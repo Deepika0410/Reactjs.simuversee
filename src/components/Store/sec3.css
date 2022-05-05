@@ -1,0 +1,123 @@
+.c11 {
+    background-color: #F8444F;
+    border-radius: 8px;
+    height: 48%;
+    margin-top: 5%;
+    max-width: 400px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+}
+
+.c21 {
+    background-color: #F8444F;
+    border-radius: 8px;
+    padding: 2%;
+    max-width: 390px;
+    height: 98.5%;
+    margin-top: 1%;
+
+}
+
+.c12 {
+    max-width: 119px;
+    height: 145px;
+
+    margin-top: 5%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    
+}
+.c212 {
+    max-width: 130px;
+    height: auto;
+    padding: 5%;
+    margin-top: 5%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.c13 {
+    max-width: 90%;
+  
+    margin-bottom:5%;
+    margin-top: 1%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 5%;
+
+    position: relative;
+    align-items: center;
+
+}
+
+.item-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #F7F8F3;
+}
+
+.item-desc {
+    width: 80%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+
+    color: #F7F8F3;
+
+}
+
+.b-btn {
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.slc {
+
+    max-width: 800px;
+    margin: 0% auto;
+
+}
+
+@media (max-width:767px) {
+    .slc {
+        max-width: 380px;
+    }
+    .c21 {
+        margin-top:15px;
+    }
+
+}
+
+.b-ctrl {
+    color: #fff;
+    font-size: larger;
+    margin: 1%;
+}
+
+.b-ctrl:hover {
+    color: #fff;
+}

@@ -1,0 +1,18 @@
+.comp2_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f7f8f3;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .comp2_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .comp2_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

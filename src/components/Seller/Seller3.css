@@ -1,0 +1,32 @@
+.seller3_Cont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seller3_Cont h3 {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-family: poppins;
+  font-size: 40px;
+  line-height: 60px;
+  color: #313131;
+}
+.seller3_Cont p {
+  margin-bottom: 5rem;
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313131;
+}
+
+.seller3_Cont button {
+  width: 40%;
+  background-color: #f8444f;
+  color: #fff;
+  padding: 20px 10px;
+  border: transparent;
+  margin-bottom: 3rem;
+  color: #313131;
+  font-size: 16px;
+  line-height: 24px;
+}

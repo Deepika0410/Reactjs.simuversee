@@ -1,0 +1,40 @@
+.row > .card{
+    height: auto;
+    color: #fff;
+    padding: 3%;
+    margin: 0% auto;
+    text-align: center;
+    background-color: #333;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.row > .card:hover
+{
+    background-color: #666;
+}
+
+.row{
+    padding: 2% 5%;
+   
+}
+
+.p1{
+    color: #ff6633;
+    font-size: 40px;
+
+}
+.p2{
+    color: #fff;
+    font-size:larger;
+}
+.context {
+    padding-left: 5%;
+    font-size: larger;
+}
+.context > p{
+
+    font-size: 5vh;
+    color: rgb(238, 186, 14);
+
+
+}

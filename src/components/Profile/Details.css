@@ -1,0 +1,71 @@
+.details_form {
+  width: 50rem;
+  max-width: 100%;
+  min-height: 40rem;
+  display: flex;
+  background-color: #f3f1f1;
+  border-radius: 8px;
+
+  flex-direction: column;
+  align-items: center;
+}
+.details_Heading {
+  text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
+.details_Heading h3 {
+  font-family: poppins;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.details_Heading p {
+  font-family: poppins;
+  font-size: 18px;
+  line-height: 21px;
+  color: #313131;
+}
+.details_Right_Con {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details_Right_Con input {
+  padding: 10px 10px 0 0;
+
+  color: black;
+  outline: none;
+  border: none;
+
+  background-color: #f3f1f1;
+  border-bottom: 1px solid black;
+}
+
+.details_Right_Con label {
+  font-family: poppins;
+  font-size: 15px;
+  line-height: 15px;
+  color: #313131;
+  margin-top: 1rem;
+}
+
+.bottom_Submit {
+  padding: 10px 20px;
+  width: 8rem;
+  border: 1px solid #313131;
+  font-size: 18px;
+
+  font-family: poppins;
+  background-color: #313131;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 3rem;
+}

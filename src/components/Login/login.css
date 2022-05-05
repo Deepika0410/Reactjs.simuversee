@@ -1,0 +1,56 @@
+.login_form{
+    min-height: 50vh;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.login_header{
+    font-weight: 200;
+    font-size: 40px;
+}
+.login_form input:nth-child(-n + 3) {
+    width: 100%;
+    margin: 5px;
+    border:0;
+    border-bottom: 1px solid #F8444F;
+}
+.login_form input:nth-child(-n+ 2) {
+    background: url('./check.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.login_form input:focus{
+    outline: none;
+}
+
+.login_form-form{
+    margin-top: 50px;
+}
+#login-submit-btn{
+    background: #78BDC4;
+    border-radius: 4px;
+    border:none;
+    width: 167.76px;
+    height: 34.96px;
+    color:white;
+    margin: 50px 0;
+}
+#register_submit-btn{
+    background: #78BDC4;
+    border-radius: 4px;
+    border:none;
+    width: 167.76px;
+    height: 34.96px;
+    color:white;
+    margin: 50px 0;
+}
+#login-submit-btn:hover{
+    border: 0.5px solid white;
+}
+.toggle-login-regis{
+    color:#F8444F;
+    
+}
+.toggle-login-regis:hover{
+    cursor: pointer;
+}

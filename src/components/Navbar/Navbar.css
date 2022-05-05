@@ -1,0 +1,115 @@
+.navbar-nav {
+  margin-top: 0 !important;
+}
+
+.navbar-brand {
+  font-family: "Cedarville" Cursive;
+  text-align: left;
+  font-weight: 600;
+  font-size: 30px;
+  width: 30%;
+  padding-top: 0 !important;
+
+  color: #f8444f;
+  padding-left: 50px !important;
+}
+.active {
+  background-color: #f8444f;
+  padding: 10px;
+  border-radius: 10px;
+}
+.myNavLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myNavLink a {
+  text-decoration: none;
+  color: #313131;
+  margin-right: 10px;
+  font-family: poppins;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.navIcon {
+  border: 1px solid #313131;
+}
+
+.icon {
+  font-size: 25px;
+  margin: 8px;
+  line-height: 30px;
+  color: #313131;
+}
+
+.navloginSignUp {
+  border: 1px solid #313131;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.navloginSignUp button {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 30px;
+  color: #313131;
+  padding: 6px;
+  border: none;
+  background-color: #ffff;
+}
+
+@media screen and (max-width: 992px) {
+  .myNavLink {
+    flex-direction: column !important;
+  }
+  .navButtons {
+    flex-direction: column;
+  }
+  .navloginSignUp {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .myNavLink a {
+    margin-bottom: 5px;
+  }
+  .navbar-brand {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .navbar-brand {
+    padding-left: 0 !important;
+    width: fit-content;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke; 
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .navbar-brand {
+    width: 25%;
+  }
+}

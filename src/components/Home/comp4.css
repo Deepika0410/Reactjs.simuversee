@@ -1,0 +1,119 @@
+/* .carousel_container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.owl-item .item {
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.25s ease-in-out;
+  margin: 50px 0;
+} */
+
+/* .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .comp3_container {
+  background-color: #f8444f;
+} */
+
+.comp4_container {
+  background-color: #f8444f;
+  position: relative;
+}
+.carousel_container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.owl-carousel {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+.owl-carousel .owl-item img {
+  width: 50% !important;
+  height: 80%;
+}
+.owl-carousel.owl-drag .owl-item {
+  transform: scale(0.8);
+  max-width: 100%;
+}
+.owl-item.active.center {
+  /* -webkit-transform: scale(1); */
+  transform: scale3d(1.3, 1, 1);
+
+  max-width: 100%;
+}
+
+.avatar {
+  height: 26rem;
+  width: 15rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-nav .owl-next {
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.owl-nav .owl-prev {
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+.owl-nav button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.owl-nav span {
+  font-size: 50px;
+  position: absolute;
+  top: -70%;
+  left: 10px;
+  color: #fff;
+}
+@media screen and (max-width: 1400px) {
+  .carousel_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .carousel_container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .carousel_container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel_container {
+    width: 90%;
+  }
+}

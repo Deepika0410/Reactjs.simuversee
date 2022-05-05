@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;500;600&display=swap");
+.s-3 {
+  background: #f7f8f3;
+  padding-top: 1.813rem;
+}
+.form-c > input {
+  margin: 1.625rem 0;
+  border: 0px;
+}
+.t-area > textarea {
+  border: 0px;
+}
+.s3-text > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
+.lets-talk > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.118;
+  text-align: center;
+
+  /* Wireframe */
+
+  color: #313131;
+  margin-bottom: 5.27vw;
+}

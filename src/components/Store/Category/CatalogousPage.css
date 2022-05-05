@@ -1,0 +1,44 @@
+.catalogue_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalogue_Heading {
+  margin-top: 3rem;
+  font-family: poppins;
+  margin-bottom: 2rem;
+  color: #313131;
+}
+.catalogue_items {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1rem;
+  width: 20rem;
+  max-width: 100%;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.catalogue_items h3 {
+  font-family: poppins;
+  font-size: 18px;
+  line-height: 25px;
+}
+.catalogue_items img {
+  margin-bottom: 1rem;
+}
+
+.catalogue_items .description {
+  color: #313131;
+  font-size: 16px;
+  line-height: 25px;
+
+  font-family: poppins;
+}
+.inventory_None {
+  display: block;
+}
+.inventory_None span {
+  font-weight: 700;
+  color: orange;
+}

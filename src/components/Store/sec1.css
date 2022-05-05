@@ -1,0 +1,116 @@
+.megamenu {
+  background-color: #f8444f;
+  color: #fff;
+}
+
+.menu-ul {
+  list-style-type: none;
+  text-align: left;
+  max-width: 120px;
+  margin: 0% auto;
+}
+
+.menu-ul a {
+  text-decoration: none !important;
+  color: #fff;
+}
+.cat-title {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  /* identical to box height */
+
+  color: #f7f8f3;
+}
+
+.cat-menu {
+  min-width: 150px;
+
+  margin: 1%;
+  padding: 1%;
+}
+.store_icon{
+  display: none;
+}
+@media (max-width: 575px) {
+  .hl1{
+    display: none;
+  }
+  .store_icon{
+    display:block
+  }
+  .mm1{
+    display:block;
+    /* position: relative;
+    left:-50%;
+    transform: translateX(50%); */
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow: visible;
+    font-size: 16px;
+  }
+  .collapse_store_menu{
+    display: flex;
+    /* position:relative;
+    left:-100%;
+    transform: translateX(50%); */
+  }
+  .collapse_store_menu ul{
+    top:-3px ;
+    display:none;
+    position: relative;
+    left:-50%;
+    transform: translateX(50%);
+  }
+  .collapse_store_menu p{
+    text-align: left;
+    line-height: 0.5;
+    font-size: 19px;
+    margin: 6px;
+    padding: 0;
+  }
+  .p_display{
+    display: block;
+  }
+  .p_hidden{
+    display:none;
+  }
+  .collapse_store_menu .men_item:hover + .men_ul{
+    cursor: pointer;
+    display:block;
+    
+  }
+  .men_ul:hover{
+    display: block;
+    
+  }
+   
+  
+  .collapse_store_menu .women_item:hover + .women_ul{
+    cursor: pointer;
+    display:block;
+    
+  }
+  .women_ul:hover{
+    display: block;
+    
+  }
+  
+  .collapse_store_menu .kids_item:hover + .kids_ul{
+    cursor: pointer;
+    display:block;
+    
+  }
+  .kids_ul:hover{
+    display: block;
+    
+  }
+  
+
+  
+}

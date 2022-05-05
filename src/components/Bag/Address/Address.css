@@ -1,0 +1,87 @@
+.bodyPart {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: auto;
+    margin-top: 8vh;
+    justify-content: center;
+}
+
+.randombox1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.txt_SDA {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn_ANA {
+    background-color: transparent;
+    padding: 0.8vh 3vw;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-left: 17vw;
+}
+
+.txt_DfA {
+    font-size: medium;
+    margin-left: -40vw;
+}
+
+.newaAddressBox {
+    border: 1px solid rgb(198, 197, 197);
+    border-radius: 8px;
+    padding: 1.5vh 4vw;
+    text-align: left;
+}
+
+.inputFieldName {
+    border-color: transparent;
+    margin-left: 1vw;
+    padding: 0.5vw;
+    width: 30vw;
+    border: none;
+}
+
+.inputFieldAddress {
+    border-color: transparent;
+    border: none;
+    margin-left: 2vw;
+    padding: 0.5vw;
+    width: 30vw;
+    height: 7vh;
+}
+
+.btn_Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2.5vw;
+}
+
+.btn_add {
+    padding: 0.6vh 2vw;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1.5px solid #313131;
+    color: #313131;
+    margin-right: 3vw;
+
+}
+.con-btn{
+    /* Rectangle 54 */
+
+color:white;
+font-size:20px;
+width: 421px;
+height: 60px;
+
+
+background: #F8444F;
+border-radius: 4px;
+
+}

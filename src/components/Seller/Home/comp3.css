@@ -1,0 +1,45 @@
+.hd1 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #313131;
+}
+
+.contFl>.row {
+    padding: 5%;
+}
+
+.specDiv, .specDiv2 {
+    margin: 1%;
+}
+
+.specDiv>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    width: 215px;
+    margin: 0% auto;
+    margin-top: 2%;
+    /* Wireframe */
+
+    color: #313131;
+}
+
+.specDiv2>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 408px;
+
+    margin: 0% auto;
+    /* Wireframe */
+    text-align: left;
+    color: #313131;
+}

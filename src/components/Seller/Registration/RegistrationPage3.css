@@ -1,0 +1,64 @@
+.registrationpage3_Heading {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: poppins;
+  color: #313131;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 500;
+}
+
+.sellerregistrationPage3_Con {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 2rem;
+}
+.sellerregistrationPage3_Con input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+}
+
+.sellerregistrationPage3_Con .select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sellerregistrationPage3_Con .select .css-1s2u09g-control {
+  height: 50px;
+}
+select {
+  text-indent: 25px;
+}
+
+.sellerregistrationPage3_Con label {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: poppins;
+  color: #313131;
+}
+.sellerregistrationPage3_Con button {
+  background-color: #f8444f;
+  color: #fff;
+  padding: 20px;
+  border: transparent;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: poppins;
+  border-radius: 4px;
+}
+
+.registrionprogress_Page3 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}

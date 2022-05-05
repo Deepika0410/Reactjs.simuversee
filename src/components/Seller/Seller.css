@@ -1,0 +1,209 @@
+.steps-content {
+  min-height: 200px;
+  margin-top: 16px;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px dashed #e9e9e9;
+  border-radius: 2px;
+}
+.seller_Progress_Step .ant-steps-item-container {
+  overflow: none !important;
+  color: #313131;
+}
+.dimension_button input {
+  border: none;
+  background-color: #eeeeee;
+  width: 2.5rem;
+  text-align: center;
+}
+.inner_Content h3,
+.progress_Con h3 {
+  font-family: poppins;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.inner_Content p {
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 20px;
+}
+.steps-action {
+  margin-top: 24px;
+}
+.seller_Progress_Step {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.seller_Progress_Step
+  .ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-icon {
+  background-color: #f8444f;
+  border: transparent;
+}
+.seller_Progress_Step
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title::after {
+  background-color: #313131;
+}
+
+.seller_Progress_Step .ant-steps-item-container {
+  overflow: none;
+  color: #313131;
+}
+.seller_Main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+.seller_Inner_Container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.inner_Content {
+  width: 25rem;
+  max-width: 100%;
+}
+/* .seller_Bottom_Container .img_cont {
+    width: 20rem;
+    height: 20rem;
+  } */
+.seller_Bottom_Container {
+  display: flex;
+
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.progress_Con {
+  text-align: center;
+}
+.seller_formPage {
+  width: 30rem;
+  max-width: 100%;
+}
+.dimension_Content {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seller_Bottom_Container img {
+  height: 100%;
+  width: 100%;
+}
+
+.seller_Inner_Container img {
+  height: 100%;
+  width: 100%;
+}
+.dimension_button {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+ cursor: pointer;
+}
+.dimension_button span {
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313131;
+}
+.description label,
+.seller_price label,
+.seller_Product_Description label {
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 30px;
+  color: #313131;
+  font-weight: 600;
+}
+.left_Heading {
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 30px;
+  color: #313131;
+  font-weight: 600;
+}
+.description input,
+.seller_price input,
+.seller_Product_Description input {
+  width: 100%;
+  padding: 10px 20px !important;
+  border: 1px solid #eeeeee;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.dimension_Content label {
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313131;
+}
+.seller_formPage button {
+  width: 100%;
+  background-color: #f8444f;
+  color: #fff;
+  padding: 20px 10px;
+  border: transparent;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 565px) and (max-width: 768px) {
+  .seller_formPage {
+    width: 18rem;
+  }
+  .inner_Content {
+    width: 18rem;
+  }
+  .seller_Main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1200px) and ((min-width: 992px)) {
+  .seller_formPage {
+    width: 25rem;
+  }
+  .inner_Content {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .seller_Main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .seller_formPage {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 565px) {
+  .seller_Inner_Container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .seller_Progress_Step {
+    width: fit-content;
+  }
+  .seller_Bottom_Container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

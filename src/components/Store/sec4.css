@@ -1,0 +1,29 @@
+.rw-brand{
+    
+background: #F7F8F3;
+}
+
+.b_name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+  
+    max-width:200px;
+    text-align: left;
+    color: #000000;
+}
+
+.b_offer{
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    max-width:200px;
+    text-align: right;
+    color: #000000;
+}

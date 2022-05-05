@@ -1,0 +1,73 @@
+.comp1_container {
+  background-color: #f8444f;
+
+  min-height: 42rem;
+}
+#exploreBtn{
+  color: black;
+  
+}
+.comp1_innerContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../images/homeImage.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  height: 40rem;
+}
+.comp1_heading {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+  margin-top: 6rem;
+}
+.comp1_heading h3 {
+  font-family: poppins;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.comp1_heading p {
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.comp1_heading button {
+  width: 15rem;
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: poppins;
+  border-radius: 5px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.comp1_container img {
+  width: 40%;
+  height: 35rem;
+}
+
+@media screen and (max-width: 786px) {
+  .comp1_heading {
+    width: 100%;
+  }
+  .comp1_heading h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 486px) and (min-width: 200px) {
+  .comp1_innerContainer {
+    background-position-x: center;
+  }
+}

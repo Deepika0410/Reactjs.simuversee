@@ -1,0 +1,144 @@
+.payment-container{
+  margin: 0 auto;
+  max-width:950px;
+  height: auto;
+  border: 1px solid #e6e5e5;
+
+}
+.logo-imge{
+  margin-left:"2vh";
+}
+
+
+.bloc-tabs {
+    display: flex;
+  }
+  .tabs {
+  
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    height:33px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    background: white;
+    
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid ;
+    
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: #F8444F;
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+  .lab{
+   
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+
+color: #000000;
+
+
+  }
+  .inp-pay{
+width: 330px;
+height: 50px;
+margin-top: 25px;
+margin-left: 10px;
+border: 1px solid #EEEEEE;
+    
+
+  }
+  .pay-btn{
+   position: relative;
+   left: 6px;
+   top: 10px;
+   color: white;
+width: 360px;
+height: 60px;
+
+background: #F8444F;
+border-radius: 4px;
+
+  }
+  
+  @media screen and (max-width: 425px) {
+   
+    .tabs > span{
+      display: none;
+
+    }
+    .tabs , .logo-imge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+    }
+    
+
+
+  }
