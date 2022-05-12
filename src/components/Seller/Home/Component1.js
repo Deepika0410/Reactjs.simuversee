@@ -16,7 +16,7 @@ const Component = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
           </p>
-          <button ><NavLink id="exploreBtn" to="/shome/productlisting"><div>Start Listing</div></NavLink></button>
+          <button ><NavLink id="exploreBtn" to="/shome/productlisting"><div style={{padding:"5px "}}>Start Listing</div></NavLink></button>
         </div>
         {/* <img src={homeImage} alt="/" /> */}
       </div>

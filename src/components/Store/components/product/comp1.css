@@ -1,7 +1,12 @@
 .item-sel-img2 {
   display: none;
 }
-
+.form_check{
+  margin-right: 3px;
+}
+.add_btn{
+  width: 220px;
+}
 .c31 {
   max-width: 100px;
   width: fit-content;
@@ -18,9 +23,12 @@
   cursor: pointer;
 }
 .img-fluid {
-  height: fit-content;
-  width: fit-content;
-  object-fit: scale-down;
+  /* height: fit-content;
+  width: fit-content; */
+  height: 100%;
+  width: 100%;
+  object-fit: scale-up;
+  /* object-fit: scale-down; */
 }
 .c31:hover {
   background-color: #cccccc;
@@ -28,14 +36,15 @@
 }
 
 .c32 {
-  max-width: 322px;
-  max-height: 410px;
-  padding: 4%;
-  margin: 0% auto;
-
+  width: 300px;
+  height: 350px;
+  margin: 5px auto;
+  box-shadow: 1px 1px 3px gray;
   background: #cccccc;
   border-radius: 8px;
+ 
 }
+
 
 .b-name {
   font-family: "Poppins";

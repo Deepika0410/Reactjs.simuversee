@@ -117,7 +117,7 @@ const Productlisting = () => {
                 </div>
               </div>
             </div>
-            <button className="startListing"><NavLink to="/shome/seller">START LISTING</NavLink></button>
+            <button className="startListing"><NavLink to="/shome/seller"><div>START LISTING</div></NavLink></button>
           </div>
           <div className="product_Right_Con_Img">
             <img src={sample} alt="" />

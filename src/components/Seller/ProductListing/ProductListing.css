@@ -102,15 +102,21 @@
   background-color: #f8444f;
   font-size: 20px;
   font-family: poppins;
-  color: #ffff;
   width: 25rem;
   max-width: 100%;
-  padding: 20px 20px;
+  padding: 15px 20px;
   text-align: center;
   border: transparent;
   margin-top: 1rem;
+  border-radius: 10px;
 }
-
+.startListing:hover{
+  background-color: #FF838A;
+}
+.startListing a, .startListing a:hover{
+  color: #ffff;
+  text-decoration: none;
+}
 @media screen and (max-width: 992px) {
   .product_Right_Con_Img {
     max-height: 20rem;

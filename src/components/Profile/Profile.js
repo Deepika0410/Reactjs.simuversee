@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import Details from "./Details";
-import "./Profile.css";
+import "./profile.css";
 import axios from 'axios'
 
 const Profile = () => {

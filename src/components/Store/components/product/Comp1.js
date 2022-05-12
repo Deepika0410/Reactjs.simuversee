@@ -108,7 +108,7 @@ function Comp1() {
             <div className="col-sm-12">
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  class="form_check"
                   type="radio"
                   name="inlineRadioOptions"
                   id="inlineRadio1"
@@ -120,7 +120,7 @@ function Comp1() {
               </div>
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  class="form_check"
                   type="radio"
                   name="inlineRadioOptions"
                   id="inlineRadio2"
@@ -131,8 +131,9 @@ function Comp1() {
                 </label>
               </div>
               <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
+                {" "}<input
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions"
                   id="inlineRadio3"
@@ -144,7 +145,8 @@ function Comp1() {
               </div>
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions"
                   id="inlineRadio4"
@@ -167,50 +169,54 @@ function Comp1() {
             <div className="col-sm-12">
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions2"
                   id="inlineRadio5"
                   value="option1"
                 />
-                <label class="form-check-label" for="inlineRadio1">
+                <label class="form-check-label" for="inlineRadio5">
                   Red
                 </label>
               </div>
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions2"
                   id="inlineRadio6"
                   value="option2"
                 />
-                <label class="form-check-label" for="inlineRadio2">
+                <label class="form-check-label" for="inlineRadio6">
                   Green
                 </label>
               </div>
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions2"
                   id="inlineRadio7"
-                  value="option2"
+                  value="option3"
                 />
-                <label class="form-check-label" for="inlineRadio2">
+                <label class="form-check-label" for="inlineRadio7">
                   Blue
                 </label>
               </div>
               <div class="form-check form-check-inline">
                 <input
-                  class="form-check-input"
+                  // class="form-check-input"
+                  className="form_check"
                   type="radio"
                   name="inlineRadioOptions2"
                   id="inlineRadio8"
-                  value="option2"
+                  value="option4"
                   disabled
                 />
-                <label class="form-check-label" for="inlineRadio2">
+                <label class="form-check-label" for="inlineRadio8">
                   Grey
                 </label>
               </div>
@@ -244,9 +250,11 @@ function Comp1() {
                           Remove from bag
                         </Button>
                       ) : (
-                        <button
-                          class="btn btn-info"
-                          style={{ width: "210px" }}
+                        <Button
+                          variant="contained"
+                          className="add_btn"
+                          // className="btn btn-info"
+                           style={{ backgroundColor: "#44F8ED" }}
                           onClick={() => {
                             cartDispatch({
                               type: cartAction.ADD_TO_CART,
@@ -254,9 +262,9 @@ function Comp1() {
                             });
                           }}
                         >
-                          {" "}
-                          Add to bag{" "}
-                        </button>
+                         
+                          {"    "}Add to bag{"   "}
+                        </Button>
                       )}
                     </div>
                     <div class="col" style={{ margin: "1%" }}>

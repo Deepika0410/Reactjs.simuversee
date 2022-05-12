@@ -46,17 +46,17 @@ function Homebar() {
             minHeight: "5rem",
           }}
         >
-          <Navbar.Brand to="/">
-            <img src={Simuverse} alt="/" />
+          <Navbar.Brand className="logoContainer" to="/" >
+            <img src={Simuverse} className="Navbar_icon" alt="/" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" style={{ width: "60%" }}>
             <Nav
               className="justify-content-around align-items-center"
-              style={{ width: "100%" }}
+              style={{ width: "100%", }}
             >
               <div className="myNavLink">
-                <NavLink to="/home">Home</NavLink>
+                <NavLink to="/home" >Home</NavLink>
                 <NavLink to="/store">Store</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/shome">Seller</NavLink>

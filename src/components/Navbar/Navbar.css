@@ -1,7 +1,13 @@
 .navbar-nav {
   margin-top: 0 !important;
 }
+.Navbar_icon{
+  max-width:150px!important;
+}
+.logoContainer{
+  max-width: 200px;
 
+}
 .navbar-brand {
   font-family: "Cedarville" Cursive;
   text-align: left;
@@ -27,10 +33,11 @@
 .myNavLink a {
   text-decoration: none;
   color: #313131;
-  margin-right: 10px;
+  margin-right: 5px;
   font-family: poppins;
   font-size: 25px;
   line-height: 30px;
+  
 }
 
 .navIcon {
