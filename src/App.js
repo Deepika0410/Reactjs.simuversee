@@ -30,6 +30,7 @@ import RegistrationComplete from "./components/Seller/Registration/RegistrationC
 // import Seller3 from "./components/Seller/Seller3"
 import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
+import ProductThreeD from "./components/Store/components/product/ProductThreeD";
 const App = () => {
   return (
     <div className="App">
@@ -84,6 +85,7 @@ const App = () => {
           <Route path="/shome/listing" element={<Listing />} />
           <Route path="/shome" element={<SellerHome />} />
           <Route path="/shome/productlisting" element={<Productlisting />} />
+          <Route path="/productThreeDView" element={<ProductThreeD />} />
         </Routes>
 
         <Footer2 />

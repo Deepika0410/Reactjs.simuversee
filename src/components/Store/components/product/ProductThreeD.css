@@ -1,0 +1,115 @@
+
+.head-1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 1.875;
+line-height: 2.813rem;
+color: #313131;
+}
+.head-2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5rem;
+text-align: center;
+color: #000000;
+}
+.brand{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  color: #000000;
+    
+}
+.product{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+     color: #000000;
+}
+.remove{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.375rem;
+    color: #F8444F;
+}
+.cardUnder{
+    width: 5.938rem;
+    height: 7.563rem;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+.centerVerical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whSet{
+    width: 160px;
+    height: 44px;
+    background: #78BDC4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+
+}
+.whSet-b{
+    box-sizing: border-box;
+    width: 160px;
+    height: 44px;
+    border: 1px solid #F8444F;
+    border-radius: 4px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 22px;
+color: #313131;
+
+}
+.backGrey{
+width: 316.12px;
+height: 398.8px;
+background: #CCCCCC;
+border-radius: 8px;
+}
+.inputSize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    margin: 5px;
+    
+border: 1px solid #F8444F;
+border-radius: 7px;
+text-align: center;
+
+}
+.space:hover{
+    background-color: #F8444F;
+}
+.bestFit{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+}
