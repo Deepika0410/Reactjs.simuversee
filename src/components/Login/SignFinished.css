@@ -1,0 +1,28 @@
+.finishedHead{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 50px;
+line-height: 75px;
+color: #313131;
+}
+.tickHW{
+width: 100px;
+height: 90px;
+margin: 0 auto;
+}
+.btnHW{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+margin: 0 auto;
+width: 167.76px;
+height: 34.96px;
+background: #F8444F;
+border-radius: 4px;
+outline: none;
+border: none;
+}

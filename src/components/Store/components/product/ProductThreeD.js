@@ -13,23 +13,40 @@ const ProductThreeD = () => {
  const  navigate=useNavigate();
 const productTopicHandler = (i) => {
     console.log(i);
-    navigate('/productThreeDView', { state: i });
+    navigate('/shop/productThreeDView', { state: i });
   };
+
+  const [sends,setSends] =useState([]);
+  console.log('hello data',sends)
+
+
+  const productTakeHandler = (p) => {
+    console.log('bag data',p);
+     navigate('/bag', { state: p });
+     console.log('navigatedata',location.state)
+  };
+
+
   const [size,setSize] =useState('')
-  const [remove,setRemove] =useState(dataProduct);
+  // const [remove,setRemove] =useState(dataProduct);
+  const [remove1,setRemove1] =useState(dataProduct);
+
 
   console.log(size);
 
-  function  removeHandle(id){
-    let setDo=remove;
-       setDo.splice(id,1);
-       setRemove(setDo)
-alert(setDo)
-alert(id)
-  }
+
+
+const removeHandle=(id)=>{
+const filterData= remove1.filter((item)=>
+item.id  !== id
+)
+setRemove1(filterData)
+}
   return (
     <div>
-        
+      {
+         console.log(remove1) 
+      }
         {/* <div className='container-lg'> */}
             <div className='row head-1'  style={{textAlign:"center"}}>
                 <h1>
@@ -48,13 +65,14 @@ alert(id)
                                 
                            
                                {
-                                   remove.map((item,index)=>(
+                                   remove1.map((item,index)=>(
                                         
                         <div className='row  justify-content-around centerVerical' key={index}>
                         <div className='col-2 mx-1 '>
                         <input class="form-check-input" 
                       onClick={() => {
                         productTopicHandler(item);
+                        setSends(item);
                       }}
                         type="radio" 
                         
@@ -72,7 +90,7 @@ alert(id)
                             <p className='product'>{item.productName}</p>
                             <p className='remove text-start'
                             onClick={()=>(
-                                removeHandle(index)
+                                removeHandle(item.id)
                             )
                         }
                             > 
@@ -86,7 +104,13 @@ alert(id)
                                 }
                                  <div className='row justify-content-around '>
                         <div className='col-auto g-0 ' >
-                        <button className='btn  whSet'>Add to bag</button>
+                        <button className='btn  whSet'
+                       onClick={() => {
+                        productTakeHandler(sends);
+                      }}
+                        >
+                          Add to bag
+                          </button>
                              </div>
                         <div className='col-auto g-0 '> 
                         <button className='btn  whSet-b'>Keep Browsing</button>
@@ -98,14 +122,16 @@ alert(id)
                         <div className='col-md-4'>
                             <div className='p-3' style={{border:"2px solid #F8444F",borderRadius:'10px'}} >
                             <div className='row justify-content-center '>
-                                {
+                               
+                                 {
                                     location.state.srcB.map((item,index)=>(
                                         <div className='backGrey' key={index}>
                                         <img src={item}  alt="" className='img-fluid'/>
                                     </div>
                                     ))
-                                }
+                                } ;
                                
+
                             </div>
                             <div className='row text-center m-0'><p id="bestFit">Best Fit</p></div>
                             <div className='row justify-content-center'>

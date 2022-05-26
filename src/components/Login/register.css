@@ -6,5 +6,23 @@
     width: 100%;
     margin: 5px;
     border:0;
-    border-bottom: 1px solid #F8444F;
+    border-bottom: 1px solid #78BDC4 ;
+}
+#sec-registration{
+    color:#78BDC4 !important;
+    font-weight: 100 !important;
+}
+.fir-registration{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6.25rem;
+    /* line-height: 9.375rem; */
+    color: #313131;
+}
+.widthSet{
+     width: 268.73px;
+     outline: none !important;
+    
+  
 }

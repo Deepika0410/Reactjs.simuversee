@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../images/simuverseLog.png'
 import './register.css';
 
 function Register() {
@@ -30,16 +31,18 @@ function Register() {
     }
 
     return(
+        <> 
+         <div className='row text-start'><img src={logo} alt="logo" className='img-fluid logo-simu'/></div>
         <div className='registration'>
-           <h1>
-           Sign Up
+        <h1 className='fir-registration' >
+               Sign <b id="sec-registration">Up</b>
            </h1> 
            <form onSubmit={handleChange} className="form_registration"> 
-                    <input onChange={(e)=>setName(e.target.value)} type="text" value={name} placeholder='Enter your name'/>
-                    <input onChange={(e)=>setNumber(e.target.value) } type="tel" value={number} placeholder='+91 0123456789'/>    
-                    <input onChange={(e)=>setEmail(e.target.value)} type="text" value={email} placeholder='Email' autoComplete="off"/>
-                    <input onChange={(e)=>setPwd(e.target.value)} type={showPwd?"text":"password"} value={pwd} placeholder='Password'/>
-                    <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/>Show Characters
+                    <input onChange={(e)=>setName(e.target.value)} type="text" value={name} placeholder='Enter your name' className='widthSet'/>
+                    <input onChange={(e)=>setNumber(e.target.value) } type="tel" value={number} placeholder='+91 0123456789' className='widthSet'/>    
+                    <input onChange={(e)=>setEmail(e.target.value)} type="text" value={email} placeholder='Email' autoComplete="off" className='widthSet'/>
+                    <input onChange={(e)=>setPwd(e.target.value)} type={showPwd?"text":"password"} value={pwd} placeholder='Password' className='widthSet'/>
+                    <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)} /><span>Show Characters</span>
                 
                 <p></p>
                 <input id="register_submit-btn" type="submit" value="Register" />
@@ -52,6 +55,7 @@ function Register() {
             </form>
             
         </div>
+        </>
     );
 }
 

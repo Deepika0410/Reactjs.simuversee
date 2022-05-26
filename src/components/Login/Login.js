@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom';
 import './login.css'
-
+import logo from '../../images/simuverseLog.png'
 
 function Login() {
     let navigate = useNavigate();
@@ -29,11 +29,14 @@ function Login() {
     
 
      return(
+         <>
+         <div className='row text-start'><img src={logo} alt="logo" className='img-fluid logo-simu'/></div>
         <div className='login_form'>
-           <h1 className='login_header'>
-                Log In
+            
+           <h1 className='fir' >
+               Log <b id="sec">In</b>
            </h1> 
-           <p>
+           <p id='impoDesign'>
            Hello there log in and start your new shopping experience
            </p>
            <form onSubmit={handleSubmmit} className="login_form-form">
@@ -43,10 +46,8 @@ function Login() {
                  <br></br>
                 
                     <input onChange={e=>setPwd(e.target.value)} type={showPwd?'text':'password'} value={pwd} placeholder='Enter password'/>
-                   <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/>Show Characters
-                <p>
-
-                </p>
+                   <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/> <span> Show Characters</span>
+               <br/>
                 <input id="login-submit-btn" type="submit" value="Login" />
   
                    
@@ -58,6 +59,7 @@ function Login() {
             </p>
             
         </div>
+        </>
     );
 }
 

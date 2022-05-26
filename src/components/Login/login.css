@@ -54,3 +54,27 @@
 .toggle-login-regis:hover{
     cursor: pointer;
 }
+.fir{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6.25rem;
+    /* line-height: 9.375rem; */
+    color: #313131;
+}
+#sec{
+  color:#F8444F !important;
+}
+#impoDesign{
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+/* line-height: 24rem; */
+text-align: center;
+color: #313131;
+}
+.logo-simu{
+    width: 159.01px !important;
+height: 38.72px !important;
+}
