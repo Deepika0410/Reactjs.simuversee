@@ -1,5 +1,4 @@
 import "./App.css";
-import { useLocation } from "react-router-dom";
 import Homebar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -26,20 +25,15 @@ import RegistrationPage2 from "./components/Seller/Registration/RegistrationPage
 import RegistrationPage3 from "./components/Seller/Registration/RegistrationPage3";
 import Shipping from "./components/Seller/Registration/Shipping";
 import RegistrationComplete from "./components/Seller/Registration/RegistrationComplete";
-import SignFinished from "./components/Login/SignFinished";
 
 // import Seller2 from "./components/Seller/Seller2"
 // import Seller3 from "./components/Seller/Seller3"
 import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
 import ProductThreeD from "./components/Store/components/product/ProductThreeD";
-import Error from "./components/Error/Error";
 const App = () => {
-  // const location=  useLocation();
-  // const path = location.pathname;
   return (
     <div className="App">
-      {/* {path === '/login' ? <Login /> : null} */}
       <BrowserRouter>
         <Homebar />
 
@@ -54,7 +48,6 @@ const App = () => {
           {/* <Route path="/bag/address/payment" element={<Payment/>}/> */}
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signFinished" element={<SignFinished/>} />
           <Route path="/search" element={<Search />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
@@ -92,12 +85,10 @@ const App = () => {
           <Route path="/shome/listing" element={<Listing />} />
           <Route path="/shome" element={<SellerHome />} />
           <Route path="/shome/productlisting" element={<Productlisting />} />
-          <Route path="/shop/productThreeDView" element={<ProductThreeD />} />
-          <Route path="*" element={<Error/>} />
+          <Route path="/productThreeDView" element={<ProductThreeD />} />
         </Routes>
 
         <Footer2 />
-       
       </BrowserRouter>
     </div>
   );

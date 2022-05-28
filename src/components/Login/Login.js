@@ -15,14 +15,21 @@ function Login() {
             email: email,
             password: pwd
         }
-        //  axios.post('https://ttmg-backend.herokuapp.com/api/auth/staffLogin',items)
-        //  .then(response=>{
-        //      navigate("/Welcome")
-        //  })
-        //  .catch(error=>{
-        //      window.alert(error)
-        //  })
-        // console.log(items);
+        console.log(items);
+          axios.post('https://sv-be.spandeep.in/auth/login',items)
+          .then(response=>{
+              if(response.data.message==="User not found."){
+                window.alert("User nor found!");
+              }
+              else{
+                localStorage.setItem("token",response.data.accessToken);
+                navigate("/home");
+              }
+              //navigate("/Welcome")
+          })
+          .catch(error=>{
+              window.alert(error)
+          })
        e.preventDefault();
     }
     
