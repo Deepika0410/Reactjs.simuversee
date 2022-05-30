@@ -1,94 +1,60 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
+import "./styles.css";
+import img1 from "./images/1.png"
+import img2 from "./images/2.png"
+import img3 from "./images/3.png"
+import img4 from "./images/4.png"
+import img5 from "./images/5.png"
+import SwiperCore, {
+  EffectCoverflow,
+  Navigation
+} from "swiper/core";
 
-import "./comp3.css";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import avatar1 from "../../images/avatar1.png";
-import avatar2 from "../../images/avatar2.png";
-import Footer from "../Footer/Footer";
-import image1 from "../../images/CarouselImage1.png";
-import image2 from "../../images/CarouselImage2.png";
-import image3 from "../../images/CaroselImage3.png";
-import image4 from "../../images/CarouselImage4.png";
-import image5 from "../../images/CarouselImage5.png";
 
-const Component4 = () => {
-  const options = {
-    responsiveClass: true,
-    nav: true,
-    dots: false,
-    center: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    loop: true,
-    smartSpeed: 1000,
-    autoplayHoverPause: true,
-    responsive: {
-      // 0: {
-      //   items: 1,
-      // },
-      // 486: {
-      //   items: 1,
-      // },
-      // 600: {
-      //   items: 1,
-      // },
-      // 784: {
-      //   items: 1,
-      // },
-      // 1000: {
-      //   items: 2,
-      // },
-    },
-  };
+SwiperCore.use([EffectCoverflow, Navigation]);
+
+export default function Component4() {
   return (
-    <div className="comp4_container">
-      <div className="carousel_container">
-        <OwlCarousel
-          {...options}
-          // items={3}
-          // className="owl-theme"
-          // loop="3000"
-          // nav="true"
-          // center="true"
-          // dots="false"
-          // responsive={0: {items:1}}
-        >
-          <div className="item avatar">
-            <img src={image1} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-          <div className="item avatar">
-            <img src={image2} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-          <div className="item avatar">
-            <img src={image3} alt="" />
-          </div>
-          <div className="item avatar">
-            <img src={image4} alt="" />
-          </div>
-          <div className="item avatar">
-            <img src={image5} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-          <div className="item avatar">
-            <img src={image1} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-          <div className="item avatar">
-            <img src={image2} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-          <div className="item avatar">
-            <img src={image3} alt="" />
-          </div>
-          <div className="item avatar">
-            <img src={image4} alt="" />
-          </div>
-          <div className="item avatar">
-            <img src={image5} alt="" style={{ marginLeft: "15%" }} />
-          </div>
-        </OwlCarousel>
-      </div>
+    <div className="containere">
+      <Swiper
+        navigation={true}
+        effect={"coverflow"}
+        centeredSlides={true}
+        slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 20,
+          depth: 2000,
+          modifier: 1,
+          slideShadows: true
+        }}
+        loop={true}
+         autoplay={{
+          delay: 700,
+          disableOnInteraction: false,
+        }}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={img1} alt="img1"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img2} alt="img1"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img3} alt="img1"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img4} alt="img1"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img5} alt="img1"/>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
-};
-
-export default Component4;
+}
