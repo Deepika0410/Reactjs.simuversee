@@ -1,6 +1,6 @@
 import "./App.css";
 import Homebar from "./components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Redirect, Navigate } from "react-router-dom";
 import Home from "./components/Home/Home";
 import SellerHome from "./components/Seller/Home/Home";
 import About from "./components/About/About";
@@ -86,6 +86,8 @@ const App = () => {
           <Route path="/shome" element={<SellerHome />} />
           <Route path="/shome/productlisting" element={<Productlisting />} />
           <Route path="/productThreeDView" element={<ProductThreeD />} />
+            {/* Error page */}
+            <Route path="*" element={<Navigate replace to="/home" />} />
         </Routes>
 
         <Footer2 />
