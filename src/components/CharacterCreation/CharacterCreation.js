@@ -7,8 +7,10 @@ import CreateAvatar from "./CreateAvatar";
 import EditAvatar from "./EditAvatar";
 import AvatarCreated from "./AvatarCreated";
 import { Route, Routes } from "react-router-dom";
+
 const CharacterCreation = () => {
   const [avatar, setAvatar] = useState(null);
+
   return (
     <div className="charCreate">
       <div className="head-t">
