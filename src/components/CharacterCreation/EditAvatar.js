@@ -1,10 +1,20 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { useNavigate,useLocation } from "react-router-dom";
 import axios from 'axios'
 
 import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
-  const navigate = useNavigate();
+  var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
+  const pid=localStorage.getItem('profileid');
+  const token=localStorage.getItem('token');
+
+  useEffect(() => {
+    fetch(`https://sv-be.spandeep.in/profile/one/${pid}`)
+    .then(response => response.json())
+    .then(data => setd(data))
+  },[])
+
+  
   const location = useLocation();
   const {image1,image2} = location.state;
   const [height, setHeight] = useState();
@@ -49,12 +59,13 @@ function EditAvatar() {
       </span>
       <div className="col-10 col-lg-6 edit_av ">
         <table>
+          <tbody>
           <tr>
             <td>
               <label htmlFor="height">Height</label>
             </td>
             <td>
-              <input onChange={handleHeight} placeholder="0" value={height} name="height" type="number" />
+              <input onChange={handleHeight} placeholder={data.height} value={height} name="height" type="number" />
             </td>
             <td>cm</td>
             
@@ -64,7 +75,7 @@ function EditAvatar() {
               <label htmlFor="weight">Weight</label>
             </td>
             <td>
-              <input onChange={handleWeight} value={weight} placeholder="0" htmlFor="weight" type="number" />
+              <input onChange={handleWeight} value={weight} placeholder={data.weight} htmlFor="weight" type="number" />
             </td>
             <td>kg</td>
           </tr>
@@ -74,9 +85,10 @@ function EditAvatar() {
             </td>
             <td>
               <select name="b-type" onChange={handleBody}>
+              <option value="none" selected disabled hidden>{data.bodyType}</option>
               <option value="square">Square</option>
               <option value="trapezoid">Trapezoid</option>
-                <option value="round">Round</option>
+              <option value="round">Round</option>
               </select>
             </td>
           </tr>
@@ -98,6 +110,7 @@ function EditAvatar() {
             </td>
             <td>oo</td>
           </tr> */}
+          </tbody>
         </table>
         <span>
           <button

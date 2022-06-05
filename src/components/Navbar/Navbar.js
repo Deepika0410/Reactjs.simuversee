@@ -29,7 +29,9 @@ function Homebar() {
   };
 
   const logoutHandler = () => {
+    localStorage.removeItem('id');
     localStorage.removeItem('token');
+    localStorage.removeItem('profileid');
     window.alert('Logged out successfully!');
     navigate("/login");
   };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./comp1.css";
 import img1 from "../../../../images/img1.png";
 import { useLocation } from "react-router-dom";
@@ -7,6 +7,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import { wishlistAction } from "../../../../context-api-setup/wishlistReducer";
 import { UseCart } from "../../../../context-api-setup/CartContext";
 import { cartAction } from "../../../../context-api-setup/cartReducer";
+import axios from "axios";
 
 function Comp1() {
   const {
@@ -20,6 +21,19 @@ function Comp1() {
   const location = useLocation();
   const { title, id } = location.state;
   const { itemsState, itemsDispatch } = UseCart();
+  console.log(`id: ${id}`)
+  const [image,setImage]=useState([]);
+  const token=localStorage.getItem('token');
+  const pid=localStorage.getItem('profileid');
+  useEffect(()=>{
+    axios.get(`https://sv-be.spandeep.in/recommendation/model?profile_id=${pid}&product_id=${id}`,
+    {headers:{"Authorization":`JWT ${token}`}}
+    )
+    .then((res)=>{
+      setImage(res.data)
+      console.log(res.data)
+    })
+  },[]);
   return (
     <div className="container-fluid">
       <div
@@ -40,8 +54,9 @@ function Comp1() {
                 <div key={key.id} className="c31">
                   <img
                     className="img-fluid"
-                    src={`http://localhost:4000/${item.image}`}
-                    alt="img"
+                    src={image}
+                    //src={`http://localhost:4000/${item.image}`}
+                    alt="model img"
                   />
                 </div>
               );
