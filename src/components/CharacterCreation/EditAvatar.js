@@ -16,42 +16,47 @@ function EditAvatar() {
 
   
   const location = useLocation();
-  const {image1,image2} = location.state;
+  const { image1, image2 } = location.state;
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
   const [bodyType, setBodyType] = useState("square");
- 
-  const handleClick = () =>{
-      let data = { 
+  const jwt = `JWT ${localStorage.getItem("token")}`;
+
+  const handleClick = () => {
+    let data = {
       frontImage: image1,
       sideImage: image2,
       height: height,
       weight: weight,
       bodyType: bodyType,
-  };
+    };
 
-      let formData = new FormData();
-      for(var key in data){
-        formData.append(key, data[key]);
-      }
-      console.log("data",formData)
-      axios.post("http://localhost:4000/profile/",         
-        formData).then((res)=>{
+    let formData = new FormData();
+    for (var key in data) {
+      formData.append(key, data[key]);
+    }
+    console.log("data", formData);
+    axios
+      .post("https://sv-be.spandeep.in/profile/", formData, {
+        headers: { Authorization: jwt },
+      })
+      .then((res) => {
         console.log(res);
-      }).catch(error=>{
-        window.alert(error)
-     }) 
-
-  }
-  const handleHeight = (e) =>{
-    setHeight(e.target.value)
-  }
-  const handleWeight = (e) =>{
-    setWeight(e.target.value)
-  }
-  const handleBody = (e) =>{
-    setBodyType(e.target.value)
-  }
+        navigate("../avatar_created");
+      })
+      .catch((error) => {
+        window.alert(error);
+      });
+  };
+  const handleHeight = (e) => {
+    setHeight(e.target.value);
+  };
+  const handleWeight = (e) => {
+    setWeight(e.target.value);
+  };
+  const handleBody = (e) => {
+    setBodyType(e.target.value);
+  };
   return (
     <>
       <span className="s-head">
@@ -68,7 +73,6 @@ function EditAvatar() {
               <input onChange={handleHeight} placeholder={data.height} value={height} name="height" type="number" />
             </td>
             <td>cm</td>
-            
           </tr>
           <tr>
             <td>
