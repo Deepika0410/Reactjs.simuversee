@@ -34,6 +34,7 @@ import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
 import ProductThreeD from "./components/Store/components/product/ProductThreeD";
 import Error from "./components/Error/Error";
+
 const App = () => {
   // const location=  useLocation();
   // const path = location.pathname;

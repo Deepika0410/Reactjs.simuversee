@@ -60,7 +60,7 @@ const Productlisting = () => {
                 sapien. Etiam tincidunt sem vel quam ullamcorper,
               </p>
               <div className="myselect">
-                <Select />
+                <Select/>
               </div>
             </div>
             <h3 className="Left_Display_Heading">
@@ -113,6 +113,7 @@ const Productlisting = () => {
                     type="number"
                     name="small"
                   />
+    
                   <span onClick={incrementHandlerLarge}>+</span>
                 </div>
               </div>
