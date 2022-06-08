@@ -14,6 +14,7 @@ const Seller2 = () => {
   let navigate = useNavigate();
   const [file1, setFile1] = useState("");
   const prdUplData = UseCart();
+  const jwt = `JWT ${localStorage.getItem("token")}`;
 
   //   const [images, setImages] = useState(null);
   //   const [imageUrl, setImageUrl] = useState([]);
@@ -99,7 +100,7 @@ const Seller2 = () => {
                 frmData.append(key, prdUplData.PrdUplState[key]);
               }
               axios
-                .post("http://localhost:4000/product/", frmData)
+                .post("https://sv-be.spandeep.in/product/", frmData,{headers: { Authorization: jwt }})
                 .then((resp) => console.log(resp));
               navigate("/shome/seller/productsuccess");
             }}

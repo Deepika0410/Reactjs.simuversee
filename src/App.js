@@ -9,7 +9,7 @@ import Wishlist from "./components/Wishlist/Wishlist";
 import Bag from "./components/Bag/bag";
 import Profile from "./components/Profile/Profile";
 import Login from "./components/Login/Login";
-import Search from "./components/Search/Search";
+import Search from "./components/Search/Search";  
 import Contact from "./components/Contact/Contact";
 import Register from "./components/Login/Register";
 import Product from "./components/Store/components/product/product";

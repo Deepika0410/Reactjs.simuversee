@@ -7,6 +7,7 @@ function EditAvatar() {
   var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
+  let navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://sv-be.spandeep.in/profile/one/${pid}`)
