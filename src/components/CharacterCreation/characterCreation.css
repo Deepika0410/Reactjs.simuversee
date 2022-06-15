@@ -11,6 +11,7 @@
   line-height: 2.813rem;
   /* identical to box height */
   color: #000000;
+  margin-top: 20px;
 }
 .s-head {
   margin-top: 1.75rem;
@@ -47,6 +48,9 @@
 }
 .uploaded_img1 {
   padding: 10px;
+  width: 250px;
+  height: 220px;
+  object-fit: contain;
 }
 .img-cont {
   background: #cccccc;
@@ -73,7 +77,7 @@
 }
 .edt-btn {
   color: #313131;
-  margin-top: 5.4rem;
+  margin-top: 6rem;
   width: 13.18vw;
   height: 44px;
   background: #ffffff;
@@ -82,9 +86,7 @@
   border-radius: 4px;
   margin-bottom: 3rem;
 }
-.edit_av input,
-select {
-
+.edit_av input, select {
   width: 6rem;
   height: 25px;
   margin: 1%;
@@ -101,6 +103,7 @@ select {
   text-align: left;
   padding-bottom: 20px;
 }
+
 .edit_av {
   font-family: "Poppins";
   font-style: normal;

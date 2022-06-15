@@ -59,12 +59,27 @@ const Productlisting = () => {
                 nisl lobortis, non luctus diam faucibus. Etiam eget lacinia
                 sapien. Etiam tincidunt sem vel quam ullamcorper,
               </p>
-              <div className="myselect">
-                <Select/>
+              <div className="x">
+                {/*Dummy select-option since no field in the model is present*/}
+                <label htmlFor="type">TYPE :   </label>
+                <select name="type" id="type" style={{border:"2px solid black"}}>
+                  <option value="T-SHIRT">T-SHIRT</option>
+                  <option value="JEANS">JEANS</option>
+                  <option value="JACKET">JACKET</option>
+                  <option value="SWEATERS">SWEATERS</option>
+                </select>
+                <br></br>
+                <label htmlFor="category" >CATEGORY :   </label>
+                <select name="category" id="category" style={{border:"2px solid black"}}>
+                  <option value="men">MEN</option>
+                  <option value="women">WOMEN</option>
+                  <option value="kids">KIDS</option>
+                </select>
               </div>
             </div>
             <h3 className="Left_Display_Heading">
               SELECT AVAILABLE SIZE AND QUANTITY
+              {/*Since no field in the model is present hence it is not sent to the server.*/}
             </h3>
             <div>
               <div className="radio__Product_Con">

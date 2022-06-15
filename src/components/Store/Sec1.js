@@ -49,9 +49,9 @@ function Sec1() {
               </NavLink>
             </ul>
           </div>
-          <div class="col-sm cat-menu ">
-            <p class={`cat-title women_item ${display?"p_display":"p_hidden"}`}>Women</p>
-            <ul class="menu-ul women_ul">
+          <div className="col-sm cat-menu ">
+            <p className={`cat-title women_item ${display?"p_display":"p_hidden"}`}>Women</p>
+            <ul className="menu-ul women_ul">
               <NavLink
                 to={"/store/categories"}
                 state={{ category: "women", type: "dresses" }}
@@ -78,9 +78,9 @@ function Sec1() {
               </NavLink>
             </ul>
           </div>
-          <div class="col-sm cat-menu items_menu">
-            <p class={`cat-title kids_item ${display?"p_display":"p_hidden"}`}>Kids</p>
-            <ul class="menu-ul kids_ul">
+          <div className="col-sm cat-menu items_menu">
+            <p className={`cat-title kids_item ${display?"p_display":"p_hidden"}`}>Kids</p>
+            <ul className="menu-ul kids_ul">
               <NavLink
                 to={"/store/categories"}
                 state={{ category: "kids", type: "tshirts" }}

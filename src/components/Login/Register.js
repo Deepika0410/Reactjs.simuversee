@@ -18,14 +18,19 @@ function Register() {
         name: name,
         mobile: number
         };
-        // axios.post('https://ttmg-backend.herokuapp.com/api/auth/staffRegister',items)
-        // .then(response =>{
-        //     window.alert("Registration Successful")
-        //     navigate("/");
-        // })
-        // .catch(error=>{
-        //     window.alert(error)
-        // })
+        axios.post('https://sv-be.spandeep.in/user/',items)
+        .then(response =>{
+            if(response.status===200){
+                window.alert("User account created!");
+                navigate("/login")
+            }
+            else{
+                window.alert("Something went wrong! Please try again later.");
+            }
+        })
+        .catch(error=>{
+            window.alert(error)
+        })
         e.preventDefault();
         
     }

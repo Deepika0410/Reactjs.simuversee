@@ -102,6 +102,10 @@ setRemove1(filterData)
                        </div>
                                     ))
                                 }
+
+
+
+                                
                                  <div className='row justify-content-around '>
                         <div className='col-auto g-0 ' >
                         <button className='btn  whSet'

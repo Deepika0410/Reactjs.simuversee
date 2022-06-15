@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./sec2.css";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import ItemsData from "./itemsData";
 import axios from "axios";
 import { UseCart } from "../../context-api-setup/CartContext";
@@ -14,7 +14,7 @@ function Sec2() {
   console.log(maxId);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/product/")
+      .get("https://sv-be.spandeep.in/product/")
       .then((resp) => {
         itemsDispatch({ type: "GET_ITEMS", payload: resp.data });
       })
@@ -33,6 +33,7 @@ function Sec2() {
       setNoOfElements(noOfElements - (noOfElements - 3));
     }
   };
+  const navigate=useNavigate();
   return (
     <div class="container con1">
       <br />
@@ -52,12 +53,16 @@ function Sec2() {
             <div className="col-sm display-cards">
               <NavLink
                 to={"/store/product"}
+                //onClick={()=>{
+                //  localStorage.setItem("productid",item.id)
+                //  navigate("/store/product");
+                //}}
                 state={{ title: item.name, id: item.id }}
               >
                 {" "}
                 <div className="card-img">
                   <img
-                    src={`http://localhost:4000/${item.image}`}
+                    src={`https://sv-be.spandeep.in/${item.image}`}
                     alt="img"
                     className="card-img1"
                   />

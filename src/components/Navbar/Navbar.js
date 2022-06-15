@@ -27,6 +27,14 @@ function Homebar() {
   const loginHandler = () => {
     navigate("/login");
   };
+
+  const logoutHandler = () => {
+    localStorage.removeItem('id');
+    localStorage.removeItem('token');
+    localStorage.removeItem('profileid');
+    window.alert('Logged out successfully!');
+    navigate("/login");
+  };
   return (
     <div>
       <Navbar
@@ -92,9 +100,15 @@ function Homebar() {
                     <CgProfile className="icon" />
                   </div>
                 </div>
+                {
+                  localStorage.getItem('token')==null?
                 <div className="navloginSignUp" onClick={loginHandler}>
                   <button>Login/Sign Up</button>
+                </div>:
+                <div className="navloginSignUp" onClick={logoutHandler}>
+                  <button>Logout</button>
                 </div>
+                }
               </div>
             </Nav>
           </Navbar.Collapse>

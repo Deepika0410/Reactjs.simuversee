@@ -17,7 +17,7 @@ const Component = () => {
             imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
           </p>
           
-            <button ><NavLink id="exploreBtn" to="/home/character-creation"><div>Explore</div></NavLink></button>
+            <NavLink id="exploreBtn" to="/home/character-creation"><div>Explore</div></NavLink>
           
         </div>
         {/* <img src={homeImage} alt="/" /> */}
