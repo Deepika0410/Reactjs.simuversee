@@ -18,8 +18,8 @@ function EditAvatar() {
   
   const location = useLocation();
   const { image1, image2 } = location.state;
-  const [height, setHeight] = useState();
-  const [weight, setWeight] = useState();
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
   const [bodyType, setBodyType] = useState("square");
   const jwt = `JWT ${localStorage.getItem("token")}`;
 

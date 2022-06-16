@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Select from "./Select";
 import "./ProductListing.css";
 import sample from "../../../images/ProductListingSample.png";
 import { NavLink } from "react-router-dom";
+import { createFilterOptions } from "@mui/material";
+import {getOpt} from './getOpt';
+import {UseCart} from '../../../context-api-setup/CartContext';
+
 const Productlisting = () => {
   const [quantity, setQuantity] = useState({
     small: 0,
     medium: 0,
     large: 0,
   });
+  let [type, setType] = useState("");
+  let [cat,setCat] = useState("men");
+  let [Opt,setOpt] = useState(getOpt(cat));
+
+  const {PrdUplDispatch} = UseCart();
+
+  useEffect(()=>{
+      setOpt(getOpt(cat))
+  },[cat])
 
   const decrementHandlerSmall = () => {
     if (quantity.small > 0) {
@@ -62,15 +75,15 @@ const Productlisting = () => {
               <div className="x">
                 {/*Dummy select-option since no field in the model is present*/}
                 <label htmlFor="type">TYPE :   </label>
-                <select name="type" id="type" style={{border:"2px solid black"}}>
-                  <option value="T-SHIRT">T-SHIRT</option>
-                  <option value="JEANS">JEANS</option>
-                  <option value="JACKET">JACKET</option>
-                  <option value="SWEATERS">SWEATERS</option>
+                <select name="type" id="type" style={{border:"2px solid black"}} onChange={(e)=>{setType(e.target.value)}}>
+                  {Opt.map(item => {
+                    return <option value={item}>{item}</option>
+                  })}
+                  {/* {console.log(Opt)} */}
                 </select>
                 <br></br>
                 <label htmlFor="category" >CATEGORY :   </label>
-                <select name="category" id="category" style={{border:"2px solid black"}}>
+                <select name="category" id="category" style={{border:"2px solid black"}} onChange={(e)=>{setCat(e.target.value)}}>
                   <option value="men">MEN</option>
                   <option value="women">WOMEN</option>
                   <option value="kids">KIDS</option>
@@ -132,7 +145,7 @@ const Productlisting = () => {
                 </div>
               </div>
             </div>
-            <button className="startListing"><NavLink to="/shome/seller"><div>START LISTING</div></NavLink></button>
+            <button className="startListing" onClick={()=>{PrdUplDispatch({type:"SET_DETAILS",payload:{category:cat,type:type,small:quantity.small,medium:quantity.medium,large:quantity.large}})}}><NavLink to="/shome/seller"><div>START LISTING</div></NavLink></button>
           </div>
           <div className="product_Right_Con_Img">
             <img src={sample} alt="" />

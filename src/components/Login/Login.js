@@ -3,6 +3,8 @@ import axios from 'axios'
 import {useNavigate} from 'react-router-dom';
 import './login.css'
 import logo from '../../images/simuverseLog.png'
+const url = "https://sv-be.spandeep.in/product/";
+const Url = "http://localhost:3000/auth/login";
 
 function Login() {
     let navigate = useNavigate();
@@ -16,7 +18,7 @@ function Login() {
             password: pwd
         }
         console.log(items);
-          axios.post('https://sv-be.spandeep.in/auth/login',items)
+          axios.post(Url,items)
           .then(response=>{
               if(response.data.message==="User not found."){
                 window.alert("User nor found!");
@@ -25,7 +27,7 @@ function Login() {
                 localStorage.setItem("id",response.data.user.id);
                 localStorage.setItem("token",response.data.accessToken);
                 const token=localStorage.getItem('token')
-                axios.get('https://sv-be.spandeep.in/profile/user',{ headers: {"Authorization" : `JWT ${token}`} })
+                axios.get(Url,{ headers: {"Authorization" : `JWT ${token}`} })
                 .then(response=>{
                     localStorage.setItem("profileid",response.data[0].id);
                 })

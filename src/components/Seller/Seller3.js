@@ -17,6 +17,7 @@ const Seller3 = () => {
         ultricies elit non enim tincidunt tristique. Phasellus dictum ut lectus
         eu convallis
       </p>
+      {/* {console.log(prdUplData.PrdUplState)} */}
       <button
         onClick={() => {
           navigate("/shome");

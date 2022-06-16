@@ -9,6 +9,8 @@ import { Steps } from "antd";
 import { useNavigate } from "react-router-dom";
 import { UseCart } from "../../context-api-setup/CartContext";
 import axios from "axios";
+const url = "https://sv-be.spandeep.in/product/";
+const Url = "http://localhost:3000/product/";
 const { Step } = Steps;
 const Seller2 = () => {
   let navigate = useNavigate();
@@ -16,7 +18,7 @@ const Seller2 = () => {
   const prdUplData = UseCart();
   const jwt = `JWT ${localStorage.getItem("token")}`;
 
-  //   const [images, setImages] = useState(null);
+    //   const [images, setImages] = useState(null);
   //   const [imageUrl, setImageUrl] = useState([]);
 
   //   const imageAddHandler = (e) => {
@@ -30,6 +32,8 @@ const Seller2 = () => {
   //     images.forEach((image) => newImageUrl.push(URL.createObjectURL(image)));
   //     setImageUrl(newImageUrl);
   //   }, [images]);
+
+
   const firstImageHandler = (e) => {
     if (e.target.files.length > 0) {
       var src = URL.createObjectURL(e.target.files[0]);
@@ -83,6 +87,7 @@ const Seller2 = () => {
             >
               <img src={VectorAdd} id="image-preview" alt="imge" />{" "}
             </div>
+            {/* {console.log(prdUplData.PrdUplState)} */}
             <input
               type="file"
               name="image-uploader"
@@ -100,7 +105,7 @@ const Seller2 = () => {
                 frmData.append(key, prdUplData.PrdUplState[key]);
               }
               axios
-                .post("https://sv-be.spandeep.in/product/", frmData,{headers: { Authorization: jwt }})
+                .post(Url, frmData,{headers: { Authorization: jwt }})
                 .then((resp) => console.log(resp));
               navigate("/shome/seller/productsuccess");
             }}

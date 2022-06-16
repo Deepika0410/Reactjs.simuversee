@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/simuverseLog.png'
 import './register.css';
+const url = "https://sv-be.spandeep.in/product/";
+const Url = "http://localhost:3000/user";
 
 function Register() {
     let navigate = useNavigate();
@@ -18,7 +20,7 @@ function Register() {
         name: name,
         mobile: number
         };
-        axios.post('https://sv-be.spandeep.in/user/',items)
+        axios.post(Url,items)
         .then(response =>{
             if(response.status===200){
                 window.alert("User account created!");
