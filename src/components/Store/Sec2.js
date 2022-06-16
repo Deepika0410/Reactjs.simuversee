@@ -11,10 +11,13 @@ function Sec2() {
   const { itemsState, itemsDispatch } = UseCart();
   const maxId = itemsState.length;
   const slice = itemsState.slice(0, noOfElements);
+  const url = "https://sv-be.spandeep.in/product/";
+const Url = "http://localhost:3000/product/";
+
   console.log(maxId);
   useEffect(() => {
     axios
-      .get("https://sv-be.spandeep.in/product/")
+      .get(Url)
       .then((resp) => {
         itemsDispatch({ type: "GET_ITEMS", payload: resp.data });
       })
