@@ -31,11 +31,15 @@ import RegistrationComplete from "./components/Seller/Registration/RegistrationC
 import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
 import ProductThreeD from "./components/Store/components/product/ProductThreeD";
+import { useState } from "react";
 const App = () => {
+  // hide the navbar when the user is on the login page
+  const [hideNavbar, setHideNavbar] = useState(false);
   return (
     <div className="App">
       <BrowserRouter>
         <Homebar />
+        
 
         <Routes>
           {/* <Route path="/contact" element={<Contact />} /> */}
