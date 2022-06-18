@@ -7,7 +7,7 @@ import ListingData from "./ListingData";
 function Listening() {
   const [noOfElement , setnoOfElement] = useState(1);
   const LoadMore =() =>{
-    setnoOfElement(noOfElement + noOfElement); 
+    setnoOfElement(noOfElement + 1); 
   }
   const slice = ListingData.slice(0,noOfElement);
 
@@ -42,7 +42,7 @@ function Listening() {
             </div>
           </div>
         </div> 
-      {/*{filteredData?.map((item) => {
+      {filteredData?.map((item) => {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item;
 
         return (
@@ -110,10 +110,10 @@ function Listening() {
             </div>
           </div>
         );
-      })} */}
+      })} 
 
       {slice.map((item,index)=>{
-        const { id, type, src, title, desc, lastUpdated, rating, price } = item;
+        const { id, type, src, title, desc, lastUpdated, rating, price } = item; 
         return(
           <div key={index}>
           <div
@@ -216,7 +216,7 @@ function Listening() {
             className="col-md-8 mb-2 box-3 pb-4"
             style={{ border: "1px solid #FFFFFF" }}
           >
-            <div className="row">
+             <div className="row">
               <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
                 <p>Product name</p>
               </div>
@@ -249,7 +249,7 @@ function Listening() {
             <img src={Shirts1} className="img-fluid " />
           </div>
         </div> 
-        </div>
+        </div> 
         );
       })}
      
