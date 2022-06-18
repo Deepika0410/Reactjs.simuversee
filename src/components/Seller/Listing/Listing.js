@@ -5,6 +5,13 @@ import Shirts1 from "../Orange_Cloth.png";
 import ListingData from "./ListingData";
 
 function Listening() {
+  const [noOfElement , setnoOfElement] = useState(1);
+  const LoadMore =() =>{
+    setnoOfElement(noOfElement + noOfElement); 
+  }
+  const slice = ListingData.slice(0,noOfElement);
+
+  
   const [filteredData, setFilteredData] = useState();
 
   useEffect(() => {
@@ -15,10 +22,10 @@ function Listening() {
   }, []);
   return (
     <div style={{ marginTop: "3rem" }}>
-      {/* <h1>hello Listening</h1> */}
-      {/* <Button>HIi World</Button> */}
-      {/* <div className="container color"> */}
-      {/* <div className="row recent ">
+       <h1>hello Listening</h1> 
+     <Button>HIi World</Button> 
+      <div className="container color"> 
+      <div className="row recent ">
           <h1>Recent Listening</h1>
         </div>
         <div className="row yourRecent" style={{ textAlign: "start" }}>
@@ -34,8 +41,8 @@ function Listening() {
               <div className="date">16/04/22</div>
             </div>
           </div>
-        </div> */}
-      {filteredData?.map((item) => {
+        </div> 
+      {/*{filteredData?.map((item) => {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item;
 
         return (
@@ -103,8 +110,13 @@ function Listening() {
             </div>
           </div>
         );
-      })}
-      {/* <div
+      })} */}
+
+      {slice.map((item,index)=>{
+        const { id, type, src, title, desc, lastUpdated, rating, price } = item;
+        return(
+          <div key={index}>
+          <div
           className="row justify-content-between"
           style={{ borderBottom: "1px solid #CCCCCC " }}
         >
@@ -145,12 +157,11 @@ function Listening() {
             <img src={Shirts1} alt="" className="img-fluid" />
           </div>
         </div>
-
-        {/* <div className='row mt-3'>
+         <div className='row mt-3'>
               <div className='col-6'  style={{textAlign:"start"}}><p>LAST MONTH</p></div>
               <div className='col-6'  style={{textAlign:"start"}}><p>15/03/22</p></div>
-          </div> */}
-      {/* <div className="row mt-3 ">
+          </div> 
+      <div className="row mt-3 ">
           <div className="col-8 increase">
             <div
               style={{ display: "flex" }}
@@ -160,9 +171,9 @@ function Listening() {
               <div className="date">15/03/22</div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-      {/* <div className="row justify-content-between">
+      <div className="row justify-content-between">
           <div
             className="col-md-8 mb-2 box-2 pb-4"
             style={{ border: "1px solid #FFFFFF" }}
@@ -200,7 +211,6 @@ function Listening() {
             <img src={Shirts1} className="img-fluid" />
           </div>
         </div>
-
         <div className="row justify-content-between">
           <div
             className="col-md-8 mb-2 box-3 pb-4"
@@ -238,17 +248,21 @@ function Listening() {
           <div className="col-md-3 col-sm-4 cardDesign mt-4 p-1">
             <img src={Shirts1} className="img-fluid " />
           </div>
-        </div> */}
+        </div> 
+        </div>
+        );
+      })}
+     
 
-      {/* <div className="row mt-4">
+      <div className="row mt-4">
           {" "}
           <div className="col-12 ">
-            <button className="btn btn-design" style={{ textAlign: "center" }}>
+            <button className="btn btn-design" style={{ textAlign: "center" }} onClick={() => LoadMore()}>
               View More
             </button>{" "}
           </div>{" "}
         </div>
-      </div>  */}
+      </div> 
     </div>
   );
 }
