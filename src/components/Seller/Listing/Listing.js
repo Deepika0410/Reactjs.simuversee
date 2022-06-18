@@ -23,9 +23,9 @@ function Listening() {
   return (
     <div style={{ marginTop: "3rem" }}>
        <h1>hello Listening</h1> 
-     <Button>HIi World</Button> 
-      <div className="container color"> 
-      <div className="row recent ">
+       <Button>HIi World</Button> 
+       <div className="container color"> 
+       <div className="row recent ">
           <h1>Recent Listening</h1>
         </div>
         <div className="row yourRecent" style={{ textAlign: "start" }}>
@@ -42,7 +42,7 @@ function Listening() {
             </div>
           </div>
         </div> 
-      {filteredData?.map((item) => {
+        {filteredData?.map((item) => {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item;
 
         return (
@@ -110,8 +110,7 @@ function Listening() {
             </div>
           </div>
         );
-      })} 
-
+      })}
       {slice.map((item,index)=>{
         const { id, type, src, title, desc, lastUpdated, rating, price } = item; 
         return(
