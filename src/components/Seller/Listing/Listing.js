@@ -21,7 +21,7 @@ function Listening() {
     setFilteredData(sortedData);
   }, []);
   return (
-    <div style={{ marginTop: "3rem" }}>
+    <div style={{ marginTop: "3rem" }} style={{ textAlign: "center" }}>
        <h1>hello Listening</h1> 
        <Button>HIi World</Button> 
        <div className="container color"> 
