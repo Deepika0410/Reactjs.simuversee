@@ -21,7 +21,7 @@ function Listening() {
     setFilteredData(sortedData);
   }, []);
   return (
-    <div style={{ marginTop: "3rem" }} style={{ textAlign: "center" }}>
+    <div style={{ marginTop: "3rem" , textAlign: "center"  }}  >
        <h1>hello Listening</h1> 
        <Button>HIi World</Button> 
        <div className="container color"> 
@@ -42,7 +42,7 @@ function Listening() {
             </div>
           </div>
         </div> 
-        {filteredData?.map((item) => {
+     {filteredData?.map((item) => {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item;
 
         return (
