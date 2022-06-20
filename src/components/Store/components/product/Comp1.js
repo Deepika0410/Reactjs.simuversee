@@ -26,7 +26,7 @@ function Comp1() {
   const token=localStorage.getItem('token');
   const pid=localStorage.getItem('profileid');
   useEffect(()=>{
-    axios.get(`https://sv-be.spandeep.in/recommendation/model?profile_id=${pid}&product_id=${id}`,
+    axios.get(`${process.env.SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
     .then((res)=>{
@@ -55,7 +55,7 @@ function Comp1() {
                   <img
                     className="img-fluid"
                     src={image}
-                    //src={`http://localhost:4000/${item.image}`}
+                    //src={`${item.image}`}
                     alt="model img"
                   />
                 </div>
@@ -71,7 +71,7 @@ function Comp1() {
                   <img
                     className="img-fluid"
                     alt="img"
-                    src={`http://localhost:4000/${item.image}`}
+                    src={`${item.image}`}
                   />
                 </div>
               </div>

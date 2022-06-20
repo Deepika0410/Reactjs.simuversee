@@ -3,8 +3,8 @@ import axios from 'axios'
 import {useNavigate} from 'react-router-dom';
 import './login.css'
 import logo from '../../images/simuverseLog.png'
-const url = "https://sv-be.spandeep.in/product/";
-const Url = "http://localhost:3000/auth/login";
+const url = `${process.env.SV_BACKEND}/product/`;
+const Url = `${process.env.SV_BACKEND}/auth/login`;
 
 function Login() {
     let navigate = useNavigate();

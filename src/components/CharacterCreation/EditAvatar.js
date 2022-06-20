@@ -10,7 +10,7 @@ function EditAvatar() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://sv-be.spandeep.in/profile/one/${pid}`)
+    fetch(`${process.env.SV_BACKEND}/profile/one/${pid}`)
     .then(response => response.json())
     .then(data => setd(data))
   },[])
@@ -38,7 +38,7 @@ function EditAvatar() {
     }
     console.log("data", formData);
     axios
-      .post("https://sv-be.spandeep.in/profile/", formData, {
+      .post(`${process.env.SV_BACKEND}/profile/`, formData, {
         headers: { Authorization: jwt },
       })
       .then((res) => {

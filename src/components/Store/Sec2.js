@@ -11,8 +11,8 @@ function Sec2() {
   const { itemsState, itemsDispatch } = UseCart();
   const maxId = itemsState.length;
   const slice = itemsState.slice(0, noOfElements);
-  const url = "https://sv-be.spandeep.in/product/";
-const Url = "http://localhost:3000/product/";
+  const url = `${process.env.SV_BACKEND}/product/`;
+const Url = `${process.env.SV_BACKEND}/product/`;
 
   console.log(maxId);
   useEffect(() => {
@@ -65,7 +65,7 @@ const Url = "http://localhost:3000/product/";
                 {" "}
                 <div className="card-img">
                   <img
-                    src={`https://sv-be.spandeep.in/${item.image}`}
+                    src={`${item.image}`}
                     alt="img"
                     className="card-img1"
                   />

@@ -12,7 +12,7 @@ const Details = () => {
   });
   useEffect(() => {
     axios
-      .get("http://localhost:4000/profile/08b65e98-7d11-4567-a63d-e6d38b8a7bd7")
+      .get(`${process.env.SV_BACKEND}/profile/08b65e98-7d11-4567-a63d-e6d38b8a7bd7`)
       .then((resp) => {
         setDetails({height:resp.data.height,chest:resp.data.chestSize,waist:resp.data.waistSize,leg:resp.data.legSize,weight:resp.data.weight})
         console.log(resp)

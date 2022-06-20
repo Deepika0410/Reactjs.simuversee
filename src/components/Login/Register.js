@@ -3,8 +3,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/simuverseLog.png'
 import './register.css';
-const url = "https://sv-be.spandeep.in/product/";
-const Url = "http://localhost:3000/user";
+const url = `${process.env.SV_BACKEND}/product/`;
+const Url = `${process.env.SV_BACKEND}/user`;
 
 function Register() {
     let navigate = useNavigate();
