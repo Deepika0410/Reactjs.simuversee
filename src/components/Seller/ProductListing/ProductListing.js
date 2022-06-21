@@ -13,9 +13,9 @@ const Productlisting = () => {
     medium: 0,
     large: 0,
   });
-  let [type, setType] = useState("");
   let [cat,setCat] = useState("men");
   let [Opt,setOpt] = useState(getOpt(cat));
+  let [type, setType] = useState("tshirts");
 
   const {PrdUplDispatch} = UseCart();
 

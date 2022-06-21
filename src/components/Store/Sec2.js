@@ -12,7 +12,7 @@ function Sec2() {
   const maxId = itemsState.length;
   const slice = itemsState.slice(0, noOfElements);
   const url = `${process.env.SV_BACKEND}/product/`;
-const Url = `${process.env.SV_BACKEND}/product/`;
+const Url = `http://localhost:3000/product/`;
 
   console.log(maxId);
   useEffect(() => {

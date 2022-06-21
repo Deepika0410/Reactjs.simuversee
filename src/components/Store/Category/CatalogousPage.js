@@ -40,7 +40,7 @@ const Catalogous = () => {
                   id,
                   category,
                   type,
-                  src,
+                  image,
                   title,
                   desc,
                   color,
@@ -50,7 +50,7 @@ const Catalogous = () => {
                 } = i;
                 return (
                   <div className="catalogue_items">
-                    <img src={src} alt="/" />
+                    <img src={image} alt="/" />
                     <div className="d-flex justify-content-between">
                       <h3>{title}</h3>
                       <h3 style={{ fontWeight: "800" }}>{rating}</h3>

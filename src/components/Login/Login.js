@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import './login.css'
 import logo from '../../images/simuverseLog.png'
 const url = `${process.env.SV_BACKEND}/product/`;
-const Url = `${process.env.SV_BACKEND}/auth/login`;
+const Url = `http://localhost:3000/auth/login`;
 
 function Login() {
     let navigate = useNavigate();
