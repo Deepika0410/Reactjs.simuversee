@@ -123,13 +123,13 @@ setRemove1(filterData)
                             <div className='p-3' style={{border:"2px solid #F8444F",borderRadius:'10px'}} >
                             <div className='row justify-content-center '>
                                
-                                 {
+                                {/* {
                                     location.state.srcB.map((item,index)=>(
                                         <div className='backGrey' key={index}>
                                         <img src={item}  alt="" className='img-fluid'/>
                                     </div>
                                     ))
-                                } ;
+                                } ; */}
                                
 
                             </div>
