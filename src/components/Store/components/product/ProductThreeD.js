@@ -13,7 +13,7 @@ const ProductThreeD = () => {
  const  navigate=useNavigate();
 const productTopicHandler = (i) => {
     console.log(i);
-    navigate('/shop/productThreeDView', { state: i });
+    navigate('/productThreeDView', { state: i });
   };
 
   const [sends,setSends] =useState([]);

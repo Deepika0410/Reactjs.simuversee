@@ -25,6 +25,7 @@ import RegistrationPage2 from "./components/Seller/Registration/RegistrationPage
 import RegistrationPage3 from "./components/Seller/Registration/RegistrationPage3";
 import Shipping from "./components/Seller/Registration/Shipping";
 import RegistrationComplete from "./components/Seller/Registration/RegistrationComplete";
+import Profiles from "./Profiles/Profiles";
 
 // import Seller2 from "./components/Seller/Seller2"
 // import Seller3 from "./components/Seller/Seller3"
@@ -88,6 +89,7 @@ const App = () => {
           <Route path="/productThreeDView" element={<ProductThreeD />} />
             {/* Error page */}
             <Route path="*" element={<Navigate replace to="/home" />} />
+            <Route path="profiles" element={<Profiles/>} />
         </Routes>
 
         <Footer2 />
