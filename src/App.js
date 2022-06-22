@@ -1,4 +1,3 @@
-import "./App.css";
 import Homebar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route, Redirect, Navigate } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -21,8 +20,6 @@ import Address from "./components/Bag/Address/Address";
 import Seller2 from "./components/Seller/Seller2";
 import Seller3 from "./components/Seller/Seller3";
 import RegistrationPage1 from "./components/Seller/Registration/RegistrationPage1";
-import RegistrationPage2 from "./components/Seller/Registration/RegistrationPage2";
-import RegistrationPage3 from "./components/Seller/Registration/RegistrationPage3";
 import Shipping from "./components/Seller/Registration/Shipping";
 import RegistrationComplete from "./components/Seller/Registration/RegistrationComplete";
 import Profiles from "./Profiles/Profiles";
@@ -32,11 +29,15 @@ import Profiles from "./Profiles/Profiles";
 import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
 import ProductThreeD from "./components/Store/components/product/ProductThreeD";
+import { useState } from "react";
 const App = () => {
+  // hide the navbar when the user is on the login page
+  const [hideNavbar, setHideNavbar] = useState(false);
   return (
     <div className="App">
       <BrowserRouter>
         <Homebar />
+        
 
         <Routes>
           {/* <Route path="/contact" element={<Contact />} /> */}
@@ -66,14 +67,7 @@ const App = () => {
             element={<RegistrationPage1 />}
           />
           *
-          <Route
-            path="/shome/registration/page2"
-            element={<RegistrationPage2 />}
-          />
-          <Route
-            path="/shome/registration/page3"
-            element={<RegistrationPage3 />}
-          />
+
           <Route path="/shome/registration/shipping" element={<Shipping />} />
           <Route
             path="/shome/registrationcompete"
