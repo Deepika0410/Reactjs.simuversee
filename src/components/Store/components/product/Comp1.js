@@ -8,7 +8,7 @@ import { wishlistAction } from "../../../../context-api-setup/wishlistReducer";
 import { UseCart } from "../../../../context-api-setup/CartContext";
 import { cartAction } from "../../../../context-api-setup/cartReducer";
 import axios from "axios";
-
+const Url = 'http://localhost:3000'
 function Comp1() {
   const {
     cartState: { cartItems },
@@ -23,16 +23,25 @@ function Comp1() {
   const { itemsState, itemsDispatch } = UseCart();
   console.log(`id: ${id}`)
   const [image,setImage]=useState([]);
+  const [score,setScore] = useState(0)
   const token=localStorage.getItem('token');
   const pid=localStorage.getItem('profileid');
   useEffect(()=>{
-    axios.get(`${process.env.SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
+    axios.get(`${Url}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
     .then((res)=>{
       setImage(res.data)
       console.log(res.data)
     })
+
+    // axios.get(`${Url}/recommendation/score?profile_id=${pid}&product_id=${id}`,
+    // {headers:{"Authorization":`JWT ${token}`}}
+    // )
+    // .then((res)=>{
+    //   setScore(res.data)
+    //   console.log(res.data)
+    // })
   },[]);
   return (
     <div className="container-fluid">

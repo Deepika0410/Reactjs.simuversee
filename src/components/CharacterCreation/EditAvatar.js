@@ -7,10 +7,11 @@ function EditAvatar() {
   var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
+  const Url = 'http://localhost:3000'
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`${process.env.SV_BACKEND}/profile/one/${pid}`)
+    fetch(`${Url}/profile/one/${pid}`)
     .then(response => response.json())
     .then(data => setd(data))
   },[])
@@ -38,7 +39,7 @@ function EditAvatar() {
     }
     console.log("data", formData);
     axios
-      .post(`${process.env.SV_BACKEND}/profile/`, formData, {
+      .post(`${Url}/profile/`, formData, {
         headers: { Authorization: jwt },
       })
       .then((res) => {

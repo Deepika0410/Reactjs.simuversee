@@ -22,7 +22,7 @@ const Url = `http://localhost:3000/product/`;
         itemsDispatch({ type: "GET_ITEMS", payload: resp.data });
       })
       .catch((err) => console.log(err));
-  }, []);
+  },[]);
 
   const loadMore = () => {
     if (noOfElements === 3) {

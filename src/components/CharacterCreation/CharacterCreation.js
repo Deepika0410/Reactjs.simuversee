@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./characterCreation.css";
 import casual3d from "../../images/casual-life-3d.png";
-import charImg1 from "../../images/char_image1.png";
-import charImg2 from "../../images/char_image2.png";
 import CreateAvatar from "./CreateAvatar";
 import EditAvatar from "./EditAvatar";
 import AvatarCreated from "./AvatarCreated";
