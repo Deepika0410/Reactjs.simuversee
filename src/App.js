@@ -84,7 +84,7 @@ const App = () => {
           <Route path="/productThreeDView" element={<ProductThreeD />} />
             {/* Error page */}
             <Route path="*" element={<Navigate replace to="/home" />} />
-            <Route path="profiles" element={<Profiles/>} />
+            <Route path="/profiles" element={<Profiles/>} />
         </Routes>
 
         <Footer2 />

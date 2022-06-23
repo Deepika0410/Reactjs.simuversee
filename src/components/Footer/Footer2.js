@@ -17,8 +17,8 @@ const Footer2 = () => {
         >
           {/* about */}
           <div className="col-8 wid-1 wid-2 col-md-4 part aboutt a23">
-            <div className="logo-c" style={{ textAlign: "centre" }}>
-              <img width="40%" src={logo} alt="logo_img" />
+            <div className="logo-c" style={{marginLeft:'-20px' }}>
+              <img width="100%" src={logo} alt="logo_img" />
             </div>
             <div className="text">
               <p>
@@ -30,14 +30,15 @@ const Footer2 = () => {
           {/* quick links */}
 
           <div
-            className="col-8 wid-1 wid-3 col-md-3 part a23"
-            style={{ padding: "0 3rem 0 3rem", margin: "0.75rem 0 0.9rem 0" }}
+            className="col-8 wid-1 wid-3 col-md-3 part a23 " 
+            id="ouickLink"
+            style={{   }}
           >
             <div>
               <p className="link-head">Quick Links</p>
             </div>
             <div className="links-cont" style={{ textAlign: "left" }}>
-              <NavLink to="/contact">About us</NavLink>
+              <NavLink to="/contact" >About us</NavLink>
               <NavLink to="/store">Store</NavLink>
               <NavLink to="/login">Login</NavLink>
               {/* <NavLink to="">Login</NavLink> */}
@@ -76,9 +77,9 @@ const Footer2 = () => {
           </div>
           <div className="row">
             <div
-              className="col-md-4 col-12 wid-2"
+              className="col-md-4 col-12 wid-2 follow"
               style={{
-                textAlign: "centre",
+               
               }}
             >
               <h5>Follow us</h5>
@@ -86,7 +87,6 @@ const Footer2 = () => {
               <div
                 className="row social-icons"
                 style={{
-                 justifyContent:"center"
                  
                 }}
               >
