@@ -16,7 +16,6 @@ const Section3 = () => {
         <div
           className="row"
           style={{
-            textAlign: "center",
             display: "flex",
             justifyContent: "center",
           }}
@@ -55,7 +54,7 @@ const Section3 = () => {
           </div>
           <div className="col-8 col-md-5" style={{ marginTop: "1rem" }}>
             <span>
-              <p style={{ fontSize: "1rem", marginLeft: "0" }}>
+              <p style={{ fontSize: "1.2rem" }} className="pHelp">
                 How can we help you?
               </p>
             </span>
