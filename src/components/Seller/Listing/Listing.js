@@ -41,47 +41,7 @@ function Listening() {
             </div>
           </div>
         </div> 
-        <div
-          className="row justify-content-between"
-          style={{ borderBottom: "1px solid #CCCCCC " }}
-        >
-           <div
-            className="col-md-8  mb-2 box-1 pb-4"
-            style={{ border: "1px solid #FFFFFF" }}
-          >
-             <div className="row">
-               <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
-                <p>Product name</p>
-                 </div> 
-              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
-                <p>price per piece</p>
-              </div>
-              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
-                <p>price</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 sameDesign" style={{ textAlign: "start" }}>
-                <p>Details</p>
-              </div>
-              <div className="col-6 lorem" style={{ textAlign: "justify" }}>
-                <p>
-                  Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                  tipografia e della stampa.dard sin dal sedicesimo
-                </p>
-              </div>
-              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
-                <p>Quality</p>
-              </div>
-              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
-                <p>1 X 20</p>
-              </div>
-            </div>
-          </div> 
-          <div className="col-md-3 col-sm-4 margin-top-1 cardDesign mb-2 p-1">
-            <img src={Shirts1} alt="" className="img-fluid" />
-        </div> 
-        </div> 
+       
     {/* {filteredData?.map((item) => {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item;
 
@@ -155,6 +115,47 @@ function Listening() {
         const { id, type, src, title, desc, lastUpdated, rating, price } = item; 
         return(
           <div key={index}>
+             <div
+          className="row justify-content-between"
+          style={{ borderBottom: "1px solid #CCCCCC " }}
+        >
+           <div
+            className="col-md-8  mb-2 box-1 pb-4"
+            style={{ border: "1px solid #FFFFFF" }}
+          >
+             <div className="row">
+               <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
+                <p>Product name</p>
+                 </div> 
+              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
+                <p>price per piece</p>
+              </div>
+              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
+                <p>price</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 sameDesign" style={{ textAlign: "start" }}>
+                <p>Details</p>
+              </div>
+              <div className="col-6 lorem" style={{ textAlign: "justify" }}>
+                <p>
+                  Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+                  tipografia e della stampa.dard sin dal sedicesimo
+                </p>
+              </div>
+              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
+                <p>Quality</p>
+              </div>
+              <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
+                <p>1 X 20</p>
+              </div>
+            </div>
+          </div> 
+          <div className="col-md-3 col-sm-4 margin-top-1 cardDesign mb-2 p-1">
+            <img src={Shirts1} alt="" className="img-fluid" />
+        </div> 
+        </div> 
         
           {/* <div className='row mt-3'>
               <div className='col-6'  style={{textAlign:"start"}}><p>LAST MONTH</p></div>

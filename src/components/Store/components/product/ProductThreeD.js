@@ -13,7 +13,7 @@ const ProductThreeD = () => {
  const  navigate=useNavigate();
 const productTopicHandler = (i) => {
     console.log(i);
-    navigate('/shop/productThreeDView', { state: i });
+    navigate('/productThreeDView', { state: i });
   };
 
   const [sends,setSends] =useState([]);
@@ -102,6 +102,10 @@ setRemove1(filterData)
                        </div>
                                     ))
                                 }
+
+
+
+                                
                                  <div className='row justify-content-around '>
                         <div className='col-auto g-0 ' >
                         <button className='btn  whSet'

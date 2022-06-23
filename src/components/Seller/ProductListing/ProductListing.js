@@ -137,6 +137,7 @@ const category = ['Man', 'woman', 'Kids'];
                     type="number"
                     name="small"
                   />
+    
                   <span onClick={incrementHandlerLarge}>+</span>
                 </div>
               </div>

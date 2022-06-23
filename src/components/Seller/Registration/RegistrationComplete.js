@@ -1,9 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link} from "react-router-dom";
 import "./RegistrationComplete.css";
+
 
 const RegistrationComplete = () => {
   const location3 = useLocation();
+ 
+  
+  
   return (
     <div className="registration_Complete_Main">
       {console.log(location3)}
@@ -16,7 +20,11 @@ const RegistrationComplete = () => {
         ultricies elit non enim tincidunt tristique. Phasellus dictum ut lectus
         eu convallis.
       </p>
-      <button>Start Product Listing</button>
+      <div>
+      <Link to="/shome/productlisting" className="btn">Start Product Listing</Link>
+      </div>
+    
+     
     </div>
   );
 };
