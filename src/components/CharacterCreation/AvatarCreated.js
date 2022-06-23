@@ -1,8 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {useEffect} from 'react';
+import axios from 'axios'
 import doneTickIcon from "../../images/icons8-tick-64 1.png";
+const Url = 'http://localhost:3000'
 function AvatarCreated() {
   const navigate = useNavigate();
+
+  useEffect(()=>{
+    const token=localStorage.getItem('token')
+                axios.get(`${Url}/profile/user`,{ headers: {"Authorization" : `JWT ${token}`} })
+                .then(response=>{
+                    localStorage.setItem("profileid",response.data[0].id);
+                })
+                .catch(error=>{
+                    console.log(error)
+                })
+  },[])
+  
   return (
     <>
       <span className="s-head">

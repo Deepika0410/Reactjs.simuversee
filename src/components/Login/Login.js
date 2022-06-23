@@ -26,14 +26,7 @@ function Login() {
               else{
                 localStorage.setItem("id",response.data.user.id);
                 localStorage.setItem("token",response.data.accessToken);
-                const token=localStorage.getItem('token')
-                axios.get(Url,{ headers: {"Authorization" : `JWT ${token}`} })
-                .then(response=>{
-                    localStorage.setItem("profileid",response.data[0].id);
-                })
-                .catch(error=>{
-                    console.log(error)
-                })
+                
                 navigate("/home");
               }
               //navigate("/Welcome")

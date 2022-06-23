@@ -4,16 +4,20 @@ import axios from 'axios'
 
 import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
-  var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
+  // If the previous profile exists then get the data , it is like live update. CHANGE the height weight and bodyType in the input form
+
+  // var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
   const Url = 'http://localhost:3000'
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`${Url}/profile/one/${pid}`)
-    .then(response => response.json())
-    .then(data => setd(data))
+    //To check if the profile already exists fetch it.
+
+    // fetch(`${Url}/profile/one/${pid}`)
+    // .then(response => response.json())
+    // .then(data => setd(data))
   },[])
 
   
@@ -72,7 +76,7 @@ function EditAvatar() {
               <label htmlFor="height">Height</label>
             </td>
             <td>
-              <input onChange={handleHeight} placeholder={data.height} value={height} name="height" type="number" />
+              <input onChange={handleHeight} placeholder={height} value={height} name="height" type="number" />
             </td>
             <td>cm</td>
           </tr>
@@ -81,7 +85,7 @@ function EditAvatar() {
               <label htmlFor="weight">Weight</label>
             </td>
             <td>
-              <input onChange={handleWeight} value={weight} placeholder={data.weight} htmlFor="weight" type="number" />
+              <input onChange={handleWeight} value={weight} placeholder={weight} htmlFor="weight" type="number" />
             </td>
             <td>kg</td>
           </tr>
@@ -91,7 +95,7 @@ function EditAvatar() {
             </td>
             <td>
               <select name="b-type" onChange={handleBody}>
-              <option value="none" selected disabled hidden>{data.bodyType}</option>
+              <option value="none" selected disabled hidden>{bodyType}</option>
               <option value="square">Square</option>
               <option value="trapezoid">Trapezoid</option>
               <option value="round">Round</option>

@@ -21,12 +21,14 @@ function Comp1() {
   const location = useLocation();
   const { title, id } = location.state;
   const { itemsState, itemsDispatch } = UseCart();
-  console.log(`id: ${id}`)
+  // console.log(`id: ${id}`)
   const [image,setImage]=useState([]);
   const [score,setScore] = useState(0)
   const token=localStorage.getItem('token');
   const pid=localStorage.getItem('profileid');
+  
   useEffect(()=>{
+
     axios.get(`${Url}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
@@ -34,6 +36,7 @@ function Comp1() {
       setImage(res.data)
       console.log(res.data)
     })
+    .catch((er)=>{console.log(er)})
 
     // axios.get(`${Url}/recommendation/score?profile_id=${pid}&product_id=${id}`,
     // {headers:{"Authorization":`JWT ${token}`}}
@@ -114,7 +117,7 @@ function Comp1() {
               return data.id === id;
             })
             .map((item, key) => {
-              console.log(item);
+              // console.log(item);
               return (
                 <div className="row pr_rw">
                   <div className="col pr_off"> Price: {item.price}rs</div>
@@ -251,7 +254,7 @@ function Comp1() {
           <div class="row">
             {itemsState
               .filter((data) => {
-                console.log(data.id);
+                // console.log(data.id);
                 return data.id === id;
               })
               .map((item, key) => {
