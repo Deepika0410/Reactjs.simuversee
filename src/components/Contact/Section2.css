@@ -1,21 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;500;600;800&display=swap");
 .s-2 {
   /* height: 60.33vh; */
   margin-top: 1.25rem;
 }
 .v-card {
-  /* width: 23.65vw; */
-  /* height: 15.02vw; */
-  /* left: 70px;
-  top: 673px; */
-
+  width:417px;
+  height: 252px;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   padding: 20px;
   margin: 20px;
-  /* text-align: center; */
-  /* display: flex; */
 }
 .links-cont > a {
   text-decoration: none;
@@ -46,13 +41,30 @@
   color: #313131;
 }
 .smth > p {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.125rem;
+  padding: 1rem 1rem;
 
   /* Wireframe */
 
   color: #313131;
+}
+.span{
+  font-family: 'Poppins', sans-serif;
+  color: #F8444F;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 1em;
+}
+.head-text{
+  display: grid;
+  margin-left: 40rem;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }

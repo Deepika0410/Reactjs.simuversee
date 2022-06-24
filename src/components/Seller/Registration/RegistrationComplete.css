@@ -22,7 +22,8 @@
   font-family: poppins;
 }
 
-.registration_Complete_Main button {
+
+.btn{
   background-color: #313131;
   color: #fff;
   padding: 20px;

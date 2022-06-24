@@ -5,28 +5,51 @@
 }
 .form-c > input {
   margin: 1.625rem 0;
-  border: 0px;
+  border:none;
+  box-shadow: inset;
+}
+.form-c > input:focus{
+ border: none;
+  
+}
+.form-c > input::after{
+  background: none;
 }
 .t-area > textarea {
+  resize: none;
   border: 0px;
+  height: 10em;
 }
 .s3-text > p {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
+  line-height: 45px;
+  display: grid;
+  margin-left: 44rem;
 }
-
+.lets-talk{
+  width: 574px;
+  height: 38px;
+  align-items: center;
+  margin: auto;
+}
 .lets-talk > p {
-  font-family: "Inter";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.118;
   text-align: center;
-
   /* Wireframe */
 
   color: #313131;
   margin-bottom: 5.27vw;
+}
+span > .pHelp{
+  line-height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  align-items: center;
 }

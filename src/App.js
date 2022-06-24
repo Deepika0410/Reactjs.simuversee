@@ -80,10 +80,11 @@ const App = () => {
           <Route path="/shome/listing" element={<Listing />} />
           <Route path="/shome" element={<SellerHome />} />
           <Route path="/shome/productlisting" element={<Productlisting />} />
+         
           <Route path="/productThreeDView" element={<ProductThreeD />} />
             {/* Error page */}
             <Route path="*" element={<Navigate replace to="/home" />} />
-            <Route path="profiles" element={<Profiles/>} />
+            <Route path="/profiles" element={<Profiles/>} />
         </Routes>
 
         <Footer2 />
