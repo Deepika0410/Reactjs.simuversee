@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { type } from "@testing-library/user-event/dist/type";
 
+
 const Productlisting = () => {
   const [quantity, setQuantity] = useState({
     small: 0,
@@ -49,6 +50,21 @@ const Productlisting = () => {
     setQuantity({ ...quantity, [e.target.name]: parseInt(e.target.value) });
     console.log(quantity);
   };
+  const[formData,setfromData] = useState({
+    isAgree :false,
+    redinput: ""
+  })
+  const handleChange = event =>{
+    const target =event.target
+    const name = target.name
+    const value =target.value
+    setfromData({
+      ...formData,
+      [name] : value
+    })
+
+  }
+ 
 
 // Our sample dropdown options
 const type = ['T-Shirt', 'Shirt', 'Pant', 'Shoe', 'Bag', 'Watch', 'Accessory'];
@@ -90,10 +106,11 @@ const category = ['Man', 'woman', 'Kids'];
               SELECT AVAILABLE SIZE AND QUANTITY
               {/*Since no field in the model is present hence it is not sent to the server.*/}
             </h3>
+            <form>
             <div>
               <div className="radio__Product_Con">
                 <div className="checbox_Pr">
-                  {/* <input type="checkbox" className="red-input" /> */}
+                <input type="radio" className="red-input" name="redinput" value="small" onChange={handleChange} checked={formData.redinput == "small"} /> 
                   <label>Small</label>
                 </div>
                 <div className="button">
@@ -110,7 +127,7 @@ const category = ['Man', 'woman', 'Kids'];
               </div>
               <div className="radio__Product_Con">
                 <div className="checbox_Pr">
-                  {/* <input type="checkbox" className="red-input" /> */}
+                <input type="radio" className="red-input" name="redinput" value="medium" onChange={handleChange} checked={formData.redinput == "medium"} /> 
                   <label>Medium</label>
                 </div>
                 <div className="button">
@@ -126,7 +143,7 @@ const category = ['Man', 'woman', 'Kids'];
               </div>
               <div className="radio__Product_Con">
                 <div className="checbox_Pr">
-                  {/* <input type="checkbox" className="red-input" /> */}
+                <input type="radio" className="red-input"name="redinput" value="large" onChange={handleChange} checked={formData.redinput == "large"} /> 
                   <label>Large</label>
                 </div>
                 <div className="button">
@@ -142,6 +159,7 @@ const category = ['Man', 'woman', 'Kids'];
                 </div>
               </div>
             </div>
+            </form>
             <button className="startListing"><NavLink to="/shome/seller"><div>START LISTING</div></NavLink></button>
           </div>
           <div className="product_Right_Con_Img">
