@@ -7,7 +7,7 @@ import ListingData from "./ListingData";
 function Listening() {
   const [noOfElement , setnoOfElement] = useState(1);
   const LoadMore =() =>{
-    setnoOfElement(noOfElement + 3); 
+    setnoOfElement(noOfElement + 1); 
   }
   const slice = ListingData.slice(0,noOfElement);
 
@@ -21,6 +21,7 @@ function Listening() {
     setFilteredData(sortedData);
   }, []);
   return (
+    
     <div style={{ marginTop: "3rem" , textAlign: "center"  }}  >
       
        <div className="container color"> 
@@ -114,7 +115,7 @@ function Listening() {
       {slice.map((item,index)=>{
         const { id, type, src, title, desc, lastUpdated, rating, price } = item; 
         return(
-          <div key={index}>
+          <div key={id}>
              <div
           className="row justify-content-between"
           style={{ borderBottom: "1px solid #CCCCCC " }}
@@ -126,12 +127,20 @@ function Listening() {
              <div className="row">
                <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
                 <p>Product name</p>
+                <h3 className="col-6 listingValue">{title}</h3>
+               
                  </div> 
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price per piece</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
             </div>
             <div className="row">
@@ -139,11 +148,16 @@ function Listening() {
                 <p>Details</p>
               </div>
               <div className="col-6 lorem" style={{ textAlign: "justify" }}>
-                <p>
-                  Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                  tipografia e della stampa.dard sin dal sedicesimo
-                </p>
+              <p>{desc}</p>
+              <div
+                    className="d-flex flex-column col-3 sameDesign"
+                    style={{ textAlign: "end" }}
+                  >
+                    <p>Rating</p>
+                    <h3 className="listingValue">{rating}</h3>
+                  </div>
               </div>
+              
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>Quality</p>
               </div>
@@ -153,22 +167,22 @@ function Listening() {
             </div>
           </div> 
           <div className="col-md-3 col-sm-4 margin-top-1 cardDesign mb-2 p-1">
-            <img src={Shirts1} alt="" className="img-fluid" />
+            <img src={src} alt="" className="img-fluid" />
         </div> 
         </div> 
         
-          {/* <div className='row mt-3'>
+          <div className='row mt-3'>
               <div className='col-6'  style={{textAlign:"start"}}><p>LAST MONTH</p></div>
-              <div className='col-6'  style={{textAlign:"start"}}><p>15/03/22</p></div>
-        </div> */}
+              <div className='col-6'  style={{textAlign:"start"}}><p>{`${new Date(lastUpdated).toDateString()}`}</p></div>
+        </div> 
       <div className="row mt-3 ">
           <div className="col-8 increase">
             <div
               style={{ display: "flex" }}
               className="justify-content-between"
             >
-              <div className="date">LAST MONTH</div>{" "}
-              <div className="date">15/03/22</div>
+             <h3 className="listing_Date_Heading">Product Listing Date</h3>
+              <h3>{`${new Date(lastUpdated).toDateString()}`}</h3>
             </div>
           </div>
         </div> 
@@ -181,12 +195,19 @@ function Listening() {
             <div className="row">
               <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
                 <p>Product name</p>
+                <h3 className="col-6 listingValue">{title}</h3>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price per piece</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
             </div>
             <div className="row">
@@ -194,10 +215,14 @@ function Listening() {
                 <p>Details</p>
               </div>
               <div className="col-6 lorem" style={{ textAlign: "justify" }}>
-                <p>
-                  Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                  tipografia e della stampa.dard sin dal sedicesimo
-                </p>
+              <p>{desc}</p>
+              <div
+                    className="d-flex flex-column col-3 sameDesign"
+                    style={{ textAlign: "end" }}
+                  >
+                    <p>Rating</p>
+                    <h3 className="listingValue">{rating}</h3>
+                  </div>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>Quality</p>
@@ -208,7 +233,7 @@ function Listening() {
             </div>
           </div>
           <div className="col-md-3 col-sm-4 cardDesign margin-top-2 p-1">
-            <img src={Shirts1} className="img-fluid" />
+            <img src={src} className="img-fluid" />
           </div>
         </div>
         <div className="row justify-content-between">
@@ -219,12 +244,20 @@ function Listening() {
              <div className="row">
               <div className="col-6 sameDesign" style={{ textAlign: "start" }}>
                 <p>Product name</p>
+                <h3 className="col-6 listingValue">{title}</h3>
+                
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price per piece</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>price</p>
+                <h3 className="listingValue" style={{ textAlign: "end" }}>
+                      {price}
+                    </h3>
               </div>
             </div>
             <div className="row">
@@ -232,10 +265,14 @@ function Listening() {
                 <p>Details</p>
               </div>
               <div className="col-6 lorem" style={{ textAlign: "justify" }}>
-                <p>
-                  Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                  tipografia e della stampa.dard sin dal sedicesimo
-                </p>
+              <p>{desc}</p>
+              <div
+                    className="d-flex flex-column col-3 sameDesign"
+                    style={{ textAlign: "end" }}
+                  >
+                    <p>Rating</p>
+                    <h3 className="listingValue">{rating}</h3>
+                  </div>
               </div>
               <div className="col-3 sameDesign" style={{ textAlign: "end" }}>
                 <p>Quality</p>
@@ -246,10 +283,10 @@ function Listening() {
             </div>
           </div>
           <div className="col-md-3 col-sm-4 cardDesign mt-4 p-1">
-            <img src={Shirts1} className="img-fluid " />
+            <img src={src} className="img-fluid " />
           </div>
         </div> 
-        </div> 
+          </div> 
         );
       })}
      
@@ -263,7 +300,7 @@ function Listening() {
           </div>{" "}
         </div>
       </div> 
-    </div>
+    </div> 
   );
 }
 
