@@ -12,6 +12,7 @@ function AvatarCreated() {
                 axios.get(`${Url}/profile/user`,{ headers: {"Authorization" : `JWT ${token}`} })
                 .then(response=>{
                     localStorage.setItem("profileid",response.data[0].id);
+                    console.log(response)
                 })
                 .catch(error=>{
                     console.log(error)

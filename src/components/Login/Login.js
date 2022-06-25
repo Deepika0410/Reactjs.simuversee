@@ -17,7 +17,7 @@ function Login() {
             email: email,
             password: pwd
         }
-        console.log(items);
+        // console.log(items);
           axios.post(Url,items)
           .then(response=>{
               if(response.data.message==="User not found."){
@@ -25,8 +25,7 @@ function Login() {
               }
               else{
                 localStorage.setItem("id",response.data.user.id);
-                localStorage.setItem("token",response.data.accessToken);
-                
+                localStorage.setItem("token",response.data.accessToken)
                 navigate("/home");
               }
               //navigate("/Welcome")
@@ -34,6 +33,7 @@ function Login() {
           .catch(error=>{
               window.alert(error)
           })
+          
        e.preventDefault();
     }
     

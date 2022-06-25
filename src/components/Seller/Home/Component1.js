@@ -3,10 +3,15 @@ import "./comp1.css";
 import img1 from "../../../images/Home/img1.png";
 import img2 from "../../../images/Home/img2.png";
 import homeImage from "../../../images/homeImage.png";
-import { NavLink } from "react-router-dom";
+import { Navigate, NavLink } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 import { Button } from "react-bootstrap";
 
 const Component = () => {
+  
+  let navigate = useNavigate();
+  let now = localStorage.length;
+  
   return (
     <div className="comp1_container">
       <div className="comp1_innerContainer">
@@ -16,7 +21,7 @@ const Component = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
           </p>
-          <button ><NavLink id="exploreBtn" to="/shome/productlisting"><div style={{padding:"5px "}}>Start Listing</div></NavLink></button>
+          <NavLink id="exploreBtn" to={!now?'/login':"/shome/productlisting"}><div>Start Listing</div></NavLink>
         </div>
         {/* <img src={homeImage} alt="/" /> */}
       </div>

@@ -104,6 +104,7 @@ const Seller2 = () => {
               for (var key in prdUplData.PrdUplState) {
                 frmData.append(key, prdUplData.PrdUplState[key]);
               }
+              
               axios
                 .post(Url, frmData,{headers: { Authorization: jwt }})
                 .then((resp) => console.log(resp));
