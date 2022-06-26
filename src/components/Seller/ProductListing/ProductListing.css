@@ -101,6 +101,7 @@
 .red-input[type=radio]:checked {
   background:#F8444F no-repeat center center;
   background-size: 9px 9px;
+  
 }
 
 .red-input[type=radio]:focus {

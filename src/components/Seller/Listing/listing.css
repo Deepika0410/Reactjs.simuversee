@@ -63,10 +63,11 @@
   background: #eeeeee;
   color: #313131;
   border-radius: 4px;
-  text-align: center;
+  text-Align: center;
   border: none;
   outline: none;
-
+  display: inline-block;
+  padding: 0;
 }
 
 .listing_Date_Heading {
