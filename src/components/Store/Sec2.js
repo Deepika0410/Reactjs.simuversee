@@ -11,8 +11,9 @@ function Sec2() {
   const { itemsState, itemsDispatch } = UseCart();
   const maxId = itemsState.length;
   const slice = itemsState.slice(0, noOfElements);
-  const url = `${process.env.SV_BACKEND}/product/`;
-const Url = `http://localhost:3000/product/`;
+
+  const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
+  const Url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
 
   console.log(maxId);
   useEffect(() => {

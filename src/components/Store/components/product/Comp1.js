@@ -29,7 +29,7 @@ function Comp1() {
   
   useEffect(()=>{
 
-    axios.get(`${Url}/recommendation/model?profile_id=${pid}&product_id=${id}`,
+    axios.get(`${process.env.REACT_APP_SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
     .then((res)=>{

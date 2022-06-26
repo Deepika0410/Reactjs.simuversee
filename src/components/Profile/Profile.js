@@ -54,7 +54,7 @@ const Profile = () => {
   };
   useEffect(() => {
     axios
-      .get(`${process.env.SV_BACKEND}/profile/08b65e98-7d11-4567-a63d-e6d38b8a7bd7`)
+      .get(`${process.env.REACT_APP_SV_BACKEND}/profile/08b65e98-7d11-4567-a63d-e6d38b8a7bd7`)
       .then((resp) => {
         setFormValue({firstName:resp.data.id,lastName:resp.data.id})
         

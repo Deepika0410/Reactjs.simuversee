@@ -6,18 +6,17 @@ import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
   // If the previous profile exists then get the data , it is like live update. CHANGE the height weight and bodyType in the input form
 
-  // var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
+  var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
   const Url = 'http://localhost:3000'
   let navigate = useNavigate();
 
   useEffect(() => {
-    //To check if the profile already exists fetch it.
-
-    // fetch(`${Url}/profile/one/${pid}`)
-    // .then(response => response.json())
-    // .then(data => setd(data))
+    if(pid){
+      fetch(`${process.env.REACT_APP_SV_BACKEND}/profile/one/${pid}`)
+      .then(response => response.json())
+      .then(data => setd(data))}
   },[])
 
   
@@ -43,7 +42,7 @@ function EditAvatar() {
     }
     console.log("data", formData);
     axios
-      .post(`${Url}/profile/`, formData, {
+      .post(`${process.env.REACT_APP_SV_BACKEND}/profile/`, formData, {
         headers: { Authorization: jwt },
       })
       .then((res) => {

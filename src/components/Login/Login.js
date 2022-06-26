@@ -3,8 +3,9 @@ import axios from 'axios'
 import {useNavigate} from 'react-router-dom';
 import './login.css'
 import logo from '../../images/simuverseLog.png'
-const url = `${process.env.SV_BACKEND}/product/`;
-const Url = `http://localhost:3000/auth/login`;
+
+const url = `${process.env.REACT_APP_SV_BACKEND}/profile/user`;
+const Url = `${process.env.REACT_APP_SV_BACKEND}/auth/login`;
 
 function Login() {
     let navigate = useNavigate();
@@ -25,13 +26,23 @@ function Login() {
               }
               else{
                 localStorage.setItem("id",response.data.user.id);
-                localStorage.setItem("token",response.data.accessToken)
+
+                localStorage.setItem("token",response.data.accessToken);
+                const token=localStorage.getItem('token')
+                axios.get(url,{ headers: {"Authorization" : `JWT ${token}`} })
+                .then(response=>{
+                    localStorage.setItem("profileid",response.data[0].id);
+                })
+                .catch(error=>{
+                    console.log(error)
+                })
                 navigate("/home");
               }
               //navigate("/Welcome")
           })
           .catch(error=>{
               window.alert(error)
+              console.log(error)
           })
           
        e.preventDefault();

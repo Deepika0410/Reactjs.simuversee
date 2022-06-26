@@ -9,8 +9,8 @@ import { Steps } from "antd";
 import { useNavigate } from "react-router-dom";
 import { UseCart } from "../../context-api-setup/CartContext";
 import axios from "axios";
-const url = `${process.env.SV_BACKEND}/product/`;
-const Url = `http://localhost:3000/product/`;
+const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
+const Url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
 const { Step } = Steps;
 const Seller2 = () => {
   let navigate = useNavigate();
