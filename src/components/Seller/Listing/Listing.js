@@ -117,7 +117,7 @@ function Listening() {
       {slice.map((item,index)=>{
         const { id, type, src, title, desc, lastUpdated, rating, price } = item; 
         return(
-          <div key={index}>
+          <div key={id}>
           <div
        className="row justify-content-between"
        style={{ borderBottom: "1px solid #CCCCCC " }}
