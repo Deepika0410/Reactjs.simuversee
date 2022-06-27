@@ -22,6 +22,7 @@
   font-family: poppins;
   font-size: 40px;
   line-height: 60px;
+  
 }
 
 .inner_Content p {
@@ -206,4 +207,8 @@
     align-items: center;
     text-align: center;
   }
+}
+
+.inner_Content{
+  width: 100%;
 }

@@ -91,14 +91,25 @@
 }
 
 .b-btn {
-    margin-right: 5%;
-    margin-bottom: 5%;
+    width: 83px;
+height: 34px;
+left: 628px;
+top: 1232px;
+background: #F7F8F3;
+border-radius: 4px;
+border-color: #fff;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
 }
 
 .slc {
 
     max-width: 800px;
     margin: 0% auto;
+    padding: 0% 0%;
 
 }
 
@@ -113,11 +124,28 @@
 }
 
 .b-ctrl {
+   
+    width: 1px;
+    height: 0px;
+    left: 1118px;
+    top: 1071px;
     color: #fff;
-    font-size: larger;
-    margin: 1%;
+border: 3px solid #FFFFFF;
 }
 
 .b-ctrl:hover {
+    
     color: #fff;
+    
+}
+
+.button{
+    width: 44px;
+    height: 44px;
+    left: 1090px;
+    top: 1049px;
+    
+    background: #78BDC4;
+    border-radius: 4px;
+ 
 }
