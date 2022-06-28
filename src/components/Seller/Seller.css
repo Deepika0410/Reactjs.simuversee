@@ -58,6 +58,12 @@
 .seller_Progress_Step .ant-steps-item-container {
   overflow: none;
   color: #313131;
+  
+  
+}
+.seller_Progress_Step .ant-steps-vertical {
+  display: flex;
+  flex-direction: row;
 }
 .seller_Main {
   width: 80%;

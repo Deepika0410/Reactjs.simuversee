@@ -131,8 +131,8 @@ const Seller = () => {
         </div>
         <div className="progress_Con">
           <h3>Product for Listing on Simuverse</h3>
-          <div className="seller_Progress_Step">
-            <Steps size="small" current={1}>
+          <div className="seller_Progress_Step ">
+            <Steps direction="horizontal"  size="small" current={1}>
               <Step title="" />
               <Step title="Details" />
               <Step title="Upload Image" />

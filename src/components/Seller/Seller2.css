@@ -96,3 +96,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+.seller2_progress .ant-steps-vertical {
+  display: flex;
+  flex-direction: row;
+}
