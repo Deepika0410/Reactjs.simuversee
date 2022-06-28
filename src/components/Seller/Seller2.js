@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import cloth from "../../images/Dimension_Cloth.png";
 import Orangecloth from "../../images/Orange_Cloth.png";
 import VectorAdd from "./VectorAdd.png";
+import rec from "../../images/Rectangle 7.png";
+//import poly1 from "../../images/Polygon 1.png"
+// import poly2 from "../../images/Polygon 2.png"
 // import addImage2 from "../../images/addImage2.png";
 
 import "./Seller2.css";
@@ -70,26 +73,47 @@ const Seller2 = () => {
         <div className="left_Side">
           <h3>Image with No Background For Reference Only</h3>
           <div className="referenceImg">
-            <img src={Orangecloth} alt="/" />
+            <img src={Orangecloth} alt="/"  />
           </div>
         </div>
         <div className="Bottom_Inner_Image_Main">
           <div className="Bottom_Inner_2">
-            {/* <div className="img_grid_sec" ></div>
-            <div className="img_grid_sec"></div> */}
+             <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
+
+             >   <div>
+              <img src={rec} id="small_rec"  alt="imge"  />
+            
+              </div>
+             <div>
+             
+             
+   
+            
+
+             </div>
+              </div>
+            <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
+              
+            <img src={rec} id="small_rec"  alt="imge"  /></div> 
+            <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
+            <img src={rec} id="small_rec"  alt="imge"  /></div> 
             <div
               className="img_grid_sec"
-              style={{ borderRadius: "20px", padding: "0" }}
+              style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
             >
-              <img src={VectorAdd} id="image-preview" alt="imge" />{" "}
-            </div>
-            <input
+              <label>
+               <input
               type="file"
               name="image-uploader"
               onChange={firstImageHandler}
               id="image-uploader"
               accept="image/*"
+              
             />
+              <img src={VectorAdd} id="image-preview" alt="imge"  />{" "}
+              </label>
+            </div>
+           
             {/* <div className="img_grid_sec_last">+</div> */}
           </div>
           <button
