@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./characterCreation.css";
 import casual3d from "../../images/casual-life-3d.png";
 import CreateAvatar from "./CreateAvatar";
 import EditAvatar from "./EditAvatar";
 import AvatarCreated from "./AvatarCreated";
 import { Route, Routes } from "react-router-dom";
+const Url = `http://localhost:3000`
+import axios from 'axios';
 
 const CharacterCreation = () => {
   const [avatar, setAvatar] = useState(null);
+  
+    // Preview the Profile front Image.
+  let [flag,setFlag] = useState(false)
+  let [img1,setImg1] = useState([]);
+  const Pid = localStorage.getItem("profileid");
+
+  useEffect(()=>{
+
+    if(Pid){
+    axios.get(`${Url}/profile/one/${Pid}`).then(res=>setImg1(res.data.frontImage));
+    console.log(img1);
+    axios.get(img1).then(res=>setImg1(res.data));
+      setFlag(true);
+  }
+  })
 
   return (
     <div className="charCreate">
@@ -27,7 +44,7 @@ const CharacterCreation = () => {
 
         <div className="col-10 col-lg-6">
           <div className="img-cont">
-            <img className="cas_img" src={casual3d} alt="3" />
+            <img className="cas_img" src={flag?img1:casual3d} alt="3" />
           </div>
           <span>
             <p>Preview Avatar</p>
