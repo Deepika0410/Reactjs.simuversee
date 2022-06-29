@@ -96,3 +96,46 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+@media (max-width:815px){
+  .seller2_Bottom_Container{
+    display:flex !important;
+    flex-direction: column !important;
+  }
+  .referenceImg{
+    margin: 0 auto  !important;
+  }
+  .Bottom_Inner_2{
+    margin:0 auto !important;
+    margin-top: 100px !important;
+  }
+}
+
+
+@media (max-width:525px){
+
+ .Bottom_Inner_2{
+  display:flex !important;
+  flex-direction: column !important;
+
+ }
+ .img_grid_sec{
+  margin: 0 auto !important;
+ }
+ #image-uploader{
+  margin: 0 auto !important;
+ 
+  width: 200px !important;
+ }
+}
+
+@media (max-width:425px){
+
+ 
+    .referenceImg {
+      width: 15rem;
+      height: 15rem;
+    }
+  
+ }

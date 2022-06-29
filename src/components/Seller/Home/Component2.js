@@ -33,7 +33,7 @@ style={{backgroundColor:"#E5E5E5"}}
   </h1>
 </div>
 <div className='row justify-content-around p-0 m-0'>
-<div className='col-lg-2'>
+<div className='col-lg-2 col-md-3'>
   <div className='row text-center'>
     <img src={pcIcon} className='img-fluid imhHwSet'/>
   </div>
@@ -51,7 +51,7 @@ style={{backgroundColor:"#E5E5E5"}}
 <div className='col-lg-1 aliCen'>
   <img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
 </div>
-<div className='col-lg-2'>
+<div className='col-lg-2 col-md-3'>
 <div className='row text-center'>
 <img src={uploadIcon} className='img-fluid imhHwSet'/>
 </div>
@@ -69,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <div className='col-lg-1 aliCen'>
 <img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
 </div>
-<div className='col-lg-2'>
+<div className='col-lg-2 col-md-3'>
 <div className='row text-center '>
 <img  src={shippedIcon}  className='img-fluid imhHwSet'/>
 </div>
@@ -87,7 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <div className='col-lg-1 aliCen'>
 <img src={arrow} className='img-fluid alis' style={{height:"30px",width:"80px"}}/>
 </div>
-<div className='col-lg-2'>
+<div className='col-lg-2 col-md-3'>
 <div className='row text-center'>
 <img src={brandIcon} className='img-fluid imhHwSet'/>
 </div>
