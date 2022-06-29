@@ -118,7 +118,6 @@
  .Bottom_Inner_2{
   display:flex !important;
   flex-direction: column !important;
-<<<<<<< HEAD
 
  }
  .img_grid_sec{
@@ -157,34 +156,3 @@
   background-color: #ffff;
   
 }
-=======
-
- }
- .img_grid_sec{
-  margin: 0 auto !important;
- }
- #image-uploader{
-  margin: 0 auto !important;
- 
-  width: 200px !important;
- }
-}
-
-@media (max-width:425px){
-
- 
-    .referenceImg {
-      width: 15rem;
-      height: 15rem;
-    }
-  
- }
-
- #small_rec{
-  z-index: 999999999999 !important;
- }
-
- #image-uploader{
-  display: none !important;
- }
->>>>>>> 61d1bd7ea686d967f4c3b6d84618f21b1d8c733c
