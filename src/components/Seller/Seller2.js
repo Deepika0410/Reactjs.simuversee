@@ -3,7 +3,7 @@ import cloth from "../../images/Dimension_Cloth.png";
 import Orangecloth from "../../images/Orange_Cloth.png";
 import VectorAdd from "./VectorAdd.png";
 import rec from "../../images/Rectangle 7.png";
-//import poly1 from "../../images/Polygon 1.png"
+// import poly1 from "../../images/Polygon 1.png"
 // import poly2 from "../../images/Polygon 2.png"
 // import addImage2 from "../../images/addImage2.png";
 
@@ -81,7 +81,7 @@ const Seller2 = () => {
              <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
 
              >   <div>
-              <img src={rec} id="small_rec"  alt="imge"  />
+              <img src={rec} id="small_rec"  alt="imge"/>
             
               </div>
              <div>
@@ -92,11 +92,13 @@ const Seller2 = () => {
 
              </div>
               </div>
-            <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
+            {/* <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
               
-            <img src={rec} id="small_rec"  alt="imge"  /></div> 
+            <img src={rec} id="small_rec"  alt="imge"/>
+            </div> 
             <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
-            <img src={rec} id="small_rec"  alt="imge"  /></div> 
+            <img src={rec} id="small_rec"  alt="imge"/>
+            </div>  */}
             <div
               className="img_grid_sec"
               style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
@@ -110,7 +112,7 @@ const Seller2 = () => {
               accept="image/*"
               
             />
-              <img src={VectorAdd} id="image-preview" alt="imge"  />{" "}
+              <img src={VectorAdd} id="image-preview" alt="imge"/>{" "}
               </label>
             </div>
            

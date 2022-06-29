@@ -31,8 +31,8 @@
   margin-bottom: 2rem;
 }
 .referenceImg {
-  max-width: 100%;
-  height: auto;
+  width: 20rem;
+  height: 20rem;
 }
 
 .seller2_Bottom_Container {
@@ -96,7 +96,58 @@
   margin-left: auto;
   margin-right: auto;
 }
-.seller2_progress .ant-steps-vertical {
+
+
+@media (max-width:815px){
+  .seller2_Bottom_Container{
+    display:flex !important;
+    flex-direction: column !important;
+  }
+  .referenceImg{
+    margin: 0 auto  !important;
+  }
+  .Bottom_Inner_2{
+    margin:0 auto !important;
+    margin-top: 100px !important;
+  }
+}
+
+
+@media (max-width:525px){
+
+ .Bottom_Inner_2{
+  display:flex !important;
+  flex-direction: column !important;
+
+ }
+ .img_grid_sec{
+  margin: 0 auto !important;
+ }
+ #image-uploader{
+  margin: 0 auto !important;
+ 
+  width: 200px !important;
+ }
+}
+
+@media (max-width:425px){
+
+ 
+    .referenceImg {
+      width: 15rem;
+      height: 15rem;
+    }
+  
+ }
+
+ #small_rec{
+  z-index: 999999999999 !important;
+ }
+
+ #image-uploader{
+  display: none !important;
+ }
+ .seller2_progress .ant-steps-vertical {
   display: flex;
   flex-direction: row;
 }
@@ -104,26 +155,4 @@
 .seller2_progress .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
   background-color: #ffff;
   
-}
-#image-uploader{
-  display:none;
-}
-
-.image-preview{
-
-  left: 6.25%;
-right: 6.25%;
-top: 6.25%;
-bottom: 6.25%;
-
-background: #EEEEEE;
-}
-.small_rec{
-  width: 79.96px;
-height: 79.96px;
-left: 825.92px;
-top: 636.91px;
-
-background: #FFFFFF;
-border-radius: 8px;
 }
