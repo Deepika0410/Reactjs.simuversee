@@ -117,12 +117,12 @@ const Seller = () => {
   return (
     <div className="seller_Main">
       <>
-        <div className="seller_Inner_Container">
-          <div className="inner_Content">
-            <h3>Reference Image for Uploading</h3>
+        <div className="seller_Inner_Container" >
+          <div className="inner_Content text-start"  >
+            <h3 >Reference Image for Uploading</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+              imperdiet nisi ut <br/> lorem ornare sollicitudin. Fusce eget quam purus
             </p>
           </div>
           <div>
@@ -131,8 +131,8 @@ const Seller = () => {
         </div>
         <div className="progress_Con">
           <h3>Product for Listing on Simuverse</h3>
-          <div className="seller_Progress_Step">
-            <Steps size="small" current={1}>
+          <div className="seller_Progress_Step ">
+            <Steps direction="horizontal"  size="small" current={1}>
               <Step title="" />
               <Step title="Details" />
               <Step title="Upload Image" />
@@ -143,7 +143,7 @@ const Seller = () => {
           <div className="inner_Content">
             <h3 className="left_Heading">How to measure dimension</h3>
             <div className="img_cont">
-              <img src={dimensionCloth} alt="/" />
+              <img src={dimensionCloth} alt="/" style={{height:"318px", width:"304px"}}/>
             </div>
           </div>
 

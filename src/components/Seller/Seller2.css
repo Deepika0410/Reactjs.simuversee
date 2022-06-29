@@ -139,3 +139,11 @@
     }
   
  }
+
+ #small_rec{
+  z-index: 999999999999 !important;
+ }
+
+ #image-uploader{
+  display: none !important;
+ }

@@ -43,11 +43,11 @@ function Sec3() {
                 </div>
             </div>
 
-            <div class="row slc" align="right" >
+            <div class="row slc" align="right"  >
                 <div class="col" >
-                    <button class="btn btn-info b-ctrl" onClick={handlePrev}> <b> &#60; </b> </button>
+                    <button class="button b-ctrl" onClick={handlePrev}> <b> &#60; </b> </button>
                     &nbsp;
-                    <button class="btn btn-info b-ctrl" onClick={handleNext}> <b> &#62; </b></button>
+                    <button class="button b-ctrl" onClick={handleNext}> <b> &#62; </b></button>
 
                 </div>
 
@@ -70,7 +70,7 @@ function Sec3() {
 
                                 <p class="item-desc" align="left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim fringilla convallis.</p>
 
-                                <div align="right"> <button class="btn btn-outline-light b-btn">Recommend</button></div>
+                                <div align="right"> <button class=" b-btn">Buy</button></div>
                             </div>
 
                         </div>

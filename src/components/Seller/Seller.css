@@ -22,6 +22,7 @@
   font-family: poppins;
   font-size: 40px;
   line-height: 60px;
+  
 }
 
 .inner_Content p {
@@ -57,6 +58,12 @@
 .seller_Progress_Step .ant-steps-item-container {
   overflow: none;
   color: #313131;
+  
+  
+}
+.seller_Progress_Step .ant-steps-vertical {
+  display: flex;
+  flex-direction: row;
 }
 .seller_Main {
   width: 80%;
@@ -206,4 +213,13 @@
     align-items: center;
     text-align: center;
   }
+}
+
+.inner_Content{
+  width: 100%;
+}
+
+.seller_Progress_Step .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background-color: #ffff;
+  
 }
