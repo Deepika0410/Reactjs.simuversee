@@ -35,7 +35,7 @@ function Profiles() {
     // alert("hello");
   }
   return (
-    <div>
+    <div>  
       <Container>
         <Row className='text-center'>
           <p className='edit'>

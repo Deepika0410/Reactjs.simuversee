@@ -38,3 +38,8 @@ margin: 0 auto !important;
   transform: translateY(20%);
 }
 
+@media (max-width:991px) {
+  .aliCen{
+    display: none !important;
+  }
+}
