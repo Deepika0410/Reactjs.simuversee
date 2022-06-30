@@ -142,6 +142,34 @@
 
  #small_rec{
   z-index: 999999999999 !important;
+ 
+ }
+ .poly{
+  
+  
+  position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 41.88px;
+         height: 41.88px;
+ }
+ .poly_2{
+  
+  
+  position: absolute;
+        top: 3px;
+        right: 1px;
+        
+ }
+ .ellips{
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  
+ }
+ .images{
+  
+  position: relative
  }
 
  #image-uploader{

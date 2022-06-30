@@ -3,8 +3,9 @@ import cloth from "../../images/Dimension_Cloth.png";
 import Orangecloth from "../../images/Orange_Cloth.png";
 import VectorAdd from "./VectorAdd.png";
 import rec from "../../images/Rectangle 7.png";
-// import poly1 from "../../images/Polygon 1.png"
-// import poly2 from "../../images/Polygon 2.png"
+import poly1 from "../../images/Polygon 1.png"
+import poly2 from "../../images/Polygon 2.png"
+import ell from "../../images/ellipse1.png";
 // import addImage2 from "../../images/addImage2.png";
 
 import "./Seller2.css";
@@ -80,8 +81,15 @@ const Seller2 = () => {
           <div className="Bottom_Inner_2">
              <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
 
-             >   <div>
+             >   <div className="images">
               <img src={rec} id="small_rec"  alt="imge"/>
+            
+              
+              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
+              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+
+              
             
               </div>
              <div>
@@ -92,13 +100,33 @@ const Seller2 = () => {
 
              </div>
               </div>
-            {/* <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
+           <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
               
-            <img src={rec} id="small_rec"  alt="imge"/>
+           <div className="images">
+              <img src={rec} id="small_rec"  alt="imge"/>
+            
+              
+              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
+              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+
+              
+            
+              </div>
             </div> 
             <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
-            <img src={rec} id="small_rec"  alt="imge"/>
-            </div>  */}
+            <div className="images">
+              <img src={rec} id="small_rec"  alt="imge"/>
+            
+              
+              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
+              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
+
+              
+            
+              </div>
+            </div>  
             <div
               className="img_grid_sec"
               style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
