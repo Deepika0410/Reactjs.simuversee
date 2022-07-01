@@ -13,18 +13,34 @@ import {
   Radio,
   FormControl,
   TextareaAutosize,
-  Box,
   Select,
   InputLabel,
   MenuItem,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    marginRight: theme.spacing(1),
-  },
-}));
+const themeData = {
+  components: {
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          "&.Mui-active": {
+            color: "#ff0000"
+          }
+        },
+        active: {
+          color: "#ff0000"
+        },
+        text: {
+          fill: "black"
+        }
+      }
+    }
+  }
+};
+
+const theme = createTheme(themeData);
 
 function getSteps() {
   return [
@@ -46,9 +62,9 @@ function getStepContent(step) {
             variant="outlined"
             placeholder="Enter Your First Name"
             fullWidth
-            margin="normal"
-            paddingtop="1rem"
+            style={{marginTop:"20px", marginBottom: "1rem", color:"#F8444F", borderColor:"#F8444F" , borderWidth:"1px", borderRadius:"5px", padding:"5px"}}
             name="firstName"
+
           />
           <TextField
             id="last-name"
@@ -297,7 +313,6 @@ function getStepContent(step) {
 }
 
 const LinaerStepper = () => {
-  const classes = useStyles();
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
   const steps = getSteps();
@@ -328,6 +343,7 @@ const LinaerStepper = () => {
 
   return (
     <div>
+      <ThemeProvider theme={theme}>
       <Stepper alternativeLabel activeStep={activeStep} >
         {steps.map((step, index) => {
           const labelProps = {};
@@ -353,7 +369,7 @@ const LinaerStepper = () => {
           );
         })}
       </Stepper>
-
+      
       {activeStep === steps.length ? (
         <Typography variant="h3" align="center" style={{color:"#F8444F"}}>
           Thank You
@@ -362,7 +378,7 @@ const LinaerStepper = () => {
         <>
           <form>{getStepContent(activeStep)}</form>
           <Button
-            className={classes.button}
+         
             disabled={activeStep === 0}
             onClick={handleBack}
             style={{color:"#F8444F"}}
@@ -371,7 +387,7 @@ const LinaerStepper = () => {
           </Button>
           {isStepOptional(activeStep) && (
             <Button
-              className={classes.button}
+      
               variant="contained"
               color="primary"
               onClick={handleSkip}
@@ -381,7 +397,6 @@ const LinaerStepper = () => {
             </Button>
           )}
           <Button
-            className={classes.button}
             variant="contained"
             color="primary"
             onClick={handleNext}
@@ -391,7 +406,9 @@ const LinaerStepper = () => {
           </Button>
         </>
       )}
+      </ThemeProvider>
     </div>
+    
   );
 };
 

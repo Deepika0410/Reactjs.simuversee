@@ -14,10 +14,6 @@
   margin: 0 auto;
 }
 
-div {
-  overflow: hidden;
-}
-
 .c1 {
   /* background-image: linear-gradient(to left,#abbaab, #ffffff ); */
   background: radial-gradient(ellipse at center, #382b2f 0%, #494647 100%);
