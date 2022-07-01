@@ -29,7 +29,7 @@ function Comp1() {
   
   useEffect(()=>{
 
-    axios.get(`${process.env.REACT_APP_SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
+   async function getImage(){ await axios.get(`${process.env.REACT_APP_SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
     .then((res)=>{
@@ -37,14 +37,16 @@ function Comp1() {
       console.log(res.data)
     })
     .catch((er)=>{console.log(er)})
-
-    // axios.get(`${Url}/recommendation/score?profile_id=${pid}&product_id=${id}`,
-    // {headers:{"Authorization":`JWT ${token}`}}
-    // )
-    // .then((res)=>{
-    //   setScore(res.data)
-    //   console.log(res.data)
-    // })
+  }
+ getImage();
+     axios.get(`${Url}/recommendation/score?profile_id=${pid}&product_id=${id}`,
+    {headers:{"Authorization":`JWT ${token}`}}
+    )
+    .then((res)=>{
+      setScore(res.data)
+      console.log("this is the score")
+      console.log(res.data)
+    })
   },[]);
   return (
     <div className="container-fluid">
@@ -63,7 +65,7 @@ function Comp1() {
             })
             .map((item, key) => {
               return (
-                <div key={key.id} className="c31">
+                <div key={key} className="c31">
                   <img
                     className="img-fluid"
                     src={image}
@@ -73,6 +75,8 @@ function Comp1() {
                 </div>
               );
             })}
+              <div><h3>{score.fitnessScore}</h3>
+           <h3>{score.isFit}</h3></div>
         </div>
         {itemsState
           .filter((data) => data.id === id)
