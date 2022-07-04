@@ -28,13 +28,20 @@ const CharacterCreation = () => {
         </div>
 
         <div className="col-10 col-lg-6">
+          
           <div className="img-cont">
             <img className="cas_img" src={casual3d} alt="3" />
-           
+         
+          
           </div>
-          <span style={{margin:"-50px -5px"}}>
-            <p>Preview Avatar</p>
+          <span style={{margin:"-50px -5px" ,padding: "2px",
+  textAlign: "center"}}>
+            <p >Preview Avatar</p>
           </span>
+          
+         
+          
+         
        
         </div>
       </div>
