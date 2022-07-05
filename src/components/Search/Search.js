@@ -21,7 +21,7 @@ const Search = () => {
 
   return (
     <div className="search_Main_Con">
-      <label>Search Items Here...!</label>
+      <label className="searchLabel">Search Items Here...!</label>
       <input
         type="text"
         value={searchInput}
