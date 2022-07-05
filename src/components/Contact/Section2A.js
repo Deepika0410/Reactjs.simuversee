@@ -19,6 +19,7 @@ const Section2A = () => {
           fringilla convallis. Ut convallis vehicula ante, id lacinia elit
           varius in. Fusce dictum faucibus lorem, eu dapibus ante condimentum
         </p>
+        <a href="/"><span className="span">Learn more maybe</span></a>
       </div>
     </div>
   );

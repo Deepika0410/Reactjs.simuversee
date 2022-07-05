@@ -15,7 +15,6 @@ const Section2 = () => {
           <div
             className="row"
             style={{
-              textAlign: "center",
               display: "flex",
               justifyContent: "center",
             }}

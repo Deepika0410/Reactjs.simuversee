@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from 'react-router';
 import "./comp1.css";
 import img1 from "../../../images/Home/img1.png";
 import img2 from "../../../images/Home/img2.png";

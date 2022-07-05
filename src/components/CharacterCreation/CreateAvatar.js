@@ -44,7 +44,12 @@ function CreateAvatar() {
           </div>
 
           <span>
-          <input type="file" name='image-uploader' onChange={handleUpload1} id='image-uploader' accept='image/*' />
+            <label>
+            <input type="file" name='image-uploader' onChange={handleUpload1} id='image-uploader' accept='image/*' />
+            <h3 style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px"}}>Upload Image</h3>
+
+            </label>
+         
           </span>
           <span>
             <button
@@ -61,10 +66,17 @@ function CreateAvatar() {
           <div className="up-img2">
             <img className="uploaded_img1" id="img2-preview" width="100%" src={charImg2} alt="img2" />
           </div>
+            <div>
+            <span>
+            <label>
+            <input type="file" name='image-uploader' onChange={handleUpload1} id='image-uploader' accept='image/*' />
+            <h3 style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px", padding:"0px 0px 2px 12px"}}>Upload Image</h3>
 
-          <span>
-          <input type="file" name='image-uploader' onChange={handleUpload2} id='image2-uploader' accept='image/*' />
+            </label>
+         
           </span>
+            </div>
+          
           <span>
             <NavLink to={"/home/character-creation/edit_avatar"} state={{image1:img1, image2:img2}}><button
               // onClick={() => navigate("/home/character-creation/edit_avatar")}

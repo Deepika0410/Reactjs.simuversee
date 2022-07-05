@@ -43,3 +43,38 @@
     text-align: left;
     color: #313131;
 }
+
+.choose1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+color: #313131;
+}
+.shift p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px; 
+    color: #313131;
+  
+    text-align: center;
+    
+}
+.dolor1 p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #313131;
+    transform: translateY(50%);
+}
+
+.logoHw1{
+    width: 117.01px !important;
+height: 116px !important;
+margin:0 auto;
+}

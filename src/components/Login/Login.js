@@ -22,7 +22,7 @@ function Login() {
           axios.post(Url,items)
           .then(response=>{
               if(response.data.message==="User not found."){
-                window.alert("User nor found!");
+                window.alert("User not found!");
               }
               else{
                 localStorage.setItem("id",response.data.user.id);

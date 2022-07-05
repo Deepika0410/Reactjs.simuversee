@@ -80,14 +80,14 @@ function Homebar() {
                     }}
                   >
                     <NavLink to="">
-                      <BsSearch className="icon" />
+                      <BsSearch className="icon" color="red" />
                     </NavLink>
                   </div>
                   <div className="navIcon" onClick={wishListHandler}>
-                    <BsHeart className="icon" />
+                    <BsHeart className="icon" color="red"/>
                   </div>
                   <div className="navIcon" onClick={bagHandler}>
-                    <BsHandbag className="icon" />
+                    <BsHandbag className="icon" color="red" />
                   </div>
                   <div
                     className="navIcon"
@@ -97,7 +97,7 @@ function Homebar() {
                       WebkitBorderBottomRightRadius: "5px",
                     }}
                   >
-                    <CgProfile className="icon" />
+                    <CgProfile className="icon" style={{}} color="red" />
                   </div>
                 </div>
                 {

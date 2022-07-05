@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./sec2.css";
-import { NavLink,useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import ItemsData from "./itemsData";
 import axios from "axios";
 import { UseCart } from "../../context-api-setup/CartContext";
 
 function Sec2() {
+  const [readMore, setReadMore] = React.useState(false);
   const [noOfElements, setNoOfElements] = useState(3);
   const [button, setButton] = useState("View More");
   const { itemsState, itemsDispatch } = UseCart();
@@ -25,19 +26,15 @@ function Sec2() {
       .catch((err) => console.log(err));
   },[]);
 
-  const loadMore = () => {
-    if (noOfElements === 3) {
-      setNoOfElements(noOfElements + 3);
-      setButton("View All");
-    } else if (noOfElements === 6) {
-      setNoOfElements(noOfElements + (maxId - 6));
-      setButton("View less");
-    } else if (noOfElements === maxId) {
-      setButton("View More");
-      setNoOfElements(noOfElements - (noOfElements - 3));
-    }
-  };
-  const navigate=useNavigate();
+    const linkName=readMore?'View Less ':'View all'
+  const navigate = useNavigate();
+  const extraContent=<div>
+  <div className="extra-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab
+    porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero
+    commodi officia aliquam! Maxime.
+  </div>
+</div>
   return (
     <div class="container con1">
       <br />
@@ -63,7 +60,7 @@ function Sec2() {
                 //}}
                 state={{ title: item.name, id: item.id }}
               >
-                {" "}
+                {/* {" "} */}
                 <div className="card-img">
                   <img
                     src={`${item.image}`}
@@ -98,12 +95,14 @@ function Sec2() {
         })}
       </div>
       <br />
+     
       <div class="row justify-content-center">
         <div class="col-sm">
-          <button class="butnvw" onClick={loadMore}>
-            {button}
+          <button class="butnvw" onClick={()=>{setReadMore(!readMore)}}>
+            {linkName}
           </button>
         </div>
+        {readMore && extraContent}
       </div>
     </div>
   );

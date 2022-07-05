@@ -28,8 +28,8 @@ const CharacterCreation = () => {
 
   return (
     <div className="charCreate">
-      <div className="head-t">
-        <h4>Welcome to SimuVerse</h4>
+      <div className="head-t text-center">
+        <h4 >Welcome to SimuVerse</h4>
       </div>
 
       {/* img upload */}
@@ -43,13 +43,19 @@ const CharacterCreation = () => {
         </div>
 
         <div className="col-10 col-lg-6">
+          
           <div className="img-cont">
             <img className="cas_img" src={flag?img1:casual3d} alt="3" />
           </div>
-          <span>
-            <p>Preview Avatar</p>
+          <span style={{margin:"-50px -5px" ,padding: "2px",
+  textAlign: "center"}}>
+            <p >Preview Avatar</p>
           </span>
-          <br />
+          
+         
+          
+         
+       
         </div>
       </div>
     </div>

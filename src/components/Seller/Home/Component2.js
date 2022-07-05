@@ -19,30 +19,93 @@ import Icon, {
 } from '@ant-design/icons';
 
 import './comp2.css';
+import arrow from './arrow9.png'
 const Component2 = () => {
   return (
-    <div className="comp2_container">
-      <div>
-        <img src={pcIcon} alt="/" style={{ height: '100px' }} />
-        <h3>CREATE AN ACCOUNT</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div>
-        <img src={uploadIcon} alt="/" style={{ maxHeight: '100px' }} />
-        <h3>UPLOAD YOUR PRODUCTS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div>
-        <img src={shippedIcon} alt="/" style={{ height: '100px' }} />
-        <h3>SHIPPING METHODS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div>
-        <img src={brandIcon} alt="/" style={{ height: '100px' }} />
-        <h3>GROW YOUR BRAND</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
+    <>
+   
+<div className='container-fluid p-1'
+style={{backgroundColor:"#E5E5E5"}}
+>
+<div className='row'>
+  <h1 className='sell1'>
+  How to sell with simuverse?
+  </h1>
+</div>
+<div className='row justify-content-around p-0 m-0'>
+<div className='col-lg-2 col-md-3'>
+  <div className='row text-center'>
+    <img src={pcIcon} className='img-fluid imhHwSet'/>
+  </div>
+  <div className='row text-center text1'>
+    <p>
+    CREATE AN ACCOUNT
+    </p>
+  </div>
+  <div className='row text-center text1'>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+  </div>
+</div>
+<div className='col-lg-1 aliCen'>
+  <img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
+</div>
+<div className='col-lg-2 col-md-3'>
+<div className='row text-center'>
+<img src={uploadIcon} className='img-fluid imhHwSet'/>
+</div>
+<div className='row text-center text1'>
+  <p>
+  UPLOAD YOUR PRODUCTS
+  </p>
+</div>
+<div className='row text-center text1'>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+</div>
+</div>
+<div className='col-lg-1 aliCen'>
+<img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
+</div>
+<div className='col-lg-2 col-md-3'>
+<div className='row text-center '>
+<img  src={shippedIcon}  className='img-fluid imhHwSet'/>
+</div>
+<div className='row text-center text1'>
+<p>
+SHIPPING METHODS
+</p>
+</div>
+<div className='row text-center text1'>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+</div>
+</div>
+<div className='col-lg-1 aliCen'>
+<img src={arrow} className='img-fluid alis' style={{height:"30px",width:"80px"}}/>
+</div>
+<div className='col-lg-2 col-md-3'>
+<div className='row text-center'>
+<img src={brandIcon} className='img-fluid imhHwSet'/>
+</div>
+<div className='row text-center text1'>
+<p>
+GROW YOUR BRAND?
+</p>
+</div>
+<div className='row text-center text1'>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.e?
+</p>
+</div>
+</div>
+</div>
+</div>
+    </>
+    
   );
 };
 

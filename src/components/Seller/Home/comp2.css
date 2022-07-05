@@ -1,18 +1,45 @@
-.comp2_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #f7f8f3;
-  padding-top: 2rem;
+
+
+.sell1{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+color: #313131;
 }
 
-@media screen and (max-width: 1200px) {
-  .comp2_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.imhHwSet{
+  width: 120px !important;
+height: 120px !important;
+margin: 0 auto !important;
+}
+.text1 p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #313131;
+}
+.text1 p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  
+}
+.aliCen{
+  justify-content: center !important;
+  align-items: center !important;
+
+  transform: translateY(20%);
 }
 
-@media screen and (max-width: 486px) {
-  .comp2_container {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width:991px) {
+  .aliCen{
+    display: none !important;
   }
 }

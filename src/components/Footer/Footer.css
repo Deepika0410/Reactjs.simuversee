@@ -1,3 +1,4 @@
+
 .footerparagrahDetail {
   font-size: 20px;
   line-height: 25px;
@@ -54,6 +55,7 @@
 .footerThirdContainer span {
   margin-right: 10px;
 }
+
 
 @media screen and (max-width: 1200px) {
   .footerContainer {

@@ -17,6 +17,12 @@
 .priceContent {
   width: 40%;
 }
+.carth2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
 .quantityItems {
   /* display: block; */
   width: 35rem;

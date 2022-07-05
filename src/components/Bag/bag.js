@@ -184,7 +184,7 @@ const Bag = () => {
           </div>
         </div>
       ) : (
-        <h1 style={{ marinTop: "100px" }}>Cart is empty</h1>
+        <h2 className="carth2" >Cart is empty</h2>
       )}
     </>
   );

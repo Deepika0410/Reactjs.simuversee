@@ -3,6 +3,7 @@
     max-width: 700px;
     margin: 0 auto;
     overflow: visible;
+   
 }
 .login_header{
     font-weight: 200;
@@ -61,6 +62,7 @@
     font-size: 6.25rem;
     /* line-height: 9.375rem; */
     color: #313131;
+   
 }
 #sec{
   color:#F8444F !important;

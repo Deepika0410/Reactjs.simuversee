@@ -8,7 +8,7 @@ const Seller3 = () => {
   const prdUplData = UseCart();
   console.log(prdUplData.PrdUplState);
   return (
-    <div className="seller3_Cont">
+    <div className="seller3_Cont text-center">
       <h3>Your Product is listed on Simuverse successfully</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in
@@ -19,7 +19,7 @@ const Seller3 = () => {
       </p>
       {/* {console.log(prdUplData.PrdUplState)} */}
       <button
-        onClick={() => {
+            onClick={() => {
           navigate("/shome");
         }}
       >
