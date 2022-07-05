@@ -76,7 +76,7 @@ function Comp1() {
               );
             })}
               <div><h3>{score.fitnessScore}</h3>
-           <h3>{score.isFit}</h3></div>
+            <h3>Is Fit ? {score.fitnessScore?score.isFit?"TRUE":"FALSE":"NULL"}</h3></div>
         </div>
         {itemsState
           .filter((data) => data.id === id)
