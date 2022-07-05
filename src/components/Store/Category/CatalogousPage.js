@@ -1,6 +1,6 @@
 import MenuItem from "antd/lib/menu/MenuItem";
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link,NavLink,useNavigate } from "react-router-dom";
 // import itemsData from "../itemsData";
 import { UseCart } from "../../../context-api-setup/CartContext";
 import "./CatalogousPage.css";
@@ -41,6 +41,8 @@ const Catalogous = () => {
                   category,
                   type,
                   image,
+                   name,
+                  description,
                   title,
                   desc,
                   color,
@@ -50,16 +52,22 @@ const Catalogous = () => {
                 } = i;
                 return (
                   <div className="catalogue_items">
+                       <NavLink
+                to={"/store/product"}
+               
+                state={{ title:name, id:id }}
+              >
                     <img src={image} alt="/" />
+                       </NavLink>
                     <div className="d-flex justify-content-between">
-                      <h3>{title}</h3>
+                      <h3>{name}</h3>
                       <h3 style={{ fontWeight: "800" }}>{rating}</h3>
                     </div>
                     <div className="d-flex justify-content-between">
                       <h3>Offer Price</h3>
                       <h3 style={{ fontWeight: "800" }}>{price}</h3>
                     </div>
-                    <h3 className="description">{desc}</h3>
+                    <h3 className="description">{description}</h3>
                   </div>
                 );
               })}
