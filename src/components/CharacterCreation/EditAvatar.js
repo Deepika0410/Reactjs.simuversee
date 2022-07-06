@@ -4,7 +4,9 @@ import axios from 'axios'
 
 import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
+
   // If the previous profile exists then get the data , it is like live update. CHANGE the height weight and bodyType in the input form
+
 
   var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
@@ -12,12 +14,14 @@ function EditAvatar() {
   const Url = 'http://localhost:3000'
   let navigate = useNavigate();
 
+
   useEffect(() => {
     if(pid){
       fetch(`${process.env.REACT_APP_SV_BACKEND}/profile/one/${pid}`)
       .then(response => response.json())
       .then(data => setd(data))}
   },[])
+
 
   
   const location = useLocation();
@@ -61,15 +65,16 @@ function EditAvatar() {
   };
   const handleBody = (e) => {
     setBodyType(e.target.value);
-  };
+  }; 
+ 
   return (
     <>
-      <span className="s-head">
-        <p>Avatar Details</p>
+      <span className="s-head ">
+        <p style={{textAlign:"center" , margin:"0% 0% 2% -13%"}}>Avatar Details</p>
       </span>
-      <div className="col-10 col-lg-6 edit_av ">
-        <table>
-          <tbody>
+      <div className="col-10 col-lg-6 edit_av  ">
+        <table className="mx-auto">
+          <tbody >
           <tr>
             <td>
               <label htmlFor="height">Height</label>
@@ -101,7 +106,7 @@ function EditAvatar() {
               </select>
             </td>
           </tr>
-          {/* <tr>
+         <tr>
             <td>
               <label htmlFor="o-datail">Other detail</label>
             </td>
@@ -118,14 +123,14 @@ function EditAvatar() {
               <input name="o-detail" />
             </td>
             <td>oo</td>
-          </tr> */}
+          </tr>
           </tbody>
         </table>
         <span>
           <button
-            // onClick={() => navigate("/home/character-creation/avatar_created")}
+            //onClick={() => navigate("/home/character-creation/avatar_created")}
             onClick={handleClick}
-            className="nxt-btn"
+            className="nxt-btn " style={{textAlign:"center" , margin:"8% 0% 2% 30%"}}
           >
             Finish
           </button>
