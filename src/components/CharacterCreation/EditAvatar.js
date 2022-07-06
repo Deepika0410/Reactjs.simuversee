@@ -4,16 +4,17 @@ import axios from 'axios'
 
 import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
+
   var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
   let navigate = useNavigate();
 
-  useEffect(() => {
+  {/* useEffect(() => {
     fetch(`https://sv-be.spandeep.in/profile/one/${pid}`)
     .then(response => response.json())
     .then(data => setd(data))
-  },[])
+  },[]) */}
 
   
   const location = useLocation();
@@ -57,15 +58,16 @@ function EditAvatar() {
   };
   const handleBody = (e) => {
     setBodyType(e.target.value);
-  };
+  }; 
+ 
   return (
     <>
-      <span className="s-head">
-        <p>Avatar Details</p>
+      <span className="s-head ">
+        <p style={{textAlign:"center" , margin:"0% 0% 2% -13%"}}>Avatar Details</p>
       </span>
-      <div className="col-10 col-lg-6 edit_av ">
-        <table>
-          <tbody>
+      <div className="col-10 col-lg-6 edit_av  ">
+        <table className="mx-auto">
+          <tbody >
           <tr>
             <td>
               <label htmlFor="height">Height</label>
@@ -97,7 +99,7 @@ function EditAvatar() {
               </select>
             </td>
           </tr>
-          {/* <tr>
+         <tr>
             <td>
               <label htmlFor="o-datail">Other detail</label>
             </td>
@@ -114,14 +116,14 @@ function EditAvatar() {
               <input name="o-detail" />
             </td>
             <td>oo</td>
-          </tr> */}
+          </tr>
           </tbody>
         </table>
         <span>
           <button
-            // onClick={() => navigate("/home/character-creation/avatar_created")}
+            //onClick={() => navigate("/home/character-creation/avatar_created")}
             onClick={handleClick}
-            className="nxt-btn"
+            className="nxt-btn " style={{textAlign:"center" , margin:"8% 0% 2% 30%"}}
           >
             Finish
           </button>

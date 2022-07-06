@@ -4,7 +4,7 @@ import charImg1 from "../../images/char_image1.png";
 import charImg2 from "../../images/char_image2.png";
 import { useNavigate,NavLink } from "react-router-dom";
 function CreateAvatar() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [img1,setImg1] = useState();
   const [img2,setImg2] = useState();
   const handleUpload1 = (e) =>{
@@ -53,9 +53,9 @@ function CreateAvatar() {
           </span>
           <span>
             <button
-              // onClick={() =>
-              //  navigate("/home/character-creation/avatar_created")
-              // } 
+               onClick={() =>
+                navigate("/home/character-creation/avatar_created")
+               }
               className="nxt-btn"
             >
               Next
@@ -69,8 +69,8 @@ function CreateAvatar() {
             <div>
             <span>
             <label>
-            <input type="file" name='image-uploader' onChange={handleUpload1} id='image-uploader' accept='image/*' />
-            <h3 style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px", padding:"0px 0px 2px 12px"}}>Upload Image</h3>
+            <input type="file" name='image-uploader' onChange={handleUpload2} id='image-uploader' accept='image/*' />
+            <h3 style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px", padding:"0px 0px"}}>Upload Image</h3>
 
             </label>
          
@@ -79,7 +79,7 @@ function CreateAvatar() {
           
           <span>
             <NavLink to={"/home/character-creation/edit_avatar"} state={{image1:img1, image2:img2}}><button
-              // onClick={() => navigate("/home/character-creation/edit_avatar")}
+              onClick={() => navigate('/home/character-creation/edit_avatar')}
                className="edt-btn"
             >
               Edit Details
