@@ -5,7 +5,6 @@ import img1 from "../../../images/Home/img1.png";
 import img2 from "../../../images/Home/img2.png";
 import homeImage from "../../../images/homeImage.png";
 import { Navigate, NavLink } from "react-router-dom";
-import {useNavigate} from 'react-router-dom';
 import { Button } from "react-bootstrap";
 
 const Component = () => {

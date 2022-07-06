@@ -6,6 +6,9 @@ import { NavLink } from "react-router-dom";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { type } from "@testing-library/user-event/dist/type";
+import {getOpt} from './getOpt'
+import {UseCart} from '../../../context-api-setup/CartContext.js'
+
 
 
 const Productlisting = () => {

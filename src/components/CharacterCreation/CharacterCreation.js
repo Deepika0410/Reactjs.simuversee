@@ -3,10 +3,11 @@ import "./characterCreation.css";
 import casual3d from "../../images/casual-life-3d.png";
 import CreateAvatar from "./CreateAvatar";
 import EditAvatar from "./EditAvatar";
+import axios from 'axios';
 import AvatarCreated from "./AvatarCreated";
 import { Route, Routes } from "react-router-dom";
 const Url = `http://localhost:3000`
-import axios from 'axios';
+
 
 const CharacterCreation = () => {
   const [avatar, setAvatar] = useState(null);
