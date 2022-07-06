@@ -5,4 +5,3 @@ changed in product listing page ,
 
 
 
-WE WILL USE THIS FRONTEND FOR DEMO ......SINCE WORKING WELL WITH THE MAIN BACKEND.
