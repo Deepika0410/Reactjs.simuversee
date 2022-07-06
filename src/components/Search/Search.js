@@ -34,7 +34,7 @@ const Search = () => {
           {filteredResults?.map((i) => {
             return (
               <div className="search_items" key={i.id}>
-                <img src={`http://localhost:4000/${i.image}`} alt="/" />
+                <img src={`${i.image}`} alt="/" />
                 <div className="d-flex justify-content-between">
                   <h3>{i.name}</h3>
                   <h3 style={{ fontWeight: "800" }}>{"4.5/5"}</h3>
@@ -53,7 +53,7 @@ const Search = () => {
           {itemsState?.map((i) => {
             return (
               <div className="search_items" key={i.id}>
-                <img src={`http://localhost:4000/${i.image}`} alt="/" />
+                <img src={`${i.image}`} alt="/" />
                 <div className="d-flex justify-content-between">
                   <h3>{i.name}</h3>
                   <h3 style={{ fontWeight: "800" }}>{"4.5/5"}</h3>

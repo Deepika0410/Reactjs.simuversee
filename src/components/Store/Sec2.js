@@ -12,15 +12,19 @@ function Sec2() {
   const { itemsState, itemsDispatch } = UseCart();
   const maxId = itemsState.length;
   const slice = itemsState.slice(0, noOfElements);
+
+  const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
+  const Url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
+
   console.log(maxId);
   useEffect(() => {
     axios
-      .get("https://sv-be.spandeep.in/product/")
+      .get(Url)
       .then((resp) => {
         itemsDispatch({ type: "GET_ITEMS", payload: resp.data });
       })
       .catch((err) => console.log(err));
-  }, []);
+  },[]);
 
     const linkName=readMore?'View Less ':'View all'
   const navigate = useNavigate();
@@ -59,7 +63,7 @@ function Sec2() {
                 {/* {" "} */}
                 <div className="card-img">
                   <img
-                    src={`https://sv-be.spandeep.in/${item.image}`}
+                    src={`${item.image}`}
                     alt="img"
                     className="card-img1"
                   />

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./comp1.css";
+import axios from 'axios'
 import img1 from "../../images/Home/img1.png";
 import img2 from "../../images/Home/img2.png";
 import homeImage from "../../images/homeImage.png";
@@ -7,6 +8,22 @@ import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 const Component = () => {
+
+  useEffect(()=>{
+      const token = localStorage.getItem('token')
+        console.log(token);
+        
+              if(token)
+                axios.get(`http://localhost:3000/profile/user`,{ headers: {"Authorization" : `JWT ${token}`} })
+                .then(response=>{
+                    if(response.data[0].id)
+                    localStorage.setItem("profileid",response.data[0].id);
+                })
+                .catch(error=>{
+                    console.log(error)
+                })
+  })
+
   return (
     <div className="comp1_container">
       <div className="comp1_innerContainer">

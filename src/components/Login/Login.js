@@ -4,6 +4,9 @@ import {useNavigate} from 'react-router-dom';
 import './login.css'
 import logo from '../../images/simuverseLog.png'
 
+const url = `${process.env.REACT_APP_SV_BACKEND}/profile/user`;
+const Url = `${process.env.REACT_APP_SV_BACKEND}/auth/login`;
+
 function Login() {
     let navigate = useNavigate();
     const[email,setEmail]=useState('');
@@ -15,17 +18,18 @@ function Login() {
             email: email,
             password: pwd
         }
-        console.log(items);
-          axios.post('https://sv-be.spandeep.in/auth/login',items)
+        // console.log(items);
+          axios.post(Url,items)
           .then(response=>{
               if(response.data.message==="User not found."){
                 window.alert("User not found!");
               }
               else{
                 localStorage.setItem("id",response.data.user.id);
+
                 localStorage.setItem("token",response.data.accessToken);
                 const token=localStorage.getItem('token')
-                axios.get('https://sv-be.spandeep.in/profile/user',{ headers: {"Authorization" : `JWT ${token}`} })
+                axios.get(url,{ headers: {"Authorization" : `JWT ${token}`} })
                 .then(response=>{
                     localStorage.setItem("profileid",response.data[0].id);
                 })
@@ -38,7 +42,9 @@ function Login() {
           })
           .catch(error=>{
               window.alert(error)
+              console.log(error)
           })
+          
        e.preventDefault();
     }
     

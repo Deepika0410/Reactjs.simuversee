@@ -5,22 +5,29 @@ import axios from 'axios'
 import { AssistantDirection } from "@mui/icons-material";
 function EditAvatar() {
 
+  // If the previous profile exists then get the data , it is like live update. CHANGE the height weight and bodyType in the input form
+
+
   var [data,setd]=useState({ height:0, weight:0,bodyType:"none"});
   const pid=localStorage.getItem('profileid');
   const token=localStorage.getItem('token');
+  const Url = 'http://localhost:3000'
   let navigate = useNavigate();
 
-  {/* useEffect(() => {
-    fetch(`https://sv-be.spandeep.in/profile/one/${pid}`)
-    .then(response => response.json())
-    .then(data => setd(data))
-  },[]) */}
+
+  useEffect(() => {
+    if(pid){
+      fetch(`${process.env.REACT_APP_SV_BACKEND}/profile/one/${pid}`)
+      .then(response => response.json())
+      .then(data => setd(data))}
+  },[])
+
 
   
   const location = useLocation();
   const { image1, image2 } = location.state;
-  const [height, setHeight] = useState();
-  const [weight, setWeight] = useState();
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
   const [bodyType, setBodyType] = useState("square");
   const jwt = `JWT ${localStorage.getItem("token")}`;
 
@@ -39,7 +46,7 @@ function EditAvatar() {
     }
     console.log("data", formData);
     axios
-      .post("https://sv-be.spandeep.in/profile/", formData, {
+      .post(`${process.env.REACT_APP_SV_BACKEND}/profile/`, formData, {
         headers: { Authorization: jwt },
       })
       .then((res) => {
@@ -73,7 +80,7 @@ function EditAvatar() {
               <label htmlFor="height">Height</label>
             </td>
             <td>
-              <input onChange={handleHeight} placeholder={data.height} value={height} name="height" type="number" />
+              <input onChange={handleHeight} placeholder={height} value={height} name="height" type="number" />
             </td>
             <td>cm</td>
           </tr>
@@ -82,7 +89,7 @@ function EditAvatar() {
               <label htmlFor="weight">Weight</label>
             </td>
             <td>
-              <input onChange={handleWeight} value={weight} placeholder={data.weight} htmlFor="weight" type="number" />
+              <input onChange={handleWeight} value={weight} placeholder={weight} htmlFor="weight" type="number" />
             </td>
             <td>kg</td>
           </tr>
@@ -92,7 +99,7 @@ function EditAvatar() {
             </td>
             <td>
               <select name="b-type" onChange={handleBody}>
-              <option value="none" selected disabled hidden>{data.bodyType}</option>
+              <option value="none" selected disabled hidden>{bodyType}</option>
               <option value="square">Square</option>
               <option value="trapezoid">Trapezoid</option>
               <option value="round">Round</option>

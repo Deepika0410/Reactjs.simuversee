@@ -262,6 +262,7 @@ const Seller = () => {
                 placeholder="999"
               />
             </div>
+        
             <button
               onClick={(e) => {
                 e.preventDefault();

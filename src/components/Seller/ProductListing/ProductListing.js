@@ -14,6 +14,15 @@ const Productlisting = () => {
     medium: 0,
     large: 0,
   });
+  let [cat,setCat] = useState("men");
+  let [Opt,setOpt] = useState(getOpt(cat));
+  let [type, setType] = useState("tshirts");
+
+  const {PrdUplDispatch} = UseCart();
+
+  useEffect(()=>{
+      setOpt(getOpt(cat))
+  },[cat])
 
   const decrementHandlerSmall = () => {
     if (quantity.small > 0) {
@@ -67,7 +76,7 @@ const Productlisting = () => {
  
 
 // Our sample dropdown options
-const type = ['T-Shirt', 'Shirt', 'Pant', 'Shoe', 'Bag', 'Watch', 'Accessory'];
+// const type = ['T-Shirt', 'Shirt', 'Pant', 'Shoe', 'Bag', 'Watch', 'Accessory'];
 const category = ['Man', 'woman', 'Kids'];
   return (
     <div className="product_listing_Con">

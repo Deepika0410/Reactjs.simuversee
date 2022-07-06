@@ -8,7 +8,7 @@ import { wishlistAction } from "../../../../context-api-setup/wishlistReducer";
 import { UseCart } from "../../../../context-api-setup/CartContext";
 import { cartAction } from "../../../../context-api-setup/cartReducer";
 import axios from "axios";
-
+const Url = 'http://localhost:3000'
 function Comp1() {
   const {
     cartState: { cartItems },
@@ -21,16 +21,30 @@ function Comp1() {
   const location = useLocation();
   const { title, id } = location.state;
   const { itemsState, itemsDispatch } = UseCart();
-  console.log(`id: ${id}`)
+  // console.log(`id: ${id}`)
   const [image,setImage]=useState([]);
+  const [score,setScore] = useState(0)
   const token=localStorage.getItem('token');
   const pid=localStorage.getItem('profileid');
+  
   useEffect(()=>{
-    axios.get(`https://sv-be.spandeep.in/recommendation/model?profile_id=${pid}&product_id=${id}`,
+
+   async function getImage(){ await axios.get(`${process.env.REACT_APP_SV_BACKEND}/recommendation/model?profile_id=${pid}&product_id=${id}`,
     {headers:{"Authorization":`JWT ${token}`}}
     )
     .then((res)=>{
       setImage(res.data)
+      console.log(res.data)
+    })
+    .catch((er)=>{console.log(er)})
+  }
+ getImage();
+     axios.get(`${Url}/recommendation/score?profile_id=${pid}&product_id=${id}`,
+    {headers:{"Authorization":`JWT ${token}`}}
+    )
+    .then((res)=>{
+      setScore(res.data)
+      console.log("this is the score")
       console.log(res.data)
     })
   },[]);
@@ -51,16 +65,18 @@ function Comp1() {
             })
             .map((item, key) => {
               return (
-                <div key={key.id} className="c31">
+                <div key={key} className="c31">
                   <img
                     className="img-fluid"
                     src={image}
-                    //src={`http://localhost:4000/${item.image}`}
+                    //src={`${item.image}`}
                     alt="model img"
                   />
                 </div>
               );
             })}
+              <div><h3>{score.fitnessScore}</h3>
+            <h3>Is Fit ? {score.fitnessScore?score.isFit?"TRUE":"FALSE":"NULL"}</h3></div>
         </div>
         {itemsState
           .filter((data) => data.id === id)
@@ -71,7 +87,7 @@ function Comp1() {
                   <img
                     className="img-fluid"
                     alt="img"
-                    src={`http://localhost:4000/${item.image}`}
+                    src={`${item.image}`}
                   />
                 </div>
               </div>
@@ -105,7 +121,7 @@ function Comp1() {
               return data.id === id;
             })
             .map((item, key) => {
-              console.log(item);
+              // console.log(item);
               return (
                 <div className="row pr_rw">
                   <div className="col pr_off"> Price: {item.price}rs</div>
@@ -242,7 +258,7 @@ function Comp1() {
           <div class="row">
             {itemsState
               .filter((data) => {
-                console.log(data.id);
+                // console.log(data.id);
                 return data.id === id;
               })
               .map((item, key) => {

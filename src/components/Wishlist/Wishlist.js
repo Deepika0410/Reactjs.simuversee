@@ -30,7 +30,7 @@ const Wishlist = () => {
                         state={{ id: item.id, title: item.name }}
                       >
                         <img
-                          src={`http://localhost:4000/${item.image}`}
+                          src={`${item.image}`}
                           alt="/"
                           className="img"
                         />
