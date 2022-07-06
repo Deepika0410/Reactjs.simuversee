@@ -14,15 +14,16 @@ const RegistrationPage1 = () => {
                     <div className="container">
                     <img src={Simu} classname="ml-auto" style={{width: "200px", height: "48.74px", left: "76px", top: "4px", paddingBottom:"2px"}}/>
                         <NavbarBrand  className="mx-auto"  href="/" > 
-                        <h1   style= {{color: '#FFFFFF' , fontStyle:'normal', fontSize:'20px',fontFamily:'Poppins', fontWeight:'400', lineHeight:'30px'}}>Registration</h1></NavbarBrand> 
+                        <h1   style= {{color: '#FFFFFF' , fontStyle:'normal', fontSize:'20px',fontFamily:'Poppins', fontWeight:'400', lineHeight:'30px'}}>Registration</h1></NavbarBrand>
+                     
                     </div>
                 </Navbar>
              
     <div>
     <CssBaseline />
-      <Container component={Box} p={8} color="secondary">
-        <Paper component={Box} p={3} style={{}} >
-          <LinearStepper/>
+      <Container component={Box} p={4}>
+        <Paper component={Box} p={3}>
+          <LinearStepper />
         </Paper>
       </Container>
     </div>

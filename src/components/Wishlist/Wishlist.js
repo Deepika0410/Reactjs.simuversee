@@ -57,7 +57,7 @@ const Wishlist = () => {
           </div>
         </div>
       ) : (
-        <h3 style={{ marginTop: "75px" }}>Wishlist Is empty</h3>
+        <h3 className="wishlist">Wishlist Is empty</h3>
       )}
     </>
   );
