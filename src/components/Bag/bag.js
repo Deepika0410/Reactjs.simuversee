@@ -146,35 +146,35 @@ const Bag = () => {
               <div>
                 <h3 className="shopping_Summary">Shopping Summary</h3>
               </div>
-              <div style={{ width: "40%" }}>
-                <div className="d-flex justify-content-between">
-                  <h3>Subtotal</h3>
-                  <h3>{totalPrice} rs.</h3>
+              <div style={{ width: "40%" ,marginTop:"7%" }}>
+                <div className="d-flex">
+                  <h3 className="total">Subtotal</h3>
+                  <h3 className="total">{totalPrice} rs.</h3>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <h3>GST</h3>
-                  <h3>{gst} rs.</h3>
+                  <h3 className="total">GST</h3>
+                  <h3 className="total">{gst} rs.</h3>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <h3>Shipping</h3>
-                  <h3>Free Delivery</h3>
+                  <h3 className="total">Shipping</h3>
+                  <h3 className="total">Free Delivery</h3>
                 </div>
               </div>
             </div>
             <div className="bottom_Line"></div>
             <div
               className="d-flex justify-content-end"
-              style={{ width: "90%", margin: "auto" }}
+              style={{ width: "84%", margin: "auto" }}
             >
               <div className="d-flex flex-column" style={{ width: "50%" }}>
                 <div className="d-flex justify-content-between">
-                  <h3 style={{ marginLeft: "8%" }}>Total</h3>
-                  <h3 style={{ marginLeft: "8%" }}>
+                  <h3 className="total" style={{ marginLeft: "8%" }}>Total</h3>
+                  <h3 className="total"style={{ marginLeft: "8%" }}>
                     {`${totalPrice + gst}`} rs.
                   </h3>
                 </div>
                 <NavLink to="/bag/address" >
-                <button style={{ marginLeft: "8%" }} className="payment_Button">
+                <button style={{ marginLeft: "8%",width:"100%" }} className="payment_Button">
                   CONTINUE TO PAYMENT
                   </button>
 
