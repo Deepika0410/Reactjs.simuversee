@@ -11,28 +11,27 @@ const Footer2 = () => {
   return (
     <div className="s-4">
       <div className="container">
-        <div 
+        <div
           className="row"
           style={{ display: "flex", justifyContent: "center" }}
         >
           {/* about */}
           <div className="col-8 wid-1 wid-2 col-md-4 part aboutt a23">
-            <div className="logo-c" style={{marginLeft:'-20px' }}>
+            <div className="logo-c" style={{ marginLeft: '-20px' }}>
               <img width="100%" src={logo} alt="logo_img" />
             </div>
             <div className="text">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                imperdiet nisi ut lorem ornare sollicitudin.
+                SimuVerse is all about making users order their desired clothes and reduce return rates. Users can also browse and try clothes of their choice.
               </p>
             </div>
           </div>
           {/* quick links */}
 
           <div
-            className="col-8 wid-1 wid-3 col-md-3 part a23 " 
+            className="col-8 wid-1 wid-3 col-md-3 part a23 "
             id="ouickLink"
-            style={{   }}
+            style={{}}
           >
             <div>
               <p className="link-head">Quick Links</p>
@@ -42,7 +41,7 @@ const Footer2 = () => {
               <NavLink to="/store">Store</NavLink>
               <NavLink to="/login">Login</NavLink>
               {/* <NavLink to="">Login</NavLink> */}
-            
+
             </div>
           </div>
           {/* get in touch  */}
@@ -79,18 +78,18 @@ const Footer2 = () => {
             <div
               className="col-md-4 col-12 wid-2 follow"
               style={{
-               
+
               }}
             >
-              <h5>Follow us</h5>
+              <h5 style={{ fontWeight: '500' }}>Follow us</h5>
               {/* TRBL */}
               <div
                 className="row social-icons"
                 style={{
-                 
+
                 }}
               >
-                <div className="col-2 w">
+                <div className="col-2 w linkedin">
                   <AiOutlineLinkedin />
                 </div>
                 <div className="col-2 mr w">

@@ -21,24 +21,26 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -6rem;
   background-image: url("../../images/homeImage.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
   height: 40rem;
 }
+
 .comp1_heading {
   display: flex;
   flex-direction: column;
   width: 60%;
   text-align: left;
-  margin-top: 6rem;
 }
 .comp1_heading h3 {
   font-family: poppins;
   font-size: 60px;
   line-height: 60px;
   color: #fff;
+  margin-top:8rem;
 }
 
 .comp1_heading p {

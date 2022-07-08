@@ -20,7 +20,11 @@
     cursor: pointer;
 }
 
-
+.htw{
+    justify-content: center;
+    align-items: center;
+    margin-left:40rem;
+}
 
 @media (max-width: 600px) {
 
