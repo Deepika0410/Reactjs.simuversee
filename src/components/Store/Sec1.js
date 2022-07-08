@@ -25,25 +25,25 @@ function Sec1() {
             <ul className="menu-ul men_ul" >
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "men", type: "tshirts" }}
+                state={{ category: "Men", type: "Tshirts" }}
               >
                 <li>T-Shirts</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "men", type: "jackets" }}
+                state={{ category: "Men", type: "Jackets" }}
               >
                 <li>Jacket</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "men", type: "jeans" }}
+                state={{ category: "Men", type: "Jeans" }}
               >
                 <li>Jeans</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "men", type: "sweaters" }}
+                state={{ category: "Men", type: "Sweaters" }}
               >
                 <li>Sweaters</li>
               </NavLink>
@@ -54,25 +54,25 @@ function Sec1() {
             <ul className="menu-ul women_ul">
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "women", type: "dresses" }}
+                state={{ category: "Women", type: "Dresses" }}
               >
                 <li>Dresses</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "women", type: "tops" }}
+                state={{ category: "Women", type: "Tops" }}
               >
                 <li>Tops</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "women", type: "tshirts" }}
+                state={{ category: "Women", type: "Tshirts" }}
               >
                 <li>T-Shirts</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "women", type: "jeans" }}
+                state={{ category: "Women", type: "Jeans" }}
               >
                 <li>Jeans</li>
               </NavLink>
@@ -83,25 +83,25 @@ function Sec1() {
             <ul className="menu-ul kids_ul">
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "kids", type: "tshirts" }}
+                state={{ category: "Kids", type: "Tshirts" }}
               >
                 <li>T-shirts</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "kids", type: "shirts" }}
+                state={{ category: "Kids", type: "Shirts" }}
               >
                 <li>Shirts</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "kids", type: "jeans" }}
+                state={{ category: "Kids", type: "Jeans" }}
               >
                 <li>Jeans</li>
               </NavLink>
               <NavLink
                 to={"/store/categories"}
-                state={{ category: "kids", type: "dresses" }}
+                state={{ category: "Kids", type: "Dresses" }}
               >
                 <li>Dresses</li>
               </NavLink>

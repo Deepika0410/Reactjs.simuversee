@@ -57,7 +57,7 @@ const Catalogous = () => {
                
                 state={{ title:name, id:id }}
               >
-                    <img src={image} alt="/" />
+                    <img src={image} className="help" alt="/" />
                        </NavLink>
                     <div className="d-flex justify-content-between">
                       <h3>{name}</h3>
