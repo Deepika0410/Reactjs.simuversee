@@ -5,7 +5,7 @@ import './login.css'
 import logo from '../../images/simuverseLog.png'
 
 const url = `${process.env.REACT_APP_SV_BACKEND}/profile/user`;
-const Url = `${process.env.REACT_APP_SV_BACKEND}/auth/login`;
+const Url = `http://localhost:3000/auth/login`;
 
 function Login() {
     let navigate = useNavigate();
