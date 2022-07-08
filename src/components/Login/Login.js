@@ -68,15 +68,13 @@ function Login() {
                  <br></br>
                 
                     <input onChange={e=>setPwd(e.target.value)} type={showPwd?'text':'password'} value={pwd} placeholder='Enter password'/>
-                   <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/> <span> Show Characters</span>
+                   <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/> <span className='chr'> Show Characters</span>
                <br/>
-                <input id="login-submit-btn" type="submit" value="Login" />
-  
-                   
+                <input id="login-submit-btn" type="submit" value="Login" /> 
                 
             </form>
-            <p>
-                New to the simuverse?
+            <p className='newonsimuverse'>
+            New to the simuverse ? 
                 <span  className='toggle-login-regis' onClick={()=>{navigate("/Register")}}>SignUp</span> 
             </p>
             

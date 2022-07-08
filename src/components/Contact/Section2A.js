@@ -9,15 +9,13 @@ const Section2A = () => {
           <img src={ellipse7} alt="" />
         </div>
         <div className="col-9">
-          <p className="card-text">Something something</p>
+          <p className="card-text">Virtual Try On</p>
         </div>
       </div>
 
       <div className="smth">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula ante, id lacinia elit
-          varius in. Fusce dictum faucibus lorem, eu dapibus ante condimentum
+        Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
         </p>
         <a href="/"><span className="span">Learn more maybe</span></a>
       </div>

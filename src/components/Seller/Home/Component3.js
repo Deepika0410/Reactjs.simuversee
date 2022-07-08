@@ -25,14 +25,14 @@ const Component3 = () => {
           </div>
           <div className='row shift'>
             <p>
-            Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.
+            Virtual try on
             </p>
           </div>
         </div>
         <div className='col-md-5'>
         <div className='row dolor1'>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
           </p>
        </div>
         </div>
@@ -43,7 +43,7 @@ const Component3 = () => {
         <div className='col-md-5'>
         <div className='row dolor1'>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Reduce returns by allowing customers to see your products in hi-res on their body type
           </p>
        </div>
         </div>
@@ -54,7 +54,7 @@ const Component3 = () => {
           </div>
           <div className='row shift'>
             <p>
-            Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.
+            Reduces return
             </p>
           </div>
         </div>
@@ -68,14 +68,14 @@ const Component3 = () => {
           </div>
           <div className='row shift'>
             <p>
-            Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.
+            Increase AOV
             </p>
           </div>
         </div>
         <div className='col-md-5'>
         <div className='row dolor1'>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Average oder value is bound to increase with this easy and competitive shopping experience
           </p>
        </div>
         </div>
@@ -86,7 +86,7 @@ const Component3 = () => {
         <div className='col-md-5'>
         <div className='row dolor1'>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock
           </p>
        </div>
         </div>
@@ -97,7 +97,7 @@ const Component3 = () => {
           </div>
           <div className='row shift'>
             <p>
-            Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.
+            Reduce waste
             </p>
           </div>
         </div>

@@ -34,12 +34,7 @@ const Section1 = () => {
       </div> */}
       <div className="about-t">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula ante, id lacinia elit
-          varius in. Fusce dictum faucibus lorem, eu dapibus ante condimentum
-          ut. Aenean eu sem eget ex molestie maximus. Integer rhoncus lorem
-          erat, sed malesuada dolor ultrices at. Donec consequat sit amet dui id
-          molestie.
+        This project is all about making users order their desired clothes and reduce return rates. Users can also browse and try clothes of their choice. In addition to that they can also get information about the cloth material and feel on the skin. Moreover they can freely browse clothes like they do in a usual online store. Users can also read the reviews by the other users to choose from finest clothes or collections.
         </p>
       </div>
     </div>

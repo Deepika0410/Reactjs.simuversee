@@ -16,6 +16,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
+    margin-left: 28rem;
     font-size: 6.25rem;
     /* line-height: 9.375rem; */
     color: #313131;
@@ -23,6 +24,40 @@
 .widthSet{
      width: 268.73px;
      outline: none !important;
+}
+#login-checkbox1{
+    margin-top: 1rem;
+    margin-left: 30rem;
+}
+.chr{
+    margin-left: .5rem;
+}
+#register_submit-btn1{
+    background: #F8444F;
+    border-radius: 4px;
+    border:none;
+    width: 167.76px;
+    height: 34.96px;
+    color:white;
+    margin-left: 14rem;
+    margin-bottom: 1rem;
+}
+#register_submit-btn1:hover{
+    background: #db515a;
+
+}
+
+.toggle-login-regis1{
+    color:#78BDC4;
+    margin-left: .8rem;
+    font-size: 1.2rem;
     
-  
+}
+.toggle-login-regis1:hover{
+    cursor: pointer;
+}
+.al{
+    margin-left: 12rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }

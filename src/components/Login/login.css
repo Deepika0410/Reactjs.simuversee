@@ -15,6 +15,7 @@
     border:0;
     border-bottom: 1px solid #F8444F;
 }
+
 .login_form input:nth-child(-n+ 2) {
     background: url('./check.png');
     background-repeat: no-repeat;
@@ -31,10 +32,18 @@
     background: #78BDC4;
     border-radius: 4px;
     border:none;
-    width: 167.76px;
-    height: 34.96px;
+    width: 10.485rem;
+    height: 2.185rem;
     color:white;
-    margin: 50px 0;
+    margin-left: 15rem  ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.newonsimuverse{
+    margin-left: 14rem;
+    margin-top: 20px;
 }
 #register_submit-btn{
     background: #78BDC4;
@@ -50,6 +59,7 @@
 }
 .toggle-login-regis{
     color:#F8444F;
+    margin-left: .8rem;
     
 }
 .toggle-login-regis:hover{
@@ -60,7 +70,8 @@
     font-style: normal;
     font-weight: 300;
     font-size: 6.25rem;
-    /* line-height: 9.375rem; */
+    margin-left: 12rem;
+    margin-top: -2rem;
     color: #313131;
    
 }
@@ -72,11 +83,19 @@
 font-style: normal;
 font-weight: 400;
 font-size: 1rem;
-/* line-height: 24rem; */
 text-align: center;
 color: #313131;
 }
 .logo-simu{
     width: 159.01px !important;
 height: 38.72px !important;
+}
+
+.chr{
+    
+}
+
+#login-checkbox{
+    margin-top: 1rem;
+    margin-left: 36rem;
 }
