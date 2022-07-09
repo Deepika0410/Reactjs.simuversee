@@ -27,9 +27,9 @@ const CharacterCreation = () => {
   }
   })
 
-  return (
+  return (  
     <div className="charCreate">
-      <div className="head-t text-center">
+      <div className="head-t text-center p-5">
         <h4 >Welcome to SimuVerse</h4>
       </div>
 
