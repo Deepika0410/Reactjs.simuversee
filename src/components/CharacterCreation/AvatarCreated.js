@@ -28,9 +28,7 @@ function AvatarCreated() {
       </span>
       <div className="col-10  col-lg-6 crtd_av  " style={{ margin:"8% 0% 2% 30%"}}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula ante, id lacinia elit
-          varius in. Fusce dictum faucibus
+        Your avatar is now created. You can use it for your future purchases. Also happy shoping!
         </p>
         <span>
           <button onClick={() => navigate("/store")} className="g-shp-btn" style={{textAlign:"center" , margin:"8% 0% 12%"}}>
