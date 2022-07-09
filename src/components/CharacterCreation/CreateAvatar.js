@@ -70,7 +70,7 @@ function CreateAvatar() {
             <span>
             <label>
             <input type="file" name='image-uploader' onChange={handleUpload2} id='image-uploader' accept='image/*' />
-            <h3 className="uploadh1" style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px", padding:"0px 0px",  position:"absolute", left:"28rem"}}>Upload Image</h3>
+            <h3 className="uploadh2" style={{fontFamily:"Poppins" , fontStyle:"normal" , fontWeight:"400", fontSize:"16px", position:"absolute", left:"25rem"}}>Upload Image</h3>
 
             </label>
          
