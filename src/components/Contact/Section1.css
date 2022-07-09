@@ -3,6 +3,7 @@
   height: 70.7vh;
   background: #f7f8f3;
   text-align: center;
+  margin-top: -10vh;
 }
 /* .polygon {
   opacity: 1;
@@ -48,4 +49,5 @@
 .l-img {
   width: 37.13vw;
   height: 12.03vw;
+  margin-top:4rem;
 }

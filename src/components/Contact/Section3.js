@@ -3,13 +3,12 @@ import "./Section3.css";
 const Section3 = () => {
   return (
     <div className="s-3">
-      <div className="s3-text">
-        <p>Let's Talk</p>
+      <div className="s3-text1">
+        <p >Let's Talk</p>
       </div>
       <div className="lets-talk">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula an
+        Enter the details below and lets get connected.
         </p>
       </div>
       <div className="container">

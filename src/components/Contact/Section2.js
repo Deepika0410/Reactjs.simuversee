@@ -8,7 +8,7 @@ const Section2 = () => {
   return (
     <div className="s-2">
       <div className="head-text">
-        <p style={{ fontSize: "3.125rem" }}>Our Vision</p>
+        <p style={{ fontSize: "3.125rem",  }}>Our Vision</p>
       </div>
       <div className="post">
         <div className="container1">

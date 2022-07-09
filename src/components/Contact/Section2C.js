@@ -8,15 +8,13 @@ const Section2C = () => {
           <img src={ellipse7} alt="" />
         </div>
         <div className="col-9">
-          <p className="card-text">Something something</p>
+          <p className="card-text">Reduce Waste</p>
         </div>
       </div>
 
       <div className="smth">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula ante, id lacinia elit
-          varius in. Fusce dictum faucibus lorem, eu dapibus ante condimentum
+        Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock
         </p>
         <a href="/"><span className="span">Learn more maybe</span></a>
       </div>

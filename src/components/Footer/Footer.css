@@ -18,6 +18,13 @@
   width: 50%;
   color: #313131;
 }
+.linkedin{
+  margin-left: 10px;
+
+}
+.linkedin:hover{
+  color: #000;
+}
 .footerfirstContainer h3 {
   margin-left: 10px;
 }

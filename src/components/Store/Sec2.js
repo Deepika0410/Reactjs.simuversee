@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./sec2.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import ItemsData from "./itemsData";
 import axios from "axios";
 import { UseCart } from "../../context-api-setup/CartContext";
 
@@ -11,10 +10,11 @@ function Sec2() {
   const [button, setButton] = useState("View More");
   const { itemsState, itemsDispatch } = UseCart();
   const maxId = itemsState.length;
-  const slice = itemsState.slice(0, noOfElements);
+  // const slice = itemsState.slice(0, noOfElements);
+  const slice = itemsState;
 
   const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
-  const Url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
+  const Url = `http://localhost:3000/product/`;
 
   console.log(maxId);
   useEffect(() => {
@@ -96,14 +96,14 @@ function Sec2() {
       </div>
       <br />
      
-      <div class="row justify-content-center">
+      {/* <div class="row justify-content-center">
         <div class="col-sm">
           <button class="butnvw" onClick={()=>{setReadMore(!readMore)}}>
             {linkName}
           </button>
         </div>
         {readMore && extraContent}
-      </div>
+      </div> */}
     </div>
   );
 }

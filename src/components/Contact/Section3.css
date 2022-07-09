@@ -20,14 +20,14 @@
   border: 0px;
   height: 10em;
 }
-.s3-text > p {
+.s3-text1 > p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 45px;
   display: grid;
-  margin-left: 44rem;
+  margin-left: 45rem;
 }
 .lets-talk{
   width: 574px;

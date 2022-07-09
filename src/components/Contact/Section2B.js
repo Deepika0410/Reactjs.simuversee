@@ -8,15 +8,13 @@ const Section2B = () => {
           <img src={ellipse7} alt="" />
         </div>
         <div className="col-9">
-          <p className="card-text">Something something</p>
+          <p className="card-text">Reduce Return</p>
         </div>
       </div>
 
       <div className="smth">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-          fringilla convallis. Ut convallis vehicula ante, id lacinia elit
-          varius in. Fusce dictum faucibus lorem, eu dapibus ante condimentum
+        Reduce returns by allowing customers to see your products in hi-res on their body type
         </p>
         <a href="/"><span className="span">Learn more maybe</span></a>
       </div>

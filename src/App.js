@@ -33,6 +33,7 @@ import { useState } from "react";
 const App = () => {
   // hide the navbar when the user is on the login page
   const [hideNavbar, setHideNavbar] = useState(false);
+  
   return (
     <div className="App">
       <BrowserRouter>

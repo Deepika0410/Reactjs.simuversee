@@ -16,8 +16,7 @@ const Footer = () => {
           <img src={Simuverse} alt="/" />
         </div>
         <p className="footerparagrahDetail">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          imperdiet nisi ut lorem ornare sollicitudin.
+        SimuVerse is all about making users order their desired clothes and reduce return rates. Users can also browse and try clothes of their choice.
         </p>
         <div className="Footer_Icon_Con">
           <h3>Follow Us</h3>

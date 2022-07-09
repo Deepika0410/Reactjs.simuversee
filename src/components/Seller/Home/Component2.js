@@ -25,7 +25,7 @@ const Component2 = () => {
     <>
    
 <div className='container-fluid p-1'
-style={{backgroundColor:"#E5E5E5"}}
+style={{backgroundColor:"#f5f5f5"}}
 >
 <div className='row'>
   <h1 className='sell1'>
@@ -44,7 +44,7 @@ style={{backgroundColor:"#E5E5E5"}}
   </div>
   <div className='row text-center text1'>
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Firstly you will have to create a seller’s account.
     </p>
   </div>
 </div>
@@ -62,7 +62,7 @@ style={{backgroundColor:"#E5E5E5"}}
 </div>
 <div className='row text-center text1'>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Then you will have to upload your products.
 </p>
 </div>
 </div>
@@ -80,7 +80,7 @@ SHIPPING METHODS
 </div>
 <div className='row text-center text1'>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Mention the shipping methods that will be convinient for you.
 </p>
 </div>
 </div>
@@ -98,7 +98,7 @@ GROW YOUR BRAND?
 </div>
 <div className='row text-center text1'>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.e?
+Sell your products and grow your brand.
 </p>
 </div>
 </div>

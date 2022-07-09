@@ -1,11 +1,8 @@
-import React, { useState,useEffect } from "react";
+import React, {useEffect } from "react";
 import "./comp1.css";
 import axios from 'axios'
-import img1 from "../../images/Home/img1.png";
-import img2 from "../../images/Home/img2.png";
-import homeImage from "../../images/homeImage.png";
 import { NavLink } from "react-router-dom";
-import { Button } from "react-bootstrap";
+
 
 const Component = () => {
 
@@ -30,8 +27,7 @@ const Component = () => {
         <div className="comp1_heading">
           <h3>Re imagining the way you shop Introducing SIMUVERSE</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Click on the explore button below to know more about SimuVerse.
           </p>
           
             <NavLink id="exploreBtn" to="/home/character-creation"><div>Explore</div></NavLink>

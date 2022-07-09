@@ -21,7 +21,7 @@ const Component2 = () => {
 
 <>
 <div className='container-fluid p-1'
-style={{backgroundColor:"#E5E5E5"}}
+style={{backgroundColor:"#F7F8F3"}}
 >
 
 <div className='row justify-content-around p-0 m-0'>
@@ -30,15 +30,13 @@ style={{backgroundColor:"#E5E5E5"}}
     <img src={virtualTry} className='img-fluid imhHwSet'/>
   </div>
   <div className='row text-center text1'>
-    <p>
+    <p style={{fontSize:"1.3rem", fontWeight:"500"}}>
     VIRTUAL TRY ON
     </p>
   </div>
   <div className='row text-center text1'>
     <p>
-
     Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
-   
     </p>
   </div>
 </div>

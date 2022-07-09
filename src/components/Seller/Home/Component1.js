@@ -18,8 +18,7 @@ const Component = () => {
         <div className="comp1_heading">
           <h3>Re imagine the way you sell Introducing SIMUVERSE</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Click on te button below to start listing your products on the SimuVerse portal.
           </p>
           <NavLink id="exploreBtn" to={!now?'/login':"/shome/productlisting"}><div>Start Listing</div></NavLink>
         </div>

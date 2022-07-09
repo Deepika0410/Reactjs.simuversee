@@ -28,7 +28,7 @@ export default function Component4() {
         coverflowEffect={{
           rotate: 0,
           stretch: 20,
-          depth: 2000,
+          depth: 800,
           modifier: 1,
           slideShadows: true
         }}
