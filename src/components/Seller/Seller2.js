@@ -57,8 +57,7 @@ const Seller2 = () => {
         <div className="inner_Content2">
           <h3>Reference Image for Uploading</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Select the image from your device that you want of the product to upload, for <br/> for listing on the SimuVerse portal.
           </p>
         </div>
         <div>
