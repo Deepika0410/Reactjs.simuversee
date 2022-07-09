@@ -6,12 +6,13 @@ import brand from '../../images/brand.png';
     {
         return(
             <div className='container-fluid rw-brand'>
-                <div className='row'>
-                    <div class="col hl1">
-                        Brands
-                    </div>
-                    
-                </div>
+               <div class="row justify-content-center">
+                 <div class="col-md-12 hl1 " style={{textAlign:"center"}}> Brands </div>
+
+                 <div class="col-md-8 txt1">
+                Select your outfits from the variety of brands that SimuVerse provide.
+                 </div>
+                 </div>
                 <div className='row justify-content-center'>
                     <div class="col-sm-6" style={{maxWidth:"600px"}}>
                         <div class="row">

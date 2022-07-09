@@ -39,11 +39,10 @@ function Sec2() {
     <div class="container con1">
       <br />
       <div class="row justify-content-center">
-        <div class="col-md-12 hl1"> Trending </div>
+        <div class="col-md-12 hl1 " style={{textAlign:"center"}}> Trending </div>
 
         <div class="col-md-8 txt1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+         Some of the most trending items on SimuVerse.
         </div>
       </div>
       <br />
