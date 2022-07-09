@@ -50,7 +50,7 @@ const Bag = () => {
                       }}
                     >
                       <img
-                        src={`http://localhost:4000/${item.image}`}
+                        src={`${item.image}`}
                         alt="/"
                         className="img"
                       />

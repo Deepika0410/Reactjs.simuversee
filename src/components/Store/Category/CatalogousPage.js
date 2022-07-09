@@ -1,27 +1,27 @@
 import MenuItem from "antd/lib/menu/MenuItem";
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
-import itemsData from "../itemsData";
+import { useLocation, Link,NavLink,useNavigate } from "react-router-dom";
+// import itemsData from "../itemsData";
+import { UseCart } from "../../../context-api-setup/CartContext";
 import "./CatalogousPage.css";
 
 const Catalogous = () => {
   const location = useLocation();
   const { category, type } = location.state;
-  const allCategories = [...new Set(itemsData.map((i) => i.type))];
-  const [dressMenu, setDressMenu] = useState(itemsData);
-  // const [categories, SetCategories] = useState(allCategories);
+  const { itemsState } = UseCart();
 
-  //   const newMenu = (itemsData.filter = (i) => {
-  //     return i.type;
-  //   });
-  //   setDressMenu(newItems);
+  // const allCategories = [...new Set(itemsData.map((i) => i.category))];
+  // const allTypes = [...new Set(itemsData.map((i) => i.type))];
+
+  const [dressMenu, setDressMenu] = useState(itemsState);
+  
+
 
   const newItems = dressMenu.filter(
     (i) =>
-      i.category.toUpperCase() === category.toUpperCase() &&
-      i.type.toUpperCase() === type.toUpperCase()
+      i.category === category &&
+      i.type === type
   );
-  // .filter((t) => t.type === type);
 
   return (
     <div>
@@ -40,7 +40,9 @@ const Catalogous = () => {
                   id,
                   category,
                   type,
-                  src,
+                  image,
+                   name,
+                  description,
                   title,
                   desc,
                   color,
@@ -50,16 +52,22 @@ const Catalogous = () => {
                 } = i;
                 return (
                   <div className="catalogue_items">
-                    <img src={src} alt="/" />
+                       <NavLink
+                to={"/store/product"}
+               
+                state={{ title:name, id:id }}
+              >
+                    <img src={image} alt="/" />
+                       </NavLink>
                     <div className="d-flex justify-content-between">
-                      <h3>{title}</h3>
+                      <h3>{name}</h3>
                       <h3 style={{ fontWeight: "800" }}>{rating}</h3>
                     </div>
                     <div className="d-flex justify-content-between">
                       <h3>Offer Price</h3>
                       <h3 style={{ fontWeight: "800" }}>{price}</h3>
                     </div>
-                    <h3 className="description">{desc}</h3>
+                    <h3 className="description">{description}</h3>
                   </div>
                 );
               })}
