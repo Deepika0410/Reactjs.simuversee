@@ -41,7 +41,7 @@ function Register() {
         <> 
          <div className='row text-start'><img src={logo} alt="logo" className='img-fluid logo-simu'/></div>
         <div className='registration'>
-        <h1 className='fir-registration' >
+        <h1 className='fir-registration' style={{marginRight:"10rem"}} >
                Sign <b id="sec-registration">Up</b>
            </h1> 
            <form onSubmit={handleChange} className="form_registration"> 
@@ -49,7 +49,7 @@ function Register() {
                     <input onChange={(e)=>setNumber(e.target.value) } type="tel" value={number} placeholder='+91 0123456789' className='widthSet'/>    
                     <input onChange={(e)=>setEmail(e.target.value)} type="text" value={email} placeholder='Email' autoComplete="off" className='widthSet'/>
                     <input onChange={(e)=>setPwd(e.target.value)} type={showPwd?"text":"password"} value={pwd} placeholder='Password' className='widthSet'/>
-                    <input type="checkbox" id="login-checkbox1"  onChange={()=>setShowPwd(!showPwd)} /><span className='chr'>Show Characters</span>
+                    <input type="checkbox" id="login-checkbox1"  onChange={()=>setShowPwd(!showPwd)} className="ml-5"/><span className='chr'>Show Characters</span>
                 
                 <p></p>
                 <input id="register_submit-btn1" type="submit" value="Register" />

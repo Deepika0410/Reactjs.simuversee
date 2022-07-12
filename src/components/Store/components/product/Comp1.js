@@ -9,6 +9,7 @@ import { UseCart } from "../../../../context-api-setup/CartContext";
 import { cartAction } from "../../../../context-api-setup/cartReducer";
 import axios from "axios";
 const Url = 'http://localhost:3000'
+
 function Comp1() {
   const {
     cartState: { cartItems },

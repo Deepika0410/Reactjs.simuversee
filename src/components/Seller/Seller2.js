@@ -13,6 +13,7 @@ import { Steps } from "antd";
 import { useNavigate } from "react-router-dom";
 import { UseCart } from "../../context-api-setup/CartContext";
 import axios from "axios";
+import Base from "../Base";
 const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
 const Url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
 const { Step } = Steps;
@@ -22,7 +23,7 @@ const Seller2 = () => {
   const prdUplData = UseCart();
   const jwt = `JWT ${localStorage.getItem("token")}`;
 
-    //   const [images, setImages] = useState(null);
+  //   const [images, setImages] = useState(null);
   //   const [imageUrl, setImageUrl] = useState([]);
 
   //   const imageAddHandler = (e) => {
@@ -52,123 +53,125 @@ const Seller2 = () => {
     }
   };
   return (
-    <div className="seller2_MainCont">
-      <div className="seller2_Inner_Container">
-        <div className="inner_Content2">
-          <h3>Reference Image for Uploading</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
-          </p>
-        </div>
-        <div>
-          <img src={cloth} alt="/" />
-        </div>
-      </div>
-      <div className="seller2_progress">
-        <h3>Products for Listing on SimuVerse</h3>
-        <Steps size="small" current={2}>
-          <Step title="" />
-          <Step title="Details" />
-          <Step title="Upload Image" />
-          <Step title="" />
-        </Steps>
-      </div>
-      <div className="seller2_Bottom_Container">
-        <div className="left_Side">
-          <h3>Image with No Background For Reference Only</h3>
-          <div className="referenceImg">
-            <img src={Orangecloth} alt="/"  />
+    <Base>
+      <div className="seller2_MainCont">
+        <div className="seller2_Inner_Container">
+          <div className="inner_Content2">
+            <h3>Reference Image for Uploading</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+            </p>
+          </div>
+          <div>
+            <img src={cloth} alt="/" />
           </div>
         </div>
-        <div className="Bottom_Inner_Image_Main">
-          <div className="Bottom_Inner_2">
-             <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
-
-             >   <div className="images">
-              <img src={rec} id="small_rec"  alt="imge"/>
-            
-              
-              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
-              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-
-              
-            
-              </div>
-             <div>
-             
-             
-   
-            
-
-             </div>
-              </div>
-           <div className="img_grid_sec"  style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
-              
-           <div className="images">
-              <img src={rec} id="small_rec"  alt="imge"/>
-            
-              
-              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
-              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-
-              
-            
-              </div>
-            </div> 
-            <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}>
-            <div className="images">
-              <img src={rec} id="small_rec"  alt="imge"/>
-            
-              
-              <img src={ell} className="ellips" style={{width:"6.35px" , height:"6.35px"}} alt="imge"/> 
-              <img src={poly2} className="poly_2" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-              <img src={poly1} className="poly" style={{width:"41.88px" , height:"41.88px"}} alt="imge"/>
-
-              
-            
-              </div>
-            </div>  
-            <div
-              className="img_grid_sec"
-              style={{ borderRadius: "20px", padding: "35%" , textAlign:"center" }}
-            >
-              <label>
-               <input
-              type="file"
-              name="image-uploader"
-              onChange={firstImageHandler}
-              id="image-uploader"
-              accept="image/*"
-              
-            />
-              <img src={VectorAdd} id="image-preview" alt="imge"/>{" "}
-              </label>
+        <div className="seller2_progress">
+          <h3>Products for Listing on SimuVerse</h3>
+          <Steps size="small" current={2}>
+            <Step title="" />
+            <Step title="Details" />
+            <Step title="Upload Image" />
+            <Step title="" />
+          </Steps>
+        </div>
+        <div className="seller2_Bottom_Container">
+          <div className="left_Side">
+            <h3>Image with No Background For Reference Only</h3>
+            <div className="referenceImg">
+              <img src={Orangecloth} alt="/" />
             </div>
-           
-            {/* <div className="img_grid_sec_last">+</div> */}
           </div>
-          <button
-            onClick={() => {
-              console.log(prdUplData.PrdUplState);
-              let frmData = new FormData();
-              for (var key in prdUplData.PrdUplState) {
-                frmData.append(key, prdUplData.PrdUplState[key]);
-              }
-              
-              axios
-                .post(Url, frmData,{headers: { Authorization: jwt }})
-                .then((resp) => console.log(resp));
-              navigate("/shome/seller/productsuccess");
-            }}
-          >
-            List Product
-          </button>
+          <div className="Bottom_Inner_Image_Main">
+            <div className="Bottom_Inner_2">
+              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}
+
+              >   <div className="images">
+                  <img src={rec} id="small_rec" alt="imge" />
+
+
+                  <img src={ell} className="ellips" style={{ width: "6.35px", height: "6.35px" }} alt="imge" />
+                  <img src={poly2} className="poly_2" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+                  <img src={poly1} className="poly" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+
+
+
+                </div>
+                <div>
+
+
+
+
+
+                </div>
+              </div>
+              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
+
+                <div className="images">
+                  <img src={rec} id="small_rec" alt="imge" />
+
+
+                  <img src={ell} className="ellips" style={{ width: "6.35px", height: "6.35px" }} alt="imge" />
+                  <img src={poly2} className="poly_2" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+                  <img src={poly1} className="poly" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+
+
+
+                </div>
+              </div>
+              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
+                <div className="images">
+                  <img src={rec} id="small_rec" alt="imge" />
+
+
+                  <img src={ell} className="ellips" style={{ width: "6.35px", height: "6.35px" }} alt="imge" />
+                  <img src={poly2} className="poly_2" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+                  <img src={poly1} className="poly" style={{ width: "41.88px", height: "41.88px" }} alt="imge" />
+
+
+
+                </div>
+              </div>
+              <div
+                className="img_grid_sec"
+                style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}
+              >
+                <label>
+                  <input
+                    type="file"
+                    name="image-uploader"
+                    onChange={firstImageHandler}
+                    id="image-uploader"
+                    accept="image/*"
+
+                  />
+                  <img src={VectorAdd} id="image-preview" alt="imge" />{" "}
+                </label>
+              </div>
+
+              {/* <div className="img_grid_sec_last">+</div> */}
+            </div>
+            <button
+              onClick={() => {
+                console.log(prdUplData.PrdUplState);
+                let frmData = new FormData();
+                for (var key in prdUplData.PrdUplState) {
+                  frmData.append(key, prdUplData.PrdUplState[key]);
+                }
+
+                axios
+                  .post(Url, frmData, { headers: { Authorization: jwt } })
+                  .then((resp) => console.log(resp));
+                navigate("/shome/seller/productsuccess");
+              }}
+            >
+              List Product
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Base>
   );
 };
 

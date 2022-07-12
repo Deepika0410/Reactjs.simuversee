@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Details from "./Details";
 import "./profile.css";
 import axios from 'axios'
+import Base from "../Base";
 
 const Profile = () => {
   const [formValue, setFormValue] = useState({
@@ -63,7 +64,8 @@ const Profile = () => {
   }, []);
   return (
     <>
-      <div className="Profile_Main_Con">
+     <Base>
+     <div className="Profile_Main_Con">
         <div className="left_side_Con">
           <h1>Profile </h1>
           <h3 className="profile_selector" onClick={personalInforDisplay}>Personal Information</h3>
@@ -169,6 +171,7 @@ const Profile = () => {
           {displayDetails && <Details />}
         </div>
       </div>
+     </Base>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-
+import './error.css'
 function Error() {
   return (
     <div>
@@ -9,7 +9,7 @@ function Error() {
                 <h1 style={{fontWeight:"500",fontSize:"300px",opacity:"0.6"}}>404</h1>
                 <p style={{fontSize:"20px"}}>Page not found</p>
 
-               <NavLink className='nav' to='/simuverse' style={{textDecoration:"underline",color:"blue"}}>go back on Home page </NavLink>
+               <NavLink className='nav' to='/simuverse' style={{textDecoration:"",color:"#fff"}}>Go to Home page</NavLink>
             </div>
         </div>
     </div>

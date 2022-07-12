@@ -17,6 +17,11 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+
+#exploreBtn:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #2e2727;
+}
 .comp1_innerContainer {
   width: 90%;
   margin-left: auto;

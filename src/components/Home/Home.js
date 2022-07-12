@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Base from "../Base";
 import Component1 from "./Component1";
 import Component2 from "./Component2";
 import Component3 from "./Component3";
@@ -9,6 +10,7 @@ import Component4 from "./Component4";
 import "./home.css";
 function Home() {
   return (
+    <Base>
     <div className="home_container">
       <Component1 />
       <Component2 />
@@ -17,6 +19,7 @@ function Home() {
 
       {/* <Component6 /> */}
     </div>
+    </Base>
   );
 }
 

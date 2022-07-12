@@ -1,13 +1,16 @@
 import React from 'react'
+import Base from '../../../Base';
 import Sec3 from '../../Sec3';
 import Comp1 from './Comp1';
 
 function product() {
   return (
-    <div style={{marginTop:"1%"}}>
-    <Comp1 />
-    <Sec3 />
-    </div>
+    <Base>
+      <div style={{ marginTop: "1%" }}>
+        <Comp1 />
+        <Sec3 />
+      </div>
+    </Base>
   )
 }
 

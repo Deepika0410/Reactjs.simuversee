@@ -36,7 +36,7 @@ const Footer2 = () => {
             <div>
               <p className="link-head">Quick Links</p>
             </div>
-            <div className="links-cont" style={{ textAlign: "left" }}>
+            <div className="links-cont" style={{ textAlign: "left", display:"grid", alignItems:"center" }}>
               <NavLink to="/contact" >About us</NavLink>
               <NavLink to="/store">Store</NavLink>
               <NavLink to="/login">Login</NavLink>

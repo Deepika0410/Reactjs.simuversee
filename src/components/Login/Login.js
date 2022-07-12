@@ -68,8 +68,10 @@ function Login() {
                  <br></br>
                 
                     <input onChange={e=>setPwd(e.target.value)} type={showPwd?'text':'password'} value={pwd} placeholder='Enter password'/>
-                   <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/> <span className='chr'> Show Characters</span>
-               <br/>
+                  
+                   
+                    <input type="checkbox" id="login-checkbox"  onChange={()=>setShowPwd(!showPwd)}/> <span className='chr'> Show Characters</span>
+                    <br></br>
                 <input id="login-submit-btn" type="submit" value="Login" /> 
                 
             </form>

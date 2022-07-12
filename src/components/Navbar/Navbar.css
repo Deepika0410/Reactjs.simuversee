@@ -17,12 +17,12 @@
   width: 30%;
   padding-top: 0 !important;
 
-  color: #f8444f;
+  /* color: #f8444f; */
   padding-left: 50px !important;
 }
 .active {
-  background-color: #f8444f;
-  padding: 10px;
+  /* background-color: #f8444f; */
+  /* padding: 10px; */
   border-radius: 10px;
 }
 .myNavLink {
@@ -34,11 +34,10 @@
 .myNavLink a {
   text-decoration: none;
   color: #313131;
-  margin-right: 5px;
+  margin-right: 10px;
   font-family: poppins;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
-  
 }
 
 .navIcon {
@@ -46,7 +45,7 @@
 }
 
 .icon {
-  font-size: 25px;
+  font-size: 20px;
   margin: 8px;
   line-height: 30px;
   color: #313131;
@@ -57,7 +56,7 @@
 .navIcon:hover{
   /* gray color code */
   background-color:#f0ebeb;
-  color: #fff;
+  /* color: #fff; */
  }
 
 .navloginSignUp {
@@ -68,7 +67,7 @@
 
 .navloginSignUp button {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   color: #313131;
   padding: 6px;

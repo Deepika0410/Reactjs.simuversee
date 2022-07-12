@@ -1,8 +1,7 @@
-import Homebar from "./components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route, Redirect, Navigate } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home/Home";
 import SellerHome from "./components/Seller/Home/Home";
-import About from "./components/About/About";
 import Store from "./components/Store/Store";
 import Wishlist from "./components/Wishlist/Wishlist";
 import Bag from "./components/Bag/bag";
@@ -13,7 +12,6 @@ import Contact from "./components/Contact/Contact";
 import Register from "./components/Login/Register";
 import Product from "./components/Store/components/product/product";
 import CharacterCreation from "./components/CharacterCreation/CharacterCreation";
-import Footer2 from "./components/Footer/Footer2";
 import Catalogous from "./components/Store/Category/CatalogousPage";
 import Seller from "./components/Seller/Seller";
 import Address from "./components/Bag/Address/Address";
@@ -29,21 +27,17 @@ import Profiles from "./Profiles/Profiles";
 import Listing from "./components/Seller/Listing/Listing";
 import Productlisting from "./components/Seller/ProductListing/ProductListing";
 import ProductThreeD from "./components/Store/components/product/ProductThreeD";
-import { useState } from "react";
+import Error from "./components/Error/Error";
 const App = () => {
-  // hide the navbar when the user is on the login page
-  const [hideNavbar, setHideNavbar] = useState(false);
   
   return (
     <div className="App">
       <BrowserRouter>
-        <Homebar />
-        
-
         <Routes>
           {/* <Route path="/contact" element={<Contact />} /> */}
           <Route exact path="/simuverse" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/bag" element={<Bag />} />
@@ -84,11 +78,10 @@ const App = () => {
          
           <Route path="/productThreeDView" element={<ProductThreeD />} />
             {/* Error page */}
-            <Route path="*" element={<Navigate replace to="/home" />} />
+            <Route path="*" element={<Error />} />
             <Route path="/profiles" element={<Profiles/>} />
         </Routes>
 
-        <Footer2 />
       </BrowserRouter>
     </div>
   );

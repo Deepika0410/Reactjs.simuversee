@@ -24,7 +24,7 @@
   margin: auto;
 }
 .active:hover{
-  color:white;
+  /* color:white; */
 }
 .add-icon {
   width: 20px;
