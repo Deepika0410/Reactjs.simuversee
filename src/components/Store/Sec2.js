@@ -26,6 +26,7 @@ function Sec2() {
       .catch((err) => console.log(err));
   }, []);
 
+
   const linkName = readMore ? 'View Less ' : 'View all'
   const navigate = useNavigate();
   const extraContent = <div>
@@ -35,6 +36,10 @@ function Sec2() {
       commodi officia aliquam! Maxime.
     </div>
   </div>
+  
+  if(!slice.length){
+    return <div className="loading">Loading...</div>
+  }
   return (
     <div class="container con1">
       <br />

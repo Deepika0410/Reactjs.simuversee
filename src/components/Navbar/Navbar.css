@@ -17,18 +17,25 @@
   width: 30%;
   padding-top: 0 !important;
 
-  /* color: #f8444f; */
+  color: #f8444f;
   padding-left: 50px !important;
 }
-.active {
-  /* background-color: #f8444f; */
-  /* padding: 10px; */
+.myNavLink .active {
+  background-color: #f8444f;
+  padding-top:.2rem;
+  padding-bottom:.2rem;
+  padding-left:.8rem;
+  padding-right:.8rem;
   border-radius: 10px;
+}
+.myNavLink .active:hover {
+  color: #fff;
 }
 .myNavLink {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .myNavLink a {
@@ -40,6 +47,14 @@
   line-height: 30px;
 }
 
+/* .myNavLink a:focus {
+  color: #fff;
+  background-color: #f8444f;
+  padding-top:.2rem;
+  padding-bottom:.2rem;
+  padding-left:.8rem;
+  padding-right:.8rem;
+} */
 .navIcon {
   border: 1px solid #313131;
 }

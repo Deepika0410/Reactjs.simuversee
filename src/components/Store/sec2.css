@@ -8,6 +8,19 @@
   font-size: 30px;
   line-height: 45px;
 }
+.loading{
+  width: 250px;
+  height: 25px;
+  z-index: 9999;
+  display: flex;
+  font-size: 2rem;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  margin-left:40rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
 .txt1 {
   font-family: "Inter";
   font-style: normal;

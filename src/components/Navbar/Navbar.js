@@ -39,7 +39,7 @@ function Homebar() {
     <div>
       <Navbar
         collapseOnSelect
-        expand="lg" 
+        expand="lg"
         style={{
           backgroundColor: "#F8444F",
           minHeight: "8rem",
@@ -64,11 +64,11 @@ function Homebar() {
               style={{ width: "100%", }}
             >
               <div className="myNavLink">
-                <NavLink to="/home" >Home</NavLink>
-                <NavLink to="/store">Store</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-                <NavLink to="/shome">Seller</NavLink>
-                <NavLink to="/home/character-creation">Avtar</NavLink>
+                <NavLink to="/home" className="aa">Home</NavLink>
+                <NavLink to="/store" className="aa">Store</NavLink>
+                <NavLink to="/contact" className="aa">Contact</NavLink>
+                <NavLink to="/shome" className="aa">Seller</NavLink>
+                <NavLink to="/home/character-creation" className="aa">Avatar</NavLink>
               </div>
               <div className="d-flex navButtons">
                 <div className="d-flex align-items-center">
@@ -85,7 +85,7 @@ function Homebar() {
                     </NavLink>
                   </div>
                   <div className="navIcon" onClick={wishListHandler}>
-                    <BsHeart className="icon" color="red"/>
+                    <BsHeart className="icon" color="red" />
                   </div>
                   <div className="navIcon" onClick={bagHandler}>
                     <BsHandbag className="icon" color="red" />
@@ -102,13 +102,13 @@ function Homebar() {
                   </div>
                 </div>
                 {
-                  localStorage.getItem('token')==null?
-                <div className="navloginSignUp" onClick={loginHandler}>
-                  <button>Login/Sign Up</button>
-                </div>:
-                <div className="navloginSignUp" onClick={logoutHandler}>
-                  <button>Logout</button>
-                </div>
+                  localStorage.getItem('token') == null ?
+                    <div className="navloginSignUp" onClick={loginHandler}>
+                      <button>Login/Sign Up</button>
+                    </div> :
+                    <div className="navloginSignUp" onClick={logoutHandler}>
+                      <button>Logout</button>
+                    </div>
                 }
               </div>
             </Nav>

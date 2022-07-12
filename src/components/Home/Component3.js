@@ -33,11 +33,11 @@ const Component3 = () => {
               marginRight: "auto",
             }}
           >
-            <img src={PersonImage} alt="/" />
+            <img src={PersonImage} alt="/" style={{width:"10rem"}}/>
           </div>
           <h3 style={{fontSize:"1.2rem"}}>Your Beautiful Image</h3>
         </div>
-        <div className="comp3_middle">
+        <div className="comp3_middle" >
           <img src={Link} alt="/" />
         </div>
         <div className="comp3_right">
