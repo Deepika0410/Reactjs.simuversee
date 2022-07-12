@@ -9,26 +9,21 @@ const Seller3 = () => {
   const prdUplData = UseCart();
   console.log(prdUplData.PrdUplState);
   return (
-    <Base>
-      <div className="seller3_Cont text-center">
-        <h3>Your Product is listed on Simuverse successfully</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in
-          efficitur nibh, in placerat diam. Praesent aliquam iaculis accumsan.
-          Duis eget sem congue, dignissim quam quis, fringilla mi. Phasellus
-          ultricies elit non enim tincidunt tristique. Phasellus dictum ut lectus
-          eu convallis
-        </p>
-        {/* {console.log(prdUplData.PrdUplState)} */}
-        <button
-          onClick={() => {
-            navigate("/shome");
-          }}
-        >
-          Back Home
-        </button>
-      </div>
-    </Base>
+    <div className="seller3_Cont text-center">
+      <h3>Your Product is listed on Simuverse successfully</h3>
+      <p>
+      You have now successfully listed your product on Simuverse .
+You can now list as many products as you want in the same manner.
+      </p>
+      {/* {console.log(prdUplData.PrdUplState)} */}
+      <button
+            onClick={() => {
+          navigate("/shome");
+        }}
+      >
+        Back Home
+      </button>
+    </div>
   );
 };
 

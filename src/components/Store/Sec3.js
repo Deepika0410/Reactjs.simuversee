@@ -9,6 +9,7 @@ import mod3 from "../../images/model3.jpg";
 import jean from "../../images/jean.png";
 import tsizechart from "../../images/t-shirtchart.png";
 import axios from "axios";
+import { useNavigate} from "react-router-dom";
 
 // TODO: get products data from backend
 var data = [
@@ -30,6 +31,7 @@ var data = [
 ];
 
 function Sec3() {
+  const navigate = useNavigate();
   let [incre, setIncre] = useState(0);
   const [modelsrc, setModelsrc] = useState(mod1)
   const [fscore, setFscore] = useState(null)
@@ -94,13 +96,14 @@ function Sec3() {
                             <div class="col c12">
                                 <img className="img-fluid"  alt="img1" src={data[incre].shirtsrc} />
                             </div>
-                            <div class="col" >
+                            <div class="col " >
                                 <div class="item-title" align="left"> {data[incre].shirttit} </div>
-                                <p class="item-desc" align="left"> Small details about the cloth </p>
+                                <p class="item-desc" align="left">Cloth1 </p>
 
-                                <p class="item-desc" align="left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim fringilla convallis.</p>
+                                <p style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3"}} align="left"> Brand Name</p>
+                                <h2  style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3"}} align="left"> Product Name</h2>
 
-                                <div align="right"> <button class=" b-btn">Buy</button></div>
+                                <div align="right"> <button class=" b-btn" onClick={() => navigate('/wishlist')}>Buy</button></div>
                             </div>
 
                         </div>

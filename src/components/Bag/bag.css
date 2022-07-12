@@ -141,9 +141,19 @@
   margin-top: 5rem;
 }
 .shopping_Summary {
-  font-family: poppins;
-  font-size: 40px;
-  line-height: 50px;
+  width: 299px;
+  height: 45px;
+ 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  margin-top: 5%;
+  line-height: 45px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
 }
 .payment_Button {
   border: transparent;
@@ -289,4 +299,19 @@
   .totalPayment_Con {
     width: 90% !important;
   }
+}
+.total{
+  width: 69px;
+height: 24px;
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
 }

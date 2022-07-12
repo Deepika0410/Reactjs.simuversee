@@ -14,7 +14,7 @@ function Sec2() {
   const slice = itemsState;
 
   const url = `${process.env.REACT_APP_SV_BACKEND}/product/`;
-  const Url = `http://localhost:3000/product/`;
+  const Url = `https://sv-be.spandeep.in/product`;
 
   console.log(maxId);
   useEffect(() => {
@@ -24,26 +24,25 @@ function Sec2() {
         itemsDispatch({ type: "GET_ITEMS", payload: resp.data });
       })
       .catch((err) => console.log(err));
-  },[]);
+  }, []);
 
-    const linkName=readMore?'View Less ':'View all'
+  const linkName = readMore ? 'View Less ' : 'View all'
   const navigate = useNavigate();
-  const extraContent=<div>
-  <div className="extra-content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab
-    porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero
-    commodi officia aliquam! Maxime.
+  const extraContent = <div>
+    <div className="extra-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab
+      porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero
+      commodi officia aliquam! Maxime.
+    </div>
   </div>
-</div>
   return (
     <div class="container con1">
       <br />
       <div class="row justify-content-center">
-        <div class="col-md-12 hl1"> Trending </div>
+        <div class="col-md-12 hl1 " style={{ textAlign: "center" }}> Trending </div>
 
         <div class="col-md-8 txt1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          imperdiet nisi ut lorem ornare sollicitudin. Fusce eget quam purus
+          Some of the most trending items on SimuVerse.
         </div>
       </div>
       <br />
@@ -95,7 +94,7 @@ function Sec2() {
         })}
       </div>
       <br />
-     
+
       {/* <div class="row justify-content-center">
         <div class="col-sm">
           <button class="butnvw" onClick={()=>{setReadMore(!readMore)}}>

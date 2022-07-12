@@ -77,7 +77,7 @@ function Comp1() {
               );
             })}
               <div><h3>{score.fitnessScore}</h3>
-            <h3>Is Fit ? {score.fitnessScore?score.isFit?"TRUE":"FALSE":"NULL"}</h3></div>
+            <h3> {score.fitnessScore?score.isFit? "TRUE": "FALSE": "Is Fit ?" } </h3></div>
         </div>
         {itemsState
           .filter((data) => data.id === id)
@@ -316,8 +316,8 @@ function Comp1() {
                         </Button>
                       ) : (
                         <button
-                          class="btn btn-outline-danger"
-                          style={{ maxWidth: "210px" }}
+                          class=" btn-outline-danger"
+                          style={{ maxWidth: "210px", paddingLeft: "2rem", paddingRight: "2rem", paddingTop: ".5rem", paddingBottom: ".5rem", backgroundColor:"  " }}
                           onClick={() => {
                             wishlistDispatch({
                               type: wishlistAction.ADD_TO_WISHLIST,

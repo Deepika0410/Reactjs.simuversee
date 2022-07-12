@@ -68,6 +68,7 @@ function Homebar() {
                 <NavLink to="/store">Store</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/shome">Seller</NavLink>
+                <NavLink to="/home/character-creation">Avtar</NavLink>
               </div>
               <div className="d-flex navButtons">
                 <div className="d-flex align-items-center">

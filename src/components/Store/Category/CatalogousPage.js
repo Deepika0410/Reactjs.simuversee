@@ -28,7 +28,7 @@ const Catalogous = () => {
     <Base>
       <div>
         <Link to="/store">
-          <h3 style={{ marginTop: "2rem" }}>Back to store</h3>
+          <h3 style={{ marginTop: "3rem", marginLeft:"40rem" }}>Back to store</h3>
         </Link>
         <h1 className="catalogue_Heading">
           {category.toUpperCase()} {type.toUpperCase()}
@@ -53,7 +53,7 @@ const Catalogous = () => {
                     recommended,
                   } = i;
                   return (
-                    <div className="catalogue_items">
+                    <div className="catalogue_items" style={{marginlLeft:"40rem"}}>
                       <NavLink
                         to={"/store/product"}
 
@@ -75,10 +75,12 @@ const Catalogous = () => {
                 })}
               </div>
             ) : (
-              <h3 className="inventory_None">
+              <div style={{display:"flex"}}>
+                <h3 className="inventory_None" >
                 None of the Items are left in Inventory.{" "}
                 <span> Please select other items...!</span>
               </h3>
+              </div>
             )}
           </>
         </div>

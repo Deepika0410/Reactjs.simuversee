@@ -6,7 +6,7 @@ import Comp1 from './Comp1';
 function product() {
   return (
     <Base>
-      <div style={{ marginTop: "1%" }}>
+      <div style={{ marginTop: "4rem" }}>
         <Comp1 />
         <Sec3 />
       </div>

@@ -12,6 +12,16 @@ function Sec1() {
     <div className="container-fluid megamenu">
       <div className="container mm1">
         <div className="row" align="left">
+          <div>
+    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb"  >
+    <li class="breadcrumb-item " style={{color:"#ffffff"}}><a href="/simuverse">Home</a></li>
+    <li class="breadcrumb-item "><a href="#">Store</a></li>
+ 
+  </ol>
+</nav>
+          </div>
           <div className="hl1">Menu
           </div>
           <div className="store_icon">

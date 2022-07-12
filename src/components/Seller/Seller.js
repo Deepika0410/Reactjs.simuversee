@@ -116,185 +116,185 @@ const Seller = () => {
   };
 
   return (
-    <Base>
-      <div className="seller_Main">
-        <>
-          <div className="seller_Inner_Container" >
-            <div className="inner_Content text-start"  >
-              <h3 >Reference Image for Uploading</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                imperdiet nisi ut <br /> lorem ornare sollicitudin. Fusce eget quam purus
-              </p>
+  <Base>
+  
+  <div className="seller_Main">
+      <>
+        <div className="seller_Inner_Container" >
+          <div className="inner_Content text-start"  >
+            <h3 >Reference Image for Uploading</h3>
+            <p>
+            Select the image from your device that you want of the product to upload, for <br/> for listing on the SimuVerse portal.
+            </p>
+          </div>
+          <div>
+            <img src={cloth} alt="/" />
+          </div>
+        </div>
+        <div className="progress_Con">
+          <h3>Product for Listing on Simuverse</h3>
+          <div className="seller_Progress_Step ">
+            <Steps direction="horizontal"  size="small" current={1}>
+              <Step title="" />
+              <Step title="Details" />
+              <Step title="Upload Image" />
+            </Steps>
+          </div>
+        </div>
+        <div className="seller_Bottom_Container">
+          <div className="inner_Content">
+            <h3 className="left_Heading">How to measure dimension</h3>
+            <div className="img_cont">
+              <img src={dimensionCloth} alt="/" style={{height:"318px", width:"304px"}}/>
+            </div>
+          </div>
+
+          <div action="/action_page.php" className="seller_formPage">
+            <div className="seller_Product_Description">
+              <label>Name of the Product</label>
+              <br />
+              <input
+                value={productName}
+                onChange={(e) => setProductName(e.target.value)}
+                placeholder="Name of the product"
+              />
             </div>
             <div>
-              <img src={cloth} alt="/" />
+              <h3>Dimensions (in cm)</h3>
+              <div className="dimension_Content">
+                <label>Collar</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerCollar}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionCollar}
+                    onChange={inputChangeHandlerCollar}
+                  />
+                  <span onClick={incrementHandlerCollar}>+</span>
+                </div>
+              </div>
+              <div className="dimension_Content">
+                <label>Length</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerLength}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionLength}
+                    onChange={inputChangeHandlerLength}
+                  />
+                  <span onClick={incrementHandlerLength}>+</span>
+                </div>
+              </div>
+              <div className="dimension_Content">
+                <label>Chest</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerChest}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionChest}
+                    onChange={inputChangeHandlerChest}
+                  />
+                  <span onClick={incrementHandlerChest}>+</span>
+                </div>
+              </div>
+              <div className="dimension_Content">
+                <label>Waist</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerWaist}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionWaist}
+                    onChange={inputChangeHandlerWaist}
+                  />
+                  <span onClick={incrementHandlerWaist}>+</span>
+                </div>
+              </div>
+              <div className="dimension_Content">
+                <label>Seleeve Length</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerSeleeve}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionSeleeve}
+                    onChange={inputChangeHandlerSeleeve}
+                  />
+                  <span onClick={incrementHandlerSeleeve}>+</span>
+                </div>
+              </div>
+              <div className="dimension_Content">
+                <label>Across Shoulder</label>
+                <div className="dimension_button">
+                  <span onClick={decrementHandlerShoulder}>-</span>
+
+                  <input
+                    type="number"
+                    value={counterDimensionShoulder}
+                    onChange={inputChangeHandlerShoulder}
+                  />
+                  <span onClick={incrementHandlerShoulder}>+</span>
+                </div>
+              </div>
             </div>
+            <div className="description">
+              <label>Description</label>
+              <br />
+              <input
+                value={productDiscription}
+                onChange={(e) => setProductDiscription(e.target.value)}
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit  "
+              />
+            </div>
+            <div className="seller_price">
+              <label>Price</label>
+              <br />
+              <input
+                onChange={(e) => setProductPrice(e.target.value)}
+                value={productPrice}
+                type="number"
+                id="fname"
+                name="fname"
+                placeholder="999"
+              />
+            </div>
+        
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                prdUplData.PrdUplDispatch({
+                  type: "SET_DETAILS",
+                  payload: {
+                    ...prdUplData.PrdUplState,
+                    name: productName,
+                    image: null,
+                    description: productDiscription,
+                    price: productPrice,
+                    collar: counterDimensionCollar,
+                    length: counterDimensionLength,
+                    chest: counterDimensionChest,
+                    waist: counterDimensionWaist,
+                    sleeveLength: counterDimensionSeleeve,
+                    acrossShoulder: counterDimensionShoulder,
+                  },
+                });
+
+                navigate("/shome/seller/addimage");
+              }}
+            >
+              Submit
+            </button>
           </div>
-          <div className="progress_Con">
-            <h3>Product for Listing on Simuverse</h3>
-            <div className="seller_Progress_Step ">
-              <Steps direction="horizontal" size="small" current={1}>
-                <Step title="" />
-                <Step title="Details" />
-                <Step title="Upload Image" />
-              </Steps>
-            </div>
-          </div>
-          <div className="seller_Bottom_Container">
-            <div className="inner_Content">
-              <h3 className="left_Heading">How to measure dimension</h3>
-              <div className="img_cont">
-                <img src={dimensionCloth} alt="/" style={{ height: "318px", width: "304px" }} />
-              </div>
-            </div>
-
-            <div action="/action_page.php" className="seller_formPage">
-              <div className="seller_Product_Description">
-                <label>Name of the Product</label>
-                <br />
-                <input
-                  value={productName}
-                  onChange={(e) => setProductName(e.target.value)}
-                  placeholder="Name of the product"
-                />
-              </div>
-              <div>
-                <h3>Dimensions (in cm)</h3>
-                <div className="dimension_Content">
-                  <label>Collar</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerCollar}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionCollar}
-                      onChange={inputChangeHandlerCollar}
-                    />
-                    <span onClick={incrementHandlerCollar}>+</span>
-                  </div>
-                </div>
-                <div className="dimension_Content">
-                  <label>Length</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerLength}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionLength}
-                      onChange={inputChangeHandlerLength}
-                    />
-                    <span onClick={incrementHandlerLength}>+</span>
-                  </div>
-                </div>
-                <div className="dimension_Content">
-                  <label>Chest</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerChest}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionChest}
-                      onChange={inputChangeHandlerChest}
-                    />
-                    <span onClick={incrementHandlerChest}>+</span>
-                  </div>
-                </div>
-                <div className="dimension_Content">
-                  <label>Waist</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerWaist}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionWaist}
-                      onChange={inputChangeHandlerWaist}
-                    />
-                    <span onClick={incrementHandlerWaist}>+</span>
-                  </div>
-                </div>
-                <div className="dimension_Content">
-                  <label>Seleeve Length</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerSeleeve}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionSeleeve}
-                      onChange={inputChangeHandlerSeleeve}
-                    />
-                    <span onClick={incrementHandlerSeleeve}>+</span>
-                  </div>
-                </div>
-                <div className="dimension_Content">
-                  <label>Across Shoulder</label>
-                  <div className="dimension_button">
-                    <span onClick={decrementHandlerShoulder}>-</span>
-
-                    <input
-                      type="number"
-                      value={counterDimensionShoulder}
-                      onChange={inputChangeHandlerShoulder}
-                    />
-                    <span onClick={incrementHandlerShoulder}>+</span>
-                  </div>
-                </div>
-              </div>
-              <div className="description">
-                <label>Description</label>
-                <br />
-                <input
-                  value={productDiscription}
-                  onChange={(e) => setProductDiscription(e.target.value)}
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit  "
-                />
-              </div>
-              <div className="seller_price">
-                <label>Price</label>
-                <br />
-                <input
-                  onChange={(e) => setProductPrice(e.target.value)}
-                  value={productPrice}
-                  type="number"
-                  id="fname"
-                  name="fname"
-                  placeholder="999"
-                />
-              </div>
-
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  prdUplData.PrdUplDispatch({
-                    type: "SET_DETAILS",
-                    payload: {
-                      ...prdUplData.PrdUplState,
-                      name: productName,
-                      image: null,
-                      description: productDiscription,
-                      price: productPrice,
-                      collar: counterDimensionCollar,
-                      length: counterDimensionLength,
-                      chest: counterDimensionChest,
-                      waist: counterDimensionWaist,
-                      sleeveLength: counterDimensionSeleeve,
-                      acrossShoulder: counterDimensionShoulder,
-                    },
-                  });
-
-                  navigate("/shome/seller/addimage");
-                }}
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </>
-      </div>
-    </Base>
+        </div>
+      </>
+    </div>
+  </Base>
   );
 };
 

@@ -106,24 +106,7 @@ function EditAvatar() {
               </select>
             </td>
           </tr>
-         <tr>
-            <td>
-              <label htmlFor="o-datail">Other detail</label>
-            </td>
-            <td>
-              <input name="o-detail" />
-            </td>
-            <td>oo</td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="o-datail">Other detail</label>
-            </td>
-            <td>
-              <input name="o-detail" />
-            </td>
-            <td>oo</td>
-          </tr>
+        
           </tbody>
         </table>
         <span>
