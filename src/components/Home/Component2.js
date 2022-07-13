@@ -19,84 +19,84 @@ const Component2 = () => {
   return (
 
 
-<>
-<div className='container-fluid p-1'
-style={{backgroundColor:"#F7F8F3"}}
->
+    <>
+      <div className='container-fluid p-5'
+        style={{ backgroundColor: "#F7F8F3" }}
+      >
 
-<div className='row justify-content-around p-0 m-0'>
-<div className='col-md-2'>
-  <div className='row text-center'>
-    <img src={virtualTry} className='img-fluid imhHwSet'/>
-  </div>
-  <div className='row text-center text1'>
-    <p style={{fontSize:"1.3rem", fontWeight:"500"}}>
-    VIRTUAL TRY ON
-    </p>
-  </div>
-  <div className='row text-center text1'>
-    <p>
-    Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
-    </p>
-  </div>
-</div>
-<div className='col-md-1 aliCen'>
-  <img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-md-2'>
-<div className='row text-center'>
-<img src={virtualTry} className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-  <p>
-  REDUCE RETURN
-  </p>
-</div>
-<div className='row text-center text1'>
-<p>
-Reduce returns by allowing customers to see your products in hi-res on their body type
-</p>
-</div>
-</div>
-<div className='col-md-1 aliCen'>
-<img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-md-2'>
-<div className='row text-center '>
-<img  src={increaseAOV}  className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-<p>
-INCREASE AOV
-</p>
-</div>
-<div className='row text-center text1'>
-<p>
-Average oder value is bound to increase with this easy and competitive shopping experience
-</p>
-</div>
-</div>
-<div className='col-md-1 aliCen'>
-<img src={arrow} className='img-fluid alis' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-md-2'>
-<div className='row text-center'>
-<img src={reduceWaste} className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-<p>
-REDUCE WASTE
-</p>
-</div>
-<div className='row text-center text1'>
-<p>
-Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock?
-</p>
-</div>
-</div>
-</div>
-</div>
-</>
+        <div className='row justify-content-around p-0 m-0'>
+          <div className='col-md-2'>
+            <div className='row text-center'>
+              <img src={virtualTry} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p style={{ fontSize: "1.3rem", fontWeight: "500" }}>
+                VIRTUAL TRY ON
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+              Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
+              </p>
+            </div>
+          </div>
+          <div className='col-md-1 aliCen'>
+            <img src={arrow} className='img-fluid' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-md-2'>
+            <div className='row text-center'>
+              <img src={virtualTry} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                REDUCE RETURN
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+              Reduce returns by allowing customers to see your products in hi-res on their body type
+              </p>
+            </div>
+          </div>
+          <div className='col-md-1 aliCen'>
+            <img src={arrow} className='img-fluid' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-md-2'>
+            <div className='row text-center '>
+              <img src={increaseAOV} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                INCREASE AOV
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+              Average oder value is bound to increase with this easy and competitive shopping experience
+              </p>
+            </div>
+          </div>
+          <div className='col-md-1 aliCen'>
+            <img src={arrow} className='img-fluid alis' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-md-2'>
+            <div className='row text-center'>
+              <img src={reduceWaste} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                REDUCE WASTE
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+              Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
     // <div className="comp2_container">
     //   <div>
     //     <img src={virtualTry} alt="/" />
@@ -131,7 +131,7 @@ Help reduce your eco footprint by providing a solution that minimises material w
     //     </p>
     //   </div>
     // </div>
-    
+
   );
 };
 

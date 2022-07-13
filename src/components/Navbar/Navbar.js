@@ -68,7 +68,7 @@ function Homebar() {
                 <NavLink to="/store" className="aa">Store</NavLink>
                 <NavLink to="/contact" className="aa">Contact</NavLink>
                 <NavLink to="/shome" className="aa">Seller</NavLink>
-                <NavLink to="/home/character-creation" className="aa">Avatar</NavLink>
+                <NavLink to="/character-creation" className="aa">Avatar</NavLink>
               </div>
               <div className="d-flex navButtons">
                 <div className="d-flex align-items-center">
@@ -81,30 +81,30 @@ function Homebar() {
                     }}
                   >
                     <NavLink to="">
-                      <BsSearch className="icon" color="red" />
+                      <BsSearch className="icon" color="black" />
                     </NavLink>
                   </div>
                   <div className="navIcon" onClick={wishListHandler}>
-                    <BsHeart className="icon" color="red" />
+                    <BsHeart className="icon" color="black" />
                   </div>
                   <div className="navIcon" onClick={bagHandler}>
-                    <BsHandbag className="icon" color="red" />
+                    <BsHandbag className="icon" color="black" />
                   </div>
                   <div
                     className="navIcon"
                     onClick={profileHandler}
                     style={{
-                      webkitBorderTopRightRadius: "5px",
-                      WebkitBorderBottomRightRadius: "5px",
+                      webkitBorderTopRightRadius: "4px",
+                      WebkitBorderBottomRightRadius: "4px",
                     }}
                   >
-                    <CgProfile className="icon" style={{}} color="red" />
+                    <CgProfile className="icon" color="black"  />
                   </div>
                 </div>
                 {
                   localStorage.getItem('token') == null ?
                     <div className="navloginSignUp" onClick={loginHandler}>
-                      <button>Login/Sign Up</button>
+                      <button>SignUp / Login</button>
                     </div> :
                     <div className="navloginSignUp" onClick={logoutHandler}>
                       <button>Logout</button>
