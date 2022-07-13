@@ -143,9 +143,9 @@ const Seller = () => {
         </div>
         <div className="seller_Bottom_Container">
           <div className="inner_Content">
-            <h3 className="left_Heading">How to measure dimension</h3>
+            <h3 className="left_Heading" style={{fontSize:"16px"}}>How to measure Diemsions</h3>
             <div className="img_cont">
-              <img src={dimensionCloth} alt="/" style={{height:"318px", width:"304px"}}/>
+              <img src={dimensionCloth} alt="/" style={{height:"400px", width:"400px"}}/>
             </div>
           </div>
 
@@ -238,7 +238,36 @@ const Seller = () => {
                   />
                   <span onClick={incrementHandlerShoulder}>+</span>
                 </div>
+                
               </div>
+              <div className="dimension_Content">
+
+              <label for="fname">SKUID</label>
+            
+              <span>
+              <input className="dimension_button" type="number" style={{border:"#eeeeee"}}/><br></br>
+
+              </span>
+             
+
+              
+             
+              </div>
+              <div className="dimension_Content">
+
+                 <label for="fname">PRODUCT-ID</label>
+
+                     <span>
+                       <input className="dimension_button" type="number" style={{border:"#eeeeee"}}/><br></br>
+
+                        </span>
+
+
+
+
+                       </div>
+              
+
             </div>
             <div className="description">
               <label>Description</label>
@@ -249,7 +278,7 @@ const Seller = () => {
                 type="text"
                 id="fname"
                 name="fname"
-                placeholder="Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit Lorem Ipsum Dorem sit  "
+                placeholder="Description of the product. "
               />
             </div>
             <div className="seller_price">
