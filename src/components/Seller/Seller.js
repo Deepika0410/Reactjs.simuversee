@@ -143,7 +143,7 @@ const Seller = () => {
         </div>
         <div className="seller_Bottom_Container">
           <div className="inner_Content">
-            <h3 className="left_Heading" style={{fontSize:"16px"}}>How to measure Diemsions</h3>
+            <h3 className="left_Heading" style={{fontSize:"16px"}}>How to measure Dimensions</h3>
             <div className="img_cont">
               <img src={dimensionCloth} alt="/" style={{height:"400px", width:"400px"}}/>
             </div>

@@ -54,7 +54,7 @@ function Homebar() {
             minHeight: "5rem",
           }}
         >
-          <Navbar.Brand className="logoContainer" to="/" >
+          <Navbar.Brand className="logoContainer" href="/home" >
             <img src={Simuverse} className="Navbar_icon" alt="/" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
