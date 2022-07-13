@@ -1,7 +1,14 @@
 import React from 'react';
 import './sec4.css';
 import brand from '../../images/brand.png';
-
+import brand1 from '../../images/brand1.png';
+import brand2 from '../../images/brand2.png';
+import brand3 from '../../images/brand3.png';
+import brand4 from '../../images/brand4.png';
+import brand5 from '../../images/brand5.png';
+import brand6 from '../../images/brand6.png';
+import brand7 from '../../images/brand7.png';
+import brand8 from '../../images/brand8.png';
 function Sec4() {
     return (
         <div className='container-fluid rw-brand' >
@@ -16,13 +23,13 @@ function Sec4() {
                 <div class="col-sm-6" style={{ maxWidth: "600px" }}>
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name" >Brand Name</p>
+                            <img class="img-fluid" src={brand1} style={{width:"145px" , height:"145px"}}/>
+                            <p class="b_name" >CHANNEL</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name">Brand Name</p>
+                            <img class="img-fluid" src={brand2} style={{width:"145px" , height:"145px"}}/>
+                            <p class="b_name">GUCCI</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                     </div>
@@ -32,13 +39,13 @@ function Sec4() {
                 <div class="col-sm-6" style={{ maxWidth: "600px" }}>
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name" >Brand Name</p>
+                            <img class="img-fluid" src={brand3} style={{width:"145px" , height:"145px"}}/>
+                            <p class="b_name" >NIKE</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name">Brand Name</p>
+                            <img class="img-fluid" src={brand4} style={{width:"145px" , height:"145px"}}/>
+                            <p class="b_name">ADIDAS</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                     </div>
@@ -49,16 +56,16 @@ function Sec4() {
                 <div class="col-sm-6" style={{ maxWidth: "600px" }}>
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name" >Brand Name</p>
+                            <img class="img-fluid" src={brand5} style={{width:"145px" , height:"145px"}}/>
+                            <p class="b_name" >LEVI'S</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "170px" }} >
-                            <img class="img-fluid" src={brand} />
-                            <div className='' style={{display:"flex", flexDirection:"row",}}>
-                            <p class="b_name">Brand Name</p>
-                            <p class="b_offer" style={{ marginLeft:"4rem", alignItem:"center", justifyContent:"center", marginTop:".2rem" }} >Offer %</p>
-                            </div>
+                            <img class="img-fluid" src={brand6}  style={{width:"145px" , height:"145px"}}/>
+                        
+                            <p class="b_name">LOUIS VUITTON</p>
+                            <p class="b_offer"  >Offer %</p>
+                        
                         </div>
                     </div>
 
@@ -67,13 +74,13 @@ function Sec4() {
                 <div class="col-sm-6" style={{ maxWidth: "600px",marginBottom:"10rem" }}>
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name" >Brand Name</p>
+                            <img class="img-fluid" src={brand7}  style={{width:"145px" , height:"145px"}} />
+                            <p class="b_name" >ZARA</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
-                            <img class="img-fluid" src={brand} />
-                            <p class="b_name">Brand Name</p>
+                            <img class="img-fluid" src={brand8}  style={{width:"145px" , height:"145px"}} />
+                            <p class="b_name">LIFESTYLE</p>
                             <p class="b_offer" >Offer %</p>
                         </div>
                     </div>
