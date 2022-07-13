@@ -51,7 +51,7 @@ function Sec4() {
 
                 </div>
             </div>
-            <div className='row justify-content-center' >
+            <div className='row justify-content-center' style={{margin:"3rem"}}>
                 <div class="col-sm-6" style={{ maxWidth: "600px" }}>
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
