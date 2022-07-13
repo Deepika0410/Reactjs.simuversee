@@ -240,32 +240,30 @@ const Seller = () => {
                 </div>
                 
               </div>
-              <div className="dimension_Content">
-
-              <label for="fname">SKUID</label>
-            
-              <span>
-              <input className="dimension_button" type="number" style={{border:"#eeeeee"}}/><br></br>
-
-              </span>
+              <div className="description">
+              <label>SKU ID</label>
+              <br />
+              <input
+                value={productDiscription}
+                onChange={(e) => setProductDiscription(e.target.value)}
+                type="numbers"
+                id="fname"
+                name="fname"
              
-
-              
+              />
+            </div>
+            <div className="seller_price">
+              <label>PRODUCT ID</label>
+              <br />
+              <input
+                onChange={(e) => setProductPrice(e.target.value)}
+                value={productPrice}
+                type="number"
+                id="fname"
+                name="fname"
              
-              </div>
-              <div className="dimension_Content">
-
-                 <label for="fname">PRODUCT-ID</label>
-
-                     <span>
-                       <input className="dimension_button" type="number" style={{border:"#eeeeee"}}/><br></br>
-
-                        </span>
-
-
-
-
-                       </div>
+              />
+            </div>
               
 
             </div>

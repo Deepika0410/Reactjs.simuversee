@@ -24,13 +24,13 @@ function Sec4() {
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
                             <img class="img-fluid" src={brand1} style={{width:"145px" , height:"145px"}}/>
-                            <p class="b_name" >CHANNEL</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}} >CHANNEL</p>
+                          
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
                             <img class="img-fluid" src={brand2} style={{width:"145px" , height:"145px"}}/>
-                            <p class="b_name">GUCCI</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>GUCCI</p>
+                      
                         </div>
                     </div>
 
@@ -40,13 +40,12 @@ function Sec4() {
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
                             <img class="img-fluid" src={brand3} style={{width:"145px" , height:"145px"}}/>
-                            <p class="b_name" >NIKE</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>NIKE</p>
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
                             <img class="img-fluid" src={brand4} style={{width:"145px" , height:"145px"}}/>
-                            <p class="b_name">ADIDAS</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>ADIDAS</p>
+                        
                         </div>
                     </div>
 
@@ -57,14 +56,14 @@ function Sec4() {
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
                             <img class="img-fluid" src={brand5} style={{width:"145px" , height:"145px"}}/>
-                            <p class="b_name" >LEVI'S</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>LEVI'S</p>
+                         
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "170px" }} >
                             <img class="img-fluid" src={brand6}  style={{width:"145px" , height:"145px"}}/>
                         
-                            <p class="b_name">LOUIS VUITTON</p>
-                            <p class="b_offer"  >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>LOUIS VUITTON</p>
+            
                         
                         </div>
                     </div>
@@ -75,13 +74,13 @@ function Sec4() {
                     <div class="row">
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }}>
                             <img class="img-fluid" src={brand7}  style={{width:"145px" , height:"145px"}} />
-                            <p class="b_name" >ZARA</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}} >ZARA</p>
+                          
                         </div>
                         <div class="col-sm" align="center" style={{ minWidth: "150px" }} >
                             <img class="img-fluid" src={brand8}  style={{width:"145px" , height:"145px"}} />
-                            <p class="b_name">LIFESTYLE</p>
-                            <p class="b_offer" >Offer %</p>
+                            <p class="b_name" style={{textAlign:"center"}}>LIFESTYLE</p>
+                      
                         </div>
                     </div>
 
