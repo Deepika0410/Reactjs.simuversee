@@ -122,13 +122,13 @@ const Seller = () => {
       <>
         <div className="seller_Inner_Container" >
           <div className="inner_Content text-start"  >
-            <h3 >Reference Image for Uploading</h3>
+            <h3>Reference Image for Uploading</h3>
             <p>
             Select the image from your device that you want of the product to upload, for <br/> for listing on the SimuVerse portal.
             </p>
           </div>
           <div>
-            <img src={cloth} alt="/" />
+            <img src={cloth} alt="/" style={{width:"197px" , height:"198px"}} />
           </div>
         </div>
         <div className="progress_Con">
