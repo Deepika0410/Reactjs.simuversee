@@ -26,7 +26,7 @@ const CharacterCreation = () => {
       axios.get(img1).then(res => setImg1(res.data));
       setFlag(true);
     }
-  })
+  }) 
 
   return (
     <Base>
