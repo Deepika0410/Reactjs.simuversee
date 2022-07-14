@@ -76,8 +76,9 @@
 
 .navloginSignUp {
   border: 1px solid #313131;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-left: 20px;
+
 }
 
 .navloginSignUp button {

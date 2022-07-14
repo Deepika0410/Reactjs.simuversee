@@ -90,7 +90,7 @@ REDUCE WASTE
 </div>
 <div className='row text-center text1'>
 <p>
-Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock?
+Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock
 </p>
 </div>
 </div>
