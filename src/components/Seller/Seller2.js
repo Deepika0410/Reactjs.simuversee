@@ -84,9 +84,9 @@ const Seller2 = () => {
           </div>
           <div className="Bottom_Inner_Image_Main">
             <div className="Bottom_Inner_2">
-              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}
+              {/* <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}
 
-              >   <div className="images">
+              >  <div className="images">
                   <img src={rec} id="small_rec" alt="imge" />
 
 
@@ -104,8 +104,8 @@ const Seller2 = () => {
 
 
                 </div>
-              </div>
-              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
+  </div> */}
+            {/*  <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
 
                 <div className="images">
                   <img src={rec} id="small_rec" alt="imge" />
@@ -118,8 +118,8 @@ const Seller2 = () => {
 
 
                 </div>
-              </div>
-              <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
+</div> */}
+             {/* <div className="img_grid_sec" style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}>
                 <div className="images">
                   <img src={rec} id="small_rec" alt="imge" />
 
@@ -131,7 +131,7 @@ const Seller2 = () => {
 
 
                 </div>
-              </div>
+</div> */}
               <div
                 className="img_grid_sec"
                 style={{ borderRadius: "20px", padding: "35%", textAlign: "center" }}
@@ -151,6 +151,9 @@ const Seller2 = () => {
 
               {/* <div className="img_grid_sec_last">+</div> */}
             </div>
+            <div>
+              
+            </div>
             <button
               onClick={() => {
                 console.log(prdUplData.PrdUplState);
@@ -168,6 +171,7 @@ const Seller2 = () => {
               List Product
             </button>
           </div>
+          
         </div>
       </div>
     </Base>

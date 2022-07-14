@@ -96,15 +96,16 @@ function Sec3() {
                         <div class="row">
                             <div class="col c12">
                                 {isImageLoaded? <img className="img-fluid"  alt="img1" src={data[incre].shirtsrc} /> : <h6>Loading...</h6>}
-                            </div>
+                          
                             <div class="col " >
                                 <div class="item-title" align="left"> {data[incre].shirttit} </div>
-                                <p class="item-desc" align="left">Cloth1 </p>
+                                <p class="item-desc" align="left" style={{marginleft:"50px"}}>Cloth1 </p>
 
-                                <p style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3"}} align="left"> Brand Name</p>
-                                <h2  style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3"}} align="left"> Product Name</h2>
+                                <p style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3", marginLeft:"50px"}} align="left"> Brand Name</p>
+                                <h2  style={{fontFamily: "Inter",fontStyle: "normal", fontWeight: "400",fontSize: "12px",color:"#F7F8F3", marginLeft:"50px"}} align="left"> Product Name</h2>
 
-                                <div align="right"> <button class=" b-btn" onClick={() => navigate('/wishlist')}>Buy</button></div>
+                                <div align="right"> <button style={{marginLeft:"200px" , marginTop:"70px"}} class=" b-btn" onClick={() => navigate('/wishlist')}>Buy</button></div>
+                            </div>
                             </div>
 
                         </div>
