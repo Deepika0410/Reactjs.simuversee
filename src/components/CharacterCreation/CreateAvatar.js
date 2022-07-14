@@ -36,8 +36,8 @@ function CreateAvatar() {
         className="upld_container col-12 "
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <div className=" col-lg-6">
-          <div className="up-img1">
+        <div className=" col-lg-6 ">
+          <div className="up-img1 " style={{marginLeft:"2px"}}>
             <img className="uploaded_img1" width="100%" id="img1-preview" src={charImg1} alt="img1" />
             
 
@@ -62,8 +62,8 @@ function CreateAvatar() {
             </button>
           </span>
         </div>
-        <div className=" col-lg-6">
-          <div className="up-img2">
+        <div className=" col-lg-6 " style={{marginLeft:"20px"}}>
+          <div className="up-img2 ">
             <img className="uploaded_img1" id="img2-preview" width="100%" src={charImg2} alt="img2" />
           </div>
             <div>
