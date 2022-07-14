@@ -52,7 +52,7 @@ const CharacterCreation = () => {
               <img className="cas_img" src={flag ? img1 : casual3d} alt="3" />
             </div>
             <span style={{
-              margin: "-50px -5px", padding: "2px",
+              margin: "-40px 5px", padding: "2px",
               textAlign: "center"
             }}>
               <p >Preview Avatar</p>

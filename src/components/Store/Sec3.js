@@ -36,6 +36,7 @@ function Sec3() {
   const [modelsrc, setModelsrc] = useState(mod1)
   const [fscore, setFscore] = useState(null)
   const token=localStorage.getItem('token')
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const pid=localStorage.getItem('profileid');
 
   const handleNext = () => {
@@ -94,7 +95,7 @@ function Sec3() {
                     <div class="c11" style={{ marginBottom: "2%", marginTop: "1%", paddingTop: "2%", paddingLeft: "2%" }}>
                         <div class="row">
                             <div class="col c12">
-                                <img className="img-fluid"  alt="img1" src={data[incre].shirtsrc} />
+                                {isImageLoaded? <img className="img-fluid"  alt="img1" src={data[incre].shirtsrc} /> : <h6>Loading...</h6>}
                             </div>
                             <div class="col " >
                                 <div class="item-title" align="left"> {data[incre].shirttit} </div>

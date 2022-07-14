@@ -11,6 +11,7 @@ import axios from "axios";
 const Url = 'http://localhost:3000'
 
 function Comp1() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const {
     cartState: { cartItems },
     cartDispatch,
@@ -67,12 +68,14 @@ function Comp1() {
             .map((item, key) => {
               return (
                 <div key={key} className="c31">
-                  <img
+                 { isImageLoaded ? <img
                     className="img-fluid"
                     src={image}
                     //src={`${item.image}`}
                     alt="model img"
                   />
+                  : <span style={{fontWeight:"400"}}>Loading...</span>
+                  }
                 </div>
               );
             })}
@@ -85,11 +88,14 @@ function Comp1() {
             return (
               <div className="col" style={{ maxWidth: "575px" }}>
                 <div className="c32">
-                  <img
-                    className="img-fluid"
-                    alt="img"
-                    src={`${item.image}`}
-                  />
+                 { isImageLoaded ?
+                   <img
+                   className="img-fluid"
+                   alt="img"
+                   src={`${item.image}`}
+                 />
+                  : <span className="ml-4" style={{position:"absolute", bottom:"50%", left:"40%", fontSize:"1.2rem", color:"#000"}}>  Loading...</span>
+                 }
                 </div>
               </div>
             );

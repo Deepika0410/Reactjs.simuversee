@@ -23,89 +23,89 @@ import arrow from './arrow9.png'
 const Component2 = () => {
   return (
     <>
-   
-<div className='container-fluid p-1'
-style={{backgroundColor:"#f5f5f5"}}
->
-<div className='row'>
-  <h1 className='sell1'>
-  How to sell with simuverse?
-  </h1>
-</div>
-<div className='row justify-content-around p-0 m-0'>
-<div className='col-lg-2 col-md-3'>
-  <div className='row text-center'>
-    <img src={pcIcon} className='img-fluid imhHwSet'/>
-  </div>
-  <div className='row text-center text1'>
-    <p>
-    CREATE AN ACCOUNT
-    </p>
-  </div>
-  <div className='row text-center text1'>
-    <p>
-    Firstly you will have to create a seller’s account.
-    </p>
-  </div>
-</div>
-<div className='col-lg-1 aliCen'>
-  <img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-lg-2 col-md-3'>
-<div className='row text-center'>
-<img src={uploadIcon} className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-  <p>
-  UPLOAD YOUR PRODUCTS
-  </p>
-</div>
-<div className='row text-center text1'>
-<p>
-Then you will have to upload your products.
-</p>
-</div>
-</div>
-<div className='col-lg-1 aliCen'>
-<img src={arrow} className='img-fluid' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-lg-2 col-md-3'>
-<div className='row text-center '>
-<img  src={shippedIcon}  className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-<p>
-SHIPPING METHODS
-</p>
-</div>
-<div className='row text-center text1'>
-<p>
-Mention the shipping methods that will be convinient for you.
-</p>
-</div>
-</div>
-<div className='col-lg-1 aliCen'>
-<img src={arrow} className='img-fluid alis' style={{height:"30px",width:"80px"}}/>
-</div>
-<div className='col-lg-2 col-md-3'>
-<div className='row text-center'>
-<img src={brandIcon} className='img-fluid imhHwSet'/>
-</div>
-<div className='row text-center text1'>
-<p>
-GROW YOUR BRAND?
-</p>
-</div>
-<div className='row text-center text1'>
-<p>
-Sell your products and grow your brand.
-</p>
-</div>
-</div>
-</div>
-</div>
+
+      <div className='container-fluid p-1'
+        style={{ backgroundColor: "#f5f5f5",  }}
+      >
+        <div className='row' style={{marginLeft:"40px"}}>
+          <h1 className='sell1'>
+            How to sell with simuverse?
+          </h1>
+        </div>
+        <div className='row justify-content-around p-0 mx-5'>
+          <div className='col-lg-2 col-md-3'>
+            <div className='row text-center'>
+              <img src={pcIcon} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                CREATE AN ACCOUNT
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                Firstly you will have to create a seller’s account.
+              </p>
+            </div>
+          </div>
+          <div className='col-lg-1 aliCen'>
+            <img src={arrow} className='img-fluid' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-lg-2 col-md-3'>
+            <div className='row text-center'>
+              <img src={uploadIcon} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                UPLOAD YOUR PRODUCTS
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                Then you will have to upload your products.
+              </p>
+            </div>
+          </div>
+          <div className='col-lg-1 aliCen'>
+            <img src={arrow} className='img-fluid' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-lg-2 col-md-3'>
+            <div className='row text-center '>
+              <img src={shippedIcon} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                SHIPPING METHODS
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                Mention the shipping methods that will be convinient for you.
+              </p>
+            </div>
+          </div>
+          <div className='col-lg-1 aliCen'>
+            <img src={arrow} className='img-fluid alis' style={{ height: "30px", width: "80px" }} />
+          </div>
+          <div className='col-lg-2 col-md-3'>
+            <div className='row text-center'>
+              <img src={brandIcon} className='img-fluid imhHwSet' />
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                GROW YOUR BRAND?
+              </p>
+            </div>
+            <div className='row text-center text1'>
+              <p>
+                Sell your products and grow your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-    
+
   );
 };
 
