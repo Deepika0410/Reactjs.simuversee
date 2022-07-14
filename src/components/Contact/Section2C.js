@@ -16,7 +16,7 @@ const Section2C = () => {
         <p>
         Help reduce your eco footprint by providing a solution that minimises material wastage or damaged stock
         </p>
-        <a href="/"><span className="span">Learn more maybe</span></a>
+        <a href="/"><span className="span">Learn more</span></a>
       </div>
     </div>
   );

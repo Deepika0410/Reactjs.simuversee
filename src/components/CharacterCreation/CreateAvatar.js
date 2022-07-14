@@ -51,22 +51,17 @@ function CreateAvatar() {
 
               </label>
 
-         
-          </span>
-          <span>
-            <button
-               onClick={() =>
-                navigate("/home/character-creation/avatar_created")
-               }
-              className="nxt-btn"
-            >
-              Next
-            </button>
-          </span>
-        </div>
-        <div className=" col-lg-6 " style={{marginLeft:"20px"}}>
-          <div className="up-img2 ">
-            <img className="uploaded_img1" id="img2-preview" width="100%" src={charImg2} alt="img2" />
+            </span>
+            <span>
+              <button
+                onClick={() =>
+                  navigate("/character-creation/avatar_created")
+                }
+                className="nxt-btn"
+              >
+                Next
+              </button>
+            </span>
           </div>
           <div className=" col-lg-6">
             <div className="up-img2">
@@ -84,7 +79,7 @@ function CreateAvatar() {
             </div>
 
             <span>
-              <NavLink to={"/home/character-creation/edit_avatar"} state={{ image1: img1, image2: img2 }}><button
+              <NavLink to={"/character-creation/edit_avatar"} state={{ image1: img1, image2: img2 }}><button
                 onClick={() => navigate('/home/character-creation/edit_avatar')}
                 className="edt-btn"
               >
@@ -93,7 +88,7 @@ function CreateAvatar() {
             </span>
           </div>
         </div>
-      </div>
+    
     </>
   );
 }

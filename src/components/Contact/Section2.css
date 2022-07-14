@@ -34,7 +34,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.11rem;
+  font-size: 1.6rem;
   /* line-height: 1.875rem; */
   /* identical to box height */
   /* width: 100%; */
@@ -48,8 +48,8 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size:1rem;
+  line-height: 1.5rem;
   padding: 1rem 1rem;
 
   /* Wireframe */

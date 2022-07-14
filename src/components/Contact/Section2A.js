@@ -17,7 +17,7 @@ const Section2A = () => {
         <p>
         Allow your customers to try-on any of your products, anywhere, anytime - without the wait of a change room
         </p>
-        <a href="/"><span className="span">Learn more maybe</span></a>
+        <a href="/"><span className="span">Learn more</span></a>
       </div>
     </div>
   );
