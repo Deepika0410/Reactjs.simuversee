@@ -10,7 +10,7 @@ const Component3 = () => {
     <>
     <div className='container-fluid p-1'>
     <div className='row'>
-  <h1 className='choose1'>
+  <h1 className='choose1 ' style={{marginLeft:"5rem"}}>
   Why choose us?
   </h1>
 </div>

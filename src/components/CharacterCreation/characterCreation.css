@@ -18,6 +18,7 @@
   margin-top: 1.75rem;
   display: block;
   text-align: left;
+  margin-left: -3rem;
 }
 .s-head > p {
   font-family: "Poppins";
@@ -37,15 +38,16 @@
   border-radius: 8px;
   width: initial;
   height: fit-content;
+  padding-right: 1rem;
 }
 .up-img2 {
   background: #ffffff;
   border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 8px;
-  width: initial;
+  width: 18rem;
   height: fit-content;
-  margin-left: 5%;
+  margin-left: 3rem;
 }
 .uploaded_img1 {
   padding: 10px;
@@ -53,19 +55,19 @@
   height: 220px;
   object-fit: contain;
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 .img-cont {
   background: #cccccc;
   border-radius: 8px;
-  width: inherit;
+  width: 250px;
   margin-left: 40%;
   padding-top: 20px;
 }
 .cas_img {
-  width: initial;
-  padding-left: 15%;
+  width: 250px;
+  padding-left: 60px;
 }
 .nxt-btn {
   margin-top: 6rem;
@@ -85,7 +87,7 @@
 
 .edt-btn {
   color: #313131;
-  margin-top: 6rem;
+  margin-top: 3.4rem;
   width: 13.18vw;
   height: 44px;
   background: #ffffff;
@@ -93,9 +95,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 3rem;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 4.5rem;
+  margin-right: 15px;
 }
 .edt-btn:hover {
   background: #589ca3;
