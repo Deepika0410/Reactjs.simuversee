@@ -29,7 +29,6 @@ function CreateAvatar() {
   }
   return (
     <>
-<<<<<<< HEAD
       <span className="s-head">
         <p>Upload picture to create your 3D Avatar</p>
       </span>
@@ -41,19 +40,6 @@ function CreateAvatar() {
           <div className="up-img1 " style={{marginLeft:"2px"}}>
             <img className="uploaded_img1" width="100%" id="img1-preview" src={charImg1} alt="img1" />
             
-=======
-      <div className="charCreate " style={{ marginLeft: "10rem" }}>
-        <span className="s-head">
-          <p>Upload picture to create your 3D Avatar</p>
-        </span>
-        <div
-          className="upld_container col-12 "
-          style={{ display: "flex", justifyContent: "space-between" }}
-        >
-          <div className=" col-lg-6">
-            <div className="up-img1">
-              <img className="uploaded_img1" width="100%" id="img1-preview" src={charImg1} alt="img1" />
->>>>>>> 0548ec0dcdd391f4e9ce401c76926c9bf1cb1ffd
 
 
             </div>
@@ -65,8 +51,6 @@ function CreateAvatar() {
 
               </label>
 
-<<<<<<< HEAD
-            </label>
          
           </span>
           <span>
@@ -83,19 +67,6 @@ function CreateAvatar() {
         <div className=" col-lg-6 " style={{marginLeft:"20px"}}>
           <div className="up-img2 ">
             <img className="uploaded_img1" id="img2-preview" width="100%" src={charImg2} alt="img2" />
-=======
-            </span>
-            <span>
-              <button
-                onClick={() =>
-                  navigate("/home/character-creation/avatar_created")
-                }
-                className="nxt-btn"
-              >
-                Next
-              </button>
-            </span>
->>>>>>> 0548ec0dcdd391f4e9ce401c76926c9bf1cb1ffd
           </div>
           <div className=" col-lg-6">
             <div className="up-img2">
