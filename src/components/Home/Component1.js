@@ -30,7 +30,7 @@ const Component = () => {
           Click on the explore button below to know more about SimuVerse.
           </p>
           
-            <NavLink id="exploreBtn" to="/home/character-creation"><div >Explore</div></NavLink>
+            <NavLink id="exploreBtn" to="/character-creation"><div >Explore</div></NavLink>
           
         </div>
         {/* <img src={homeImage} alt="/" /> */}

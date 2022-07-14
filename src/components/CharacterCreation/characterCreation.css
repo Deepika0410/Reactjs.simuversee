@@ -18,7 +18,7 @@
   margin-top: 1.75rem;
   display: block;
   text-align: left;
-  margin-left: -3rem;
+  margin-left: 3rem;
 }
 .s-head > p {
   font-family: "Poppins";
@@ -36,7 +36,7 @@
   border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 8px;
-  width: initial;
+  width: 18rem;
   height: fit-content;
   padding-right: 1rem;
 }
@@ -47,7 +47,7 @@
   border-radius: 8px;
   width: 18rem;
   height: fit-content;
-  margin-left: 3rem;
+  margin-left: -2rem;
 }
 .uploaded_img1 {
   padding: 10px;
@@ -156,7 +156,9 @@
   margin-left: 15%;
   margin-right: 10%;
 } */
-
+.upld_container{
+  margin-left: 15%;
+}
 @media screen and (max-width: 425px) {
   .upld_container {
     flex-direction: column;
