@@ -54,7 +54,7 @@ const App = () => {
           <Route path="/shome/seller/addimage" element={<Seller2 />} />
           <Route path="/shome/seller/productsuccess" element={<Seller3 />} />
           <Route
-            path="/home/character-creation/*"
+            path="/character-creation/*"
             element={<CharacterCreation />}
           />
           <Route
