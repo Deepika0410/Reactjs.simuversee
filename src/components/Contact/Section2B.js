@@ -16,7 +16,7 @@ const Section2B = () => {
         <p>
         Reduce returns by allowing customers to see your products in hi-res on their body type
         </p>
-        <a href="/"><span className="span">Learn more maybe</span></a>
+        <a href="/"><span className="span">Learn more</span></a>
       </div>
     </div>
   );

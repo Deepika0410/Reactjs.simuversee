@@ -55,7 +55,7 @@ function CreateAvatar() {
             <span>
               <button
                 onClick={() =>
-                  navigate("/home/character-creation/avatar_created")
+                  navigate("/character-creation/avatar_created")
                 }
                 className="nxt-btn"
               >
@@ -79,7 +79,7 @@ function CreateAvatar() {
             </div>
 
             <span>
-              <NavLink to={"/home/character-creation/edit_avatar"} state={{ image1: img1, image2: img2 }}><button
+              <NavLink to={"/character-creation/edit_avatar"} state={{ image1: img1, image2: img2 }}><button
                 onClick={() => navigate('/home/character-creation/edit_avatar')}
                 className="edt-btn"
               >
